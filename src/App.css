@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+}
+.App-Header{
+  padding: 0;
+  z-index: 100;
+}
+.main-body {
+  position: absolute;
+  top: 5rem;
+}
