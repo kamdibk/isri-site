@@ -1,0 +1,13 @@
+.sticky-contact-details{
+    display: none;
+    background-color: red;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    .sticky-contact-details{
+        display: block;
+    }
+}

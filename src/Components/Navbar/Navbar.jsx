@@ -9,8 +9,6 @@ import {
   AiOutlineMobile,
   AiOutlineDesktop,
   AiOutlineClose,
-  AiOutlinePlus,
-  AiOutlineMinus,
 } from "react-icons/ai";
 import { FaHandshake } from "react-icons/fa";
 import { BsCart4, BsLaptop, BsFillPeopleFill } from "react-icons/bs";
@@ -50,6 +48,9 @@ const Navbar = () => {
               <a href="#">SERVICES</a>
               <div className="dropdown">
                 <div className="dropdown-lvl-1">
+                  <div className="services-image">
+                    {/* Image */}
+                  </div>
                   <div className="services-links">
                     <div style={{ padding: "10px" }}>
                       <br />
@@ -209,7 +210,7 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="services-image"></div>
+                  {/* <div className="services-image"></div> */}
                 </div>
               </div>
             </li>
@@ -254,13 +255,13 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-          <div className="mobile-ham-icon" onClick={toggleDropdown}>
+        <div className="mobile-ham-icon" onClick={toggleDropdown}>
           {dropdownNav ? (
-                <AiOutlineClose size={25} />
-              ) : (
-                <GiHamburgerMenu size={25} />
-              )}
-          </div>
+            <AiOutlineClose size={25} />
+          ) : (
+            <GiHamburgerMenu size={25} />
+          )}
+        </div>
       </nav>
       {dropdownNav ? <Services /> : null}
     </div>

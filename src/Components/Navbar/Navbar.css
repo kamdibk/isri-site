@@ -55,12 +55,12 @@
   margin: 1.2rem;
 }
 .services-links{
-  width: 300px;
+  width: 350px;
 }
 
 .services-image {
   background-image: url("../../assets/menu_pc_serv.jpg");
-  width: 350px;
+  width: 320px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -78,7 +78,7 @@
 .display-none{
   display: none;
 }
-@media screen and (max-width: 1390px) and (min-width:760px){
+@media screen and (max-width: 1390px) and (min-width:550px){
   .nav-links {
       display: none;
   }
@@ -153,7 +153,7 @@
   padding: 8px !important;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 550px) {
   .nav-links {
     display: none;
   }
