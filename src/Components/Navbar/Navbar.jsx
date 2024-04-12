@@ -242,7 +242,7 @@ const Navbar = () => {
           <div className="contact">
             <AiOutlineMail
               size={27}
-              style={{ marginRight: "10px" }}
+              style={{ marginRight: "20px" }}
               color={"red"}
             />
             <span className="contact-email">info@isritechnologies.com</span>

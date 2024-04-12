@@ -1,13 +1,30 @@
-.sticky-contact-details{
+.sticky-contact-details {
     display: none;
-    background-color: red;
     bottom: 0;
     position: fixed;
     width: 100%;
+    font-size: 15px;
+}
+
+.PE-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.PE-icon {
+    text-align: center;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 550px) {
-    .sticky-contact-details{
+    .sticky-contact-details {
         display: block;
     }
 }
