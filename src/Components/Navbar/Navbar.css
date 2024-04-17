@@ -121,11 +121,9 @@
 {
   text-decoration: none;
   color: rgb(221, 7, 7);
-  font-weight: 500;
   font-weight: 600;
 }
 .dropdown-nav-links-items li{
-  /* height: 50px; */
   padding: 15px 20px 15px 20px !important;
   border-top: 0.5px dashed rgba(172, 172, 172, 0.682);
 }

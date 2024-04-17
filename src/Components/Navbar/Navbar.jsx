@@ -235,14 +235,16 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="com-contacts">
-          <div className="contact" style={{ borderBottom: "1px solid black" }}>
+          <div className="contact" 
+          style={{ borderBottom: "1px solid gray" }}
+          >
             <MdPhone size={27} style={{ marginRight: "10px" }} color={"red"} />
             <span className="contact-number">IN : +91-90825 82243</span>
           </div>
           <div className="contact">
             <AiOutlineMail
               size={27}
-              style={{ marginRight: "20px" }}
+              style={{ marginRight: "10px" }}
               color={"red"}
             />
             <span className="contact-email">info@isritechnologies.com</span>

@@ -3,8 +3,7 @@ import "./StickyContactForMobile.css";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
-import callIcon from "../../assets/ic_ft2.png";
-import contactusIcon from "../../assets/ic_ft4.png";
+
 const StickyContactForMobile = () => {
   return (
     <div className="sticky-contact-details">

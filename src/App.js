@@ -13,7 +13,7 @@ function App() {
         <Technologies />
       </div>
       <div className="main-body">{/* <Hero /> */}</div>
-      <StickyContactForMobile />
+      <StickyContactForMobile/>
     </div>
   );
 }
