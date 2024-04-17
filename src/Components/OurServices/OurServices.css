@@ -1,0 +1,19 @@
+.ourservices-main-container {
+    /* background-color: red; */
+    height: 400px;
+    width: 100vw;
+}
+.ourservices-main-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+.ourservices-item {
+    margin-top: -110px;
+    background-color: green;
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    
+}

@@ -1,6 +1,14 @@
 .SliderMainComponent-main{
-    height: 90vh;
+    height: 800px;
     width: 100vw;
-    background-color: red;
-    background-image: url('');
+    background-image: url('../../images/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.child-slider{
+    position: absolute;
+    width: 50%;
+    top: 200px;
+    left:100px;
+    backdrop-filter: blur(4px);
 }

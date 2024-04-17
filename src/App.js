@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Technologies from "./Components/Navbar/Technologies/Technologies";
 import StickyContactForMobile from "./Components/StickyContactForMobile/StickyContactForMobile";
 import SliderMainComponent from "./Components/SliderMainComponent/SliderMainComponent";
+import OurServices from "./Components/OurServices/OurServices";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </div>
       <div className="main-body">
         <SliderMainComponent/>
+        <OurServices />
       </div>
       <StickyContactForMobile/>
     </div>
