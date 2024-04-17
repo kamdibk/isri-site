@@ -1,0 +1,45 @@
+.slider{
+    color:white;
+    max-width: 770px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.item{
+    height: 100%;
+    width: 100%;
+}
+.item>img{
+    object-fit:contain;
+}
+
+
+/* 1st Div */
+.share-dev{
+}
+.logo-and-text{
+    width: 770px;
+    display: flex;
+    align-items: center;
+}
+.sd-text{
+    margin-left: 15px;
+    color: white;
+    font-size: 3rem;
+}
+
+.share-dev-text{
+    margin-top: 10px;
+    color: rgb(180, 178, 177);
+    font-weight: 600;
+    font-size: large;
+}

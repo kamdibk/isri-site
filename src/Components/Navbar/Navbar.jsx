@@ -39,8 +39,8 @@ const Navbar = () => {
   return (
     <div className="fixed-nav">
       <nav className="navbar">
-        <div className="com-logo">
-          <img src={Logo} alt="ISRI Logo" className="isri-logo" />
+        <div className="com-logo" style={{marginLeft:"10px"}}>
+          <img src={Logo} alt="ISRI Logo" className="isri-logo" height={60}/>
         </div>
         <div className="nav-links">
           <ul className="nav-links-items">
@@ -259,7 +259,7 @@ const Navbar = () => {
         </div>
         <div className="mobile-ham-icon" onClick={toggleDropdown}>
           {dropdownNav ? (
-            <AiOutlineClose size={25} />
+            <AiOutlineClose size={25} className="rotetateclose"/>
           ) : (
             <GiHamburgerMenu size={25} />
           )}
