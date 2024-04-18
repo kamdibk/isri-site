@@ -1,0 +1,19 @@
+.whoweare-container {
+    height: 750px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap : 1rem;
+}
+
+.whoweare-container-left {
+    height: 600px;
+    width: 43%;
+}
+
+.whoweare-container-right {
+    height: 600px;
+    width: 43%;
+}
