@@ -1,5 +1,4 @@
 .fixed-nav{
-  /* position: fixed; */
   width: 100%;
 }
 .navbar{
@@ -7,7 +6,7 @@
   justify-content:space-between;
   align-items: center;
   padding: 10px 10px 0 10px;
-  /* border-bottom: 2px solid rgba(159, 157, 157, 0.729); */
+  border-bottom: 2px solid rgba(159, 157, 157, 0.729);
 }
 .nav-links-items{
   display: flex;

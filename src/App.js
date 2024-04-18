@@ -5,22 +5,22 @@ import Technologies from "./Components/Navbar/Technologies/Technologies";
 import StickyContactForMobile from "./Components/StickyContactForMobile/StickyContactForMobile";
 import SliderMainComponent from "./Components/SliderMainComponent/SliderMainComponent";
 import OurServices from "./Components/OurServices/OurServices";
+import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
 
 function App() {
   return (
     <div className="App">
       <div className="App-Header">
         <Navbar />
-        {/* <Test/> */}
         <Technologies />
       </div>
       <div className="main-body">
-        <SliderMainComponent/>
+        <SliderMainComponent />
         <OurServices />
+        <WhoWeAre />
       </div>
-      <StickyContactForMobile/>
+      <StickyContactForMobile />
     </div>
-
   );
 }
 

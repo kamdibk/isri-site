@@ -1,11 +1,12 @@
-.slider{
-    color:white;
+.slider {
+    color: white;
     max-width: 770px;
     height: 300px;
     overflow: hidden;
     position: relative;
 }
-.slider .list{
+
+.slider .list {
     position: absolute;
     width: max-content;
     height: 100%;
@@ -14,32 +15,72 @@
     display: flex;
     transition: 1s;
 }
-.item{
+
+.item {
     height: 100%;
     width: 100%;
 }
-.item>img{
-    object-fit:contain;
+
+.item>img {
+    object-fit: contain;
 }
 
 
 /* 1st Div */
-.share-dev{
-}
-.logo-and-text{
+.logo-and-text {
     width: 770px;
     display: flex;
     align-items: center;
 }
-.sd-text{
+
+.sd-text {
     margin-left: 15px;
     color: white;
     font-size: 3rem;
 }
 
-.share-dev-text{
+.share-dev-text {
     margin-top: 10px;
     color: rgb(180, 178, 177);
     font-weight: 600;
     font-size: large;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 1390px) and (min-width:550px) {
+    .sd-text {
+        font-size: 2rem;
+    }
+
+    .share-dev-text {
+        height: 80px;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 690px) and (min-width:550px) {
+    .slider {
+        width: 96vw !important;
+    }
+    .sd-text {
+        font-size: 1.6rem;
+    }
+    .share-dev-text {
+        width: 69%;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sd-text {
+        font-size: 2rem;
+    }
+
+    .share-dev-text {
+        height: 80px;
+        width: 94vw;
+        overflow: none;
+    }
 }

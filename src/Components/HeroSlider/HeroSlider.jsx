@@ -1,9 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import "./HeroSlider.css";
 import SharepointLogo from "../../images/sharepointlogo.png";
 import www from '../../images/www.png'
 import appIcon from '../../images/mobileAppIcon.png'
+import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions";
 const HeroSlider = () => {
+  const [iconSize,setIconSize] = useState(100);
+  const {width} = useWindowDimensions();
+
+  useEffect(()=>{
+    const headText = document.getElementsByClassName('sd-text');
+    if(width>=550 && width<=1390){
+      setIconSize(80);
+    }
+    else if(width<550){
+      setIconSize(60);
+    }
+
+  },[width])
   useEffect(() => {
     let slider = document.querySelector(".slider .list");
     let items = document.querySelectorAll(".slider .list .item");
@@ -32,7 +46,7 @@ const HeroSlider = () => {
       <div className="list" id="list">
         <div className="item" id="item">
           <div className="logo-and-text">
-            <img src={SharepointLogo} alt="" height={100} />
+            <img src={SharepointLogo} height={iconSize} />
             <div className="sd-text">
               Sharepoint <br />
               Development
@@ -45,7 +59,7 @@ const HeroSlider = () => {
         </div>
         <div className="item" id="item">
         <div className="logo-and-text">
-            <img src={www} alt="" height={100} />
+            <img src={www} height={iconSize} />
             <div className="sd-text">
               Responsive Website <br />
               to Scale Responsible<br/>
@@ -58,7 +72,7 @@ const HeroSlider = () => {
         </div>
         <div className="item" id="item">
         <div className="logo-and-text">
-            <img src={appIcon} alt="" height={100} />
+            <img src={appIcon} height={iconSize} />
             <div className="sd-text">
               Enterprise <br />
               Mobile Solutions
