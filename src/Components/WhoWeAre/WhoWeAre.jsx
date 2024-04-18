@@ -6,4 +6,4 @@ const WhoWeAre = () => {
   )
 }
 
-export default 
+export default WhoWeAre 
