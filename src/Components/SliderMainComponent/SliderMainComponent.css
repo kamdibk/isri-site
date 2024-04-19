@@ -1,7 +1,8 @@
 .SliderMainComponent-main{
     height: 800px;
     width: 100vw;
-    background-image: url('../../images/pxfuel.jpg');
+    background-image: url('../../images/texture_dark_lines_126785_4000x2666cpy2.jpg');
+    /* background-image: url('../../images/pxfuel.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
