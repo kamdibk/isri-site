@@ -155,8 +155,15 @@
     .sign-img{
         width: 120px;
     }
+    .whoweare-container-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     .whoweare-container-right-img1{
-        margin-left: 10%;
+        width: 400px;
+        margin-left: 0;
     }
     .whoweare-container-right-img2{
         display: none;
