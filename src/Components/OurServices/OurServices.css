@@ -74,5 +74,7 @@
 }
 
 @media screen and (max-width: 550px) {
-
+    .ourservices-item{
+        width: 320px;
+    }
 }
