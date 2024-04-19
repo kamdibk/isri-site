@@ -88,7 +88,7 @@ line-height: 18px;
         flex: none !important;
         display: block;
         height: fit-content ;
-        transition: 1s;
+        /* transition: .5s; */
     }
     .whoweare-container-left {
         padding: 4rem;
@@ -99,11 +99,18 @@ line-height: 18px;
     .whoweare-container-right {
         width: 100vw;
         box-sizing: border-box;
-        transition: 1s;
+        transition: .5s;
     }
 }
+@media screen and (max-width:815px) {
+    .whoweare-container {
+        margin-top: 1350px;
+     }
+}
+/* 
 @media screen and (max-width:715px) {
+
     .whoweare-container {
        margin-top: 1350px;
     }
-}
+} */
