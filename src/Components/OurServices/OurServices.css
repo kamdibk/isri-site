@@ -73,10 +73,8 @@
     }
 }
 
-@media screen and (max-width: 7150px) {
+@media screen and (max-width: 715px) {
     .ourservices-item{
         width: 320px;
     }
 }
-/*
-@media screen and (max-width:715px) */

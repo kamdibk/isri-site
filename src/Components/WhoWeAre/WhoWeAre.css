@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow');
+
 .whoweare-container {
     height: 750px;
     width: 100vw;
@@ -6,7 +7,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap : 1rem;
+    gap: 1rem;
     position: relative;
     margin-top: 1rem;
 }
@@ -21,61 +22,68 @@
     width: 43%;
     border: 2px solid black;
 }
-.who-we-are-hr{
-    margin:1rem 1rem;
-}   
-.inner-div{
+
+.who-we-are-hr {
+    margin: 1rem 1rem;
+}
+
+.inner-div {
     display: flex;
     height: 140px;
     width: 90%;
-    border-top : 2px solid rgb(209, 206, 206);
+    border-top: 2px solid rgb(209, 206, 206);
     margin: 2rem;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
 }
 
-.inner-div-child-left{
-    height:120px;
+.inner-div-child-left {
+    height: 120px;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.inner-div-child-right{
+
+.inner-div-child-right {
     height: 100px;
     width: 60%;
-    border-left : 2px solid rgb(209, 206, 206);
+    border-left: 2px solid rgb(209, 206, 206);
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
     justify-content: center;
 }
-.who-we-are-text{
+
+.who-we-are-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
 }
-.who-we-are-num{
-    color:rgb(8,106,216);
+
+.who-we-are-num {
+    color: rgb(8, 106, 216);
     font-family: "Barlow";
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
 }
-.who-we-are-left-name{
-color:rgb(14,14,14);
-font-family: "Barlow",sans-serif;
-font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-margin-top: 20px;
+
+.who-we-are-left-name {
+    color: rgb(14, 14, 14);
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 20px;
 }
-.who-we-are-left-desig{
-color: rgb(76,77,86);
-font-size: 12px;
-font-weight: 400;
-line-height: 18px;
+
+.who-we-are-left-desig {
+    color: rgb(76, 77, 86);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 @media screen and (max-width: 1395px){
@@ -83,34 +91,47 @@ line-height: 18px;
         margin-top: 476px;
     }
 }
-@media screen and (max-width:900px){
-    .whoweare-container{
+
+@media screen and (max-width:900px) {
+    .whoweare-container {
         flex: none !important;
         display: block;
-        height: fit-content ;
-        /* transition: .5s; */
+        height: fit-content;
     }
+
     .whoweare-container-left {
-        padding: 4rem;
+        padding: 3rem;
         width: 100vw;
         box-sizing: border-box;
-        transition: 1s;
     }
+
     .whoweare-container-right {
         width: 100vw;
         box-sizing: border-box;
-        transition: .5s;
     }
 }
+
 @media screen and (max-width:815px) {
     .whoweare-container {
-        margin-top: 1350px;
-     }
-}
-/* 
-@media screen and (max-width:715px) {
-
-    .whoweare-container {
-       margin-top: 1350px;
+        margin-top: 508px;
     }
-} */
+}
+@media screen and (max-width:716px) {
+    .whoweare-container {
+        margin-top: 1400px;
+    }
+    .whoweare-container-left {
+        padding: 0.8rem;
+        display: block;
+    }
+    .whoweare-container-right {
+        padding: 0.8rem;
+        display: block;
+    }
+}
+@media screen and (max-width:540) {
+    .whoweare-container-right {
+        margin-top: 2rem;
+        background-color: red;
+    }
+}
