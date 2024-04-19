@@ -78,7 +78,7 @@ font-weight: 400;
 line-height: 18px;
 }
 
-@media screen and (max-width: 1398px){
+@media screen and (max-width: 1395px){
     .whoweare-container {
         margin-top: 476px;
     }
@@ -100,5 +100,10 @@ line-height: 18px;
         width: 100vw;
         box-sizing: border-box;
         transition: 1s;
+    }
+}
+@media screen and (max-width:715px) {
+    .whoweare-container {
+       margin-top: 1350px;
     }
 }
