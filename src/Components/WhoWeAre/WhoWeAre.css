@@ -129,9 +129,12 @@
         display: block;
     }
 }
-@media screen and (max-width:540) {
+@media screen and (max-width:540px) {
     .whoweare-container-right {
-        margin-top: 2rem;
+        margin-top: 25px;
         background-color: red;
+    }
+    .inner-div {
+        margin-bottom: 10px;
     }
 }
