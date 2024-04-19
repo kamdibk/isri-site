@@ -1,6 +1,8 @@
 import React from "react";
 import "./WhoWeAre.css";
 import sign from '../../images/sign.png'
+import pic1 from '../../images/about-big2.jpg'
+import pic2 from '../../images/about-sm2.jpg'
 const WhoWeAre = () => {
   return (
     <div className="whoweare-container">
@@ -39,7 +41,7 @@ const WhoWeAre = () => {
         <div className="inner-div">
             <div className="inner-div-child-left">
               <div className="who-we-are-left-sign">
-                <img src={sign} alt="sig" />
+                <img src={sign} alt="sig" className="sign-img"/>
               </div>
               <div className="who-we-are-left-name">
                 Lorem Bhau
@@ -58,7 +60,10 @@ const WhoWeAre = () => {
             </div>
         </div>
       </div>
-      <div className="whoweare-container-right"></div>
+      <div className="whoweare-container-right">
+        <div><img src={pic2} alt="" /></div>
+        <div><img src={pic1} alt="" /></div>
+      </div>
     </div>
   );
 };

@@ -17,11 +17,7 @@
     width: 43%;
 }
 
-.whoweare-container-right {
-    height: 600px;
-    width: 43%;
-    border: 2px solid black;
-}
+
 
 .who-we-are-hr {
     margin: 1rem 1rem;
@@ -86,6 +82,14 @@
     line-height: 18px;
 }
 
+.whoweare-container-right {
+    height: 600px;
+    width: 43%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
 @media screen and (max-width: 1395px){
     .whoweare-container {
         margin-top: 476px;
@@ -131,10 +135,10 @@
 }
 @media screen and (max-width:540px) {
     .whoweare-container-right {
-        margin-top: 25px;
+        margin-top: 50px;
         background-color: red;
     }
-    .inner-div {
-        margin-bottom: 10px;
+    .sign-img{
+        width: 120px;
     }
 }
