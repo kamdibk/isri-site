@@ -61,8 +61,8 @@ const WhoWeAre = () => {
         </div>
       </div>
       <div className="whoweare-container-right">
-        <div><img src={pic2} alt="" /></div>
-        <div><img src={pic1} alt="" /></div>
+        <div className="whoweare-container-right-img1"></div>
+        <div className="whoweare-container-right-img2"></div>
       </div>
     </div>
   );
