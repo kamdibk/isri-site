@@ -9,12 +9,15 @@
     justify-content: center;
     gap: 1rem;
     position: relative;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 .whoweare-container-left {
     height: 600px;
     width: 43%;
+    box-sizing: border-box;
 }
 
 
@@ -86,7 +89,7 @@
     height: 600px;
     width: 43%;
     box-sizing: border-box;
-
+    flex-shrink: 2;
 }
 .whoweare-container-right-img1{
     background-image: url("../../images/about-big2.jpg");
@@ -106,9 +109,7 @@
 }
 
 @media screen and (max-width: 1395px){
-    .whoweare-container {
-        margin-top: 476px;
-    }
+
 }
 
 @media screen and (max-width:900px) {
@@ -125,19 +126,22 @@
     }
 
     .whoweare-container-right {
-        width: 100vw;
+        width: 90vw;
         box-sizing: border-box;
+        margin-left: 50px;
+        overflow: hidden;
     }
 }
 
 @media screen and (max-width:815px) {
     .whoweare-container {
-        margin-top: 508px;
+        /* margin-top: 508px; */
     }
+
 }
 @media screen and (max-width:716px) {
     .whoweare-container {
-        margin-top: 1400px;
+        /* margin-top: 1400px; */
     }
     .whoweare-container-left {
         padding: 0.8rem;
