@@ -5,7 +5,7 @@ import Technologies from "./Components/Navbar/Technologies/Technologies";
 import StickyContactForMobile from "./Components/StickyContactForMobile/StickyContactForMobile";
 import SliderMainComponent from "./Components/SliderMainComponent/SliderMainComponent";
 import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
-import OurServices1 from "./Components/OurServices1/OurServices1";
+import OurServices from "./Components/OurServices/OurServices";
 import WhyChooseUs from './Components/WhyChooseUs/WhyChooseUs'
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       </div>
       <div className="main-body">
         <SliderMainComponent />
-        <OurServices1 />
+        <OurServices />
         <WhoWeAre />
         <WhyChooseUs />
       </div>
