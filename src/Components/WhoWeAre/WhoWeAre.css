@@ -206,4 +206,7 @@
     .whoweare-container-right-img2{
         display: none;
     }
+    .whoweare-subcontainer{
+        padding: 1rem;
+    }
 }
