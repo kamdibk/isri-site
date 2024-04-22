@@ -19,7 +19,7 @@ function App() {
         <OurServices1 />
         <WhoWeAre />
       </div>
-      <StickyContactForMobile />
+      <StickyContactForMobile />     
     </div>
   );
 }
