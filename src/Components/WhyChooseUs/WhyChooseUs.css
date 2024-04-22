@@ -1,0 +1,33 @@
+.whychooseus-container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.whychooseus-subcontainer{
+    height: 700px;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 5rem;
+}
+.heading-text{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    color: blue;
+}
+.whychooseus-content{
+    margin: 2rem;
+}
+
+.hr {
+    color: rgba(209, 206, 206, 0.543);
+    margin: 0 1rem;
+}
+
+.h1-txt{
+    margin-top: 32px;
+    font-family: arial;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* container end */

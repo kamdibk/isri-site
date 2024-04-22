@@ -6,7 +6,8 @@ import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import 'swiper/css/navigation';
+import { Pagination,Navigation } from "swiper/modules";
 //swiper-End
 
 // icon
@@ -41,9 +42,11 @@ const OurServices1 = () => {
         slidesPerView={noOfSlides} 
         spaceBetween={slideGap} 
         pagination={{clickable: true,}}
-        modules={[Pagination]}
+        navigation={true}
+        modules={[Pagination,Navigation]}
         className="mySwiper"
-      >{
+      >
+        {
         OurservicesData.map((key)=>{
           return(
             <SwiperSlide key={key.id}>
