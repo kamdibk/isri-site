@@ -128,7 +128,6 @@
     .whoweare-container-right {
         width: 90vw;
         box-sizing: border-box;
-        margin-left: 50px;
         overflow: hidden;
     }
 }
@@ -168,6 +167,7 @@
     .whoweare-container-right-img1{
         width: 400px;
         margin-left: 0;
+        margin-left: 40px;
     }
     .whoweare-container-right-img2{
         display: none;
