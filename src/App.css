@@ -13,3 +13,8 @@
 .main-body {
   position: relative;
 }
+.stroke-text{
+  color: transparent;
+  -webkit-text-stroke-width: .7px ;
+  -webkit-text-stroke-color: white ;
+}
