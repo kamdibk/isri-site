@@ -17,10 +17,10 @@
     margin: 2rem;
 }
 
-.hr {
+/* .hr {
     color: rgba(209, 206, 206, 0.543);
     margin: 0 1rem;
-}
+} */
 
 .h1-txt{
     margin-top: 32px;
@@ -92,5 +92,8 @@
 @media screen and (max-width:560px) {
     .whychooseus-subcontainer{
         padding: 10px;
+    }
+    .whychooseus-content{
+        margin: 8px;
     }
 }

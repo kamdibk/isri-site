@@ -4,7 +4,7 @@ import { WhyChooseUsData } from "../../Data/WhyChooseUsData";
 const WhyChooseUs = () => {
   return (
     <div className="whychooseus-container">
-      <hr className="hr" />
+      {/* <hr className="hr" /> */}
       <div className="whychooseus-subcontainer">
         <div className="whychooseus-content">
           <h4 className="heading-text">WHY CHOOSE US</h4>
