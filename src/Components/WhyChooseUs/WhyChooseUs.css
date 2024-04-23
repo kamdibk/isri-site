@@ -1,12 +1,14 @@
 .whychooseus-container{
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .whychooseus-subcontainer{
     width: 100vw;
     box-sizing: border-box;
     padding: 3rem 4rem;
     background-color: #0f172a;
+    overflow: hidden;
 }
 .heading-text{
     color: rgb(0, 0, 0);
@@ -15,6 +17,7 @@
 }
 .whychooseus-content{
     margin: 2rem;
+    overflow: hidden;
 }
 
 /* .hr {
