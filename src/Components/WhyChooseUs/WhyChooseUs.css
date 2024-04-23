@@ -3,11 +3,9 @@
     box-sizing: border-box;
 }
 .whychooseus-subcontainer{
-    /* height: 100%; */
     width: 100vw;
     box-sizing: border-box;
     padding: 3rem 4rem;
-
     background-color: #0f172a;
 }
 .heading-text{
@@ -55,6 +53,7 @@
     justify-content: center;
     /*  */
     font-family: "Jost";
+    text-align: justify;
 }
 .whychooseus-rsn-block:hover{
     box-shadow: 0px 0px 20px rgba(152, 194, 231, 0.526);
@@ -75,4 +74,23 @@
 .rotate-icon:hover{
     rotate: 180deg;
     transition: 1s;
+}
+
+
+@media screen and (max-width:1150px) and (min-width:830px){
+    .whychooseus-rsn-block{
+        width: 45%;
+        text-align: justify;
+    }
+}
+@media screen and (max-width:830px){
+    .whychooseus-rsn-block{
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+@media screen and (max-width:560px) {
+    .whychooseus-subcontainer{
+        padding: 10px;
+    }
 }
