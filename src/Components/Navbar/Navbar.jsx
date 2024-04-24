@@ -22,7 +22,7 @@ import Services from "./Services/Services";
 
 const Navbar = () => {
   const [dropdownNav, setDropdownNav] = useState(false);
-  const { height, width } = useWindowDimensions();
+  const {width } = useWindowDimensions();
   const toggleDropdown = () => {
     setDropdownNav(!dropdownNav);
   };
