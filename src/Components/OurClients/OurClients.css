@@ -1,0 +1,98 @@
+.ourclients-main-container {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.ourclients-inner-container {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 3rem 4rem;
+  overflow: hidden;
+  display: flex;
+}
+.ourclients-left-container {
+  width: 38%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+.ourclients-right-container {
+  width: 72%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.heading-text-our-clients {
+  color: rgb(0, 0, 255);
+  font-weight: 700;
+  font-family: "Jost";
+}
+.our-clients-text {
+  box-sizing: border-box;
+  font-size: 19px;
+  height: 100%;
+  text-align: justify;
+}
+.our-clients-boxes {
+  background-color: red;
+  height: 100px;
+  width: 100px !important;
+  margin: 1rem ;
+}
+
+.slick-slider {
+  height: 100% !important;
+  vertical-align: middle;
+}
+.slick-arrow {
+  background-color: red;
+}
+
+
+
+@media screen and (max-width: 915px) {
+  .inline-boxes {
+    margin: 0.4rem !important;
+    margin-left: 0 !important;
+  }
+
+  .our-clients-boxes { 
+    margin: 0.3rem !important;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .ourclients-inner-container {
+    flex-direction: column;
+  }
+  .ourclients-left-container {
+    width: 100%;
+  }
+  .ourclients-right-container {
+    width: 100% !important;
+    padding-top: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 1286px) {
+  .ourclients-inner-container {
+    padding: 3rem 1rem;
+  }
+  .ourclients-right-container {
+    padding-top: 1rem;
+    transition: 0.5s;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1385px) and (min-width:915px) {
+  .our-clients-boxes {
+    margin: 1.2rem;
+    margin-left: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .our-clients-boxes {
+    margin: 1.2rem !important;
+  }
+
+}

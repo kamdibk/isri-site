@@ -11,7 +11,6 @@
     overflow: hidden;
 }
 .heading-text{
-    color: rgb(0, 0, 0);
     font-weight: 600;
     color: white;
 }
@@ -79,6 +78,12 @@
     transition: 1s;
 }
 
+@media screen and (max-width:1200px) {
+    .whychooseus-subcontainer{
+        padding-left:  1rem;
+        padding-right: 1rem;
+    }
+}
 
 @media screen and (max-width:1150px) and (min-width:830px){
     .whychooseus-rsn-block{

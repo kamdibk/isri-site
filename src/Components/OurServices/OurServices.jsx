@@ -35,6 +35,7 @@ const OurServices1 = () => {
       setSlidegap(30)
     }
   },[width])
+  
   return (
     <div className="ourservices-swiper-container">
       <Swiper 

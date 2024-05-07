@@ -2,7 +2,7 @@
     width: 100vw;
     background-image: url('../../images/service-bg3.jpg');
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 0 2rem;
 }
 
 .ourservices-swiper-container>.swiper {
@@ -75,11 +75,11 @@
 }
 
 .swiper-button-prev {
-    left: 0 !important;
+    left: -10px !important;
 }
 
 .swiper-button-next {
-    right: 0 !important;
+    right: -10px !important;
 }
 
 @media screen and (max-width:670px) {
@@ -90,10 +90,11 @@
     .ourservices-text {
         line-height: 30px;
     }
+
     .swiper-button-prev{
-        margin-left: -13px;
+        margin-left: -3px;
     }
     .swiper-button-next {
-        margin-right: -13px;
+        margin-right: -3px;
     }
 }

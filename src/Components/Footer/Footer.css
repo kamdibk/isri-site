@@ -1,0 +1,23 @@
+.footer-main-container{
+    background-color: #0f172a;
+    color: white;
+    /* font-weight: 500; */
+}
+.footer-inner-container{
+    display: flex;
+    padding: 1rem;
+}
+.footer-left-container{
+    padding: 1rem 3rem;
+    width: 50%;
+}
+.footer-right-container{
+    width: 50%;
+}
+.footer-right-container iframe{
+    border-radius: 8px;
+    border: none;
+}
+.logo-container{
+    padding-top: 1em;
+}

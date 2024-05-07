@@ -162,6 +162,12 @@
         margin-left: 200px;
     }
 }
+@media screen and (max-width:1200px) {
+    .whoweare-subcontainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
 @media screen and (max-width:1190px){
     .whoweare-container-right-img1{
         margin-left: 150px;

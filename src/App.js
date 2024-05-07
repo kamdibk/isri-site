@@ -7,6 +7,8 @@ import SliderMainComponent from "./Components/SliderMainComponent/SliderMainComp
 import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
 import OurServices from "./Components/OurServices/OurServices";
 import WhyChooseUs from './Components/WhyChooseUs/WhyChooseUs'
+import OurClients from "./Components/OurClients/OurClients";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,8 @@ function App() {
         <OurServices />
         <WhoWeAre />
         <WhyChooseUs />
+        <OurClients />
+        <Footer />
       </div>
       <StickyContactForMobile />     
     </div>
