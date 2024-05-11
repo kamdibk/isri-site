@@ -12,7 +12,6 @@ const OurClients = () => {
   const [itemSwitch, SetItemSwitch] = useState(false);
   const [noOfItems,setNoOfItems] = useState(6);
   useEffect(() => {
-    console.log(width)
     if(width <= 820 && width>=1200){
       SetItemSwitch(true);
       setNoOfItems(6);

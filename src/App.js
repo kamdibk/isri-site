@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
+// import Navbar from "./Components/Navbar1/Navbar";
 import Technologies from "./Components/Navbar/Technologies/Technologies";
 import StickyContactForMobile from "./Components/StickyContactForMobile/StickyContactForMobile";
 import SliderMainComponent from "./Components/SliderMainComponent/SliderMainComponent";
