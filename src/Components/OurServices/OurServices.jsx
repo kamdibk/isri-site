@@ -49,7 +49,7 @@ const OurServices1 = () => {
         {
         OurservicesData.map((key)=>{
           return(
-            <SwiperSlide key={key.id}>
+            <SwiperSlide key={key.id} className={key.id === 1 ? "first-slide" : ""}>
             <div className="ourservices-icon">
                  {key.icon}
             </div>

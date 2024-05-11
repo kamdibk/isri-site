@@ -1,6 +1,9 @@
 export const NavbarData = [
     {
         title:"Services",
+        subNav:[
+            
+        ]
     },
     {
         title:"Technologies",
