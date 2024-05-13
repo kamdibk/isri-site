@@ -40,7 +40,7 @@ const Navbar = () => {
     <div className="fixed-nav">
       <nav className="navbar">
         <div className="com-logo" style={{marginLeft:"10px"}}>
-          <img src={Logo} alt="ISRI Logo" className="isri-logo" height={60}/>
+          <img src={Logo} alt="ISRI Logo" className="isri-logo" height={45}/>
         </div>
         <div className="nav-links">
           <ul className="nav-links-items">

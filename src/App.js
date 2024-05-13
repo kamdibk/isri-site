@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
-// import Navbar from "./Components/Navbar1/Navbar";
 import Technologies from "./Components/Navbar/Technologies/Technologies";
 import StickyContactForMobile from "./Components/StickyContactForMobile/StickyContactForMobile";
 import SliderMainComponent from "./Components/SliderMainComponent/SliderMainComponent";
@@ -10,6 +9,8 @@ import OurServices from "./Components/OurServices/OurServices";
 import WhyChooseUs from './Components/WhyChooseUs/WhyChooseUs'
 import OurClients from "./Components/OurClients/OurClients";
 import Footer from "./Components/Footer/Footer";
+
+
 function App() {
   return (
     <div className="App">
