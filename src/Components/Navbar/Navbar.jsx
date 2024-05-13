@@ -18,7 +18,9 @@ import { GrGamepad } from "react-icons/gr";
 import { TbRobot } from "react-icons/tb";
 import { GiArtificialIntelligence, GiHamburgerMenu } from "react-icons/gi";
 import useWindowDimensions from "./../Hooks/WindowDimensions/useWindowDimensions";
-import Services from "./Services/Services";
+import SubNav from "./Services/SubNav";
+import AboutUs from "./AboutUS/AboutUs";
+import Industries from "./Industries/Industries";
 
 const Navbar = () => {
   const [dropdownNav, setDropdownNav] = useState(false);
@@ -34,13 +36,13 @@ const Navbar = () => {
       }
     }
     window.addEventListener("resize", handleToggleService);
-  });
+  },[width]);
 
   return (
     <div className="fixed-nav">
       <nav className="navbar">
-        <div className="com-logo" style={{marginLeft:"10px"}}>
-          <img src={Logo} alt="ISRI Logo" className="isri-logo" height={45}/>
+        <div className="com-logo" style={{ marginLeft: "10px" }}>
+          <img src={Logo} alt="ISRI Logo" className="isri-logo" height={45} />
         </div>
         <div className="nav-links">
           <ul className="nav-links-items">
@@ -48,13 +50,11 @@ const Navbar = () => {
               <a href="#">SERVICES</a>
               <div className="dropdown">
                 <div className="dropdown-lvl-1">
-                  <div className="services-image">
-                    {/* Image */}
-                  </div>
+                  <div className="services-image">{/* Image */}</div>
                   <div className="services-links">
                     <div style={{ padding: "10px" }}>
                       <br />
-                      <span className="services-heading">SERVICES</span>
+                      <span className="dropdown-heading">SERVICES</span>
                       <br />
                       <br />
                       <hr />
@@ -219,9 +219,11 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#">INDUSTRIES</a>
+              <Industries classname1="dropdown" classname2="services-links-items"/>
             </li>
             <li>
               <a href="#">ABOUT US</a>
+              <AboutUs classname1="dropdown" classname2="services-links-items"/>
             </li>
             <li>
               <a href="#">PORTFOLIO</a>
@@ -235,9 +237,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="com-contacts">
-          <div className="contact" 
-          style={{ borderBottom: "1px solid gray" }}
-          >
+          <div className="contact" style={{ borderBottom: "1px solid gray" }}>
             <MdPhone size={27} style={{ marginRight: "10px" }} color={"red"} />
             <span className="contact-number">IN : +91-90825 82243</span>
           </div>
@@ -259,13 +259,13 @@ const Navbar = () => {
         </div>
         <div className="mobile-ham-icon" onClick={toggleDropdown}>
           {dropdownNav ? (
-            <AiOutlineClose size={25} className="rotetateclose"/>
+            <AiOutlineClose size={25} className="rotetateclose" />
           ) : (
             <GiHamburgerMenu size={25} />
           )}
         </div>
       </nav>
-      {dropdownNav ? <Services /> : null}
+      {dropdownNav ? <SubNav /> : null}
     </div>
   );
 };

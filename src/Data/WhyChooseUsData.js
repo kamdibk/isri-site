@@ -1,9 +1,13 @@
-import { MdInsertEmoticon } from "react-icons/md";
-import { FaChartLine } from "react-icons/fa";
+import { FaChartLine, FaRegHandshake  } from "react-icons/fa";
 import { Ri24HoursFill } from "react-icons/ri";
+import { GoLaw } from "react-icons/go";
+import { TbCertificate } from "react-icons/tb";
+import { GiPlayerTime } from "react-icons/gi";
 
 const iconSize = 55;
 const iconColor = "rgb(7, 89, 127)"
+
+
 export const WhyChooseUsData = [
     {
         id: 1,
@@ -19,26 +23,26 @@ export const WhyChooseUsData = [
     },
     {
         id: 3,
-        icon: <MdInsertEmoticon  size={iconSize} color={iconColor} className="rotate-icon"/>,
+        icon: <TbCertificate  size={iconSize} color={iconColor} className="rotate-icon"/>,
         heading:"ISO 9001:2015 Certified",
         description:"Customer Satisfaction is our top priority"
     },
     {
         id: 4,
-        icon: <MdInsertEmoticon  size={iconSize} color={iconColor} className="rotate-icon"/>,
+        icon: <FaRegHandshake   size={iconSize} color={iconColor} className="rotate-icon"/>,
         heading:"We Listen, We Learn, Understand, Then Build",
         description:"Designs & develops experiences that help you innovate and grow"
     },
     {
         id: 5,
-        icon: <MdInsertEmoticon  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"this is heading",
-        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt repellat aspernatur quia sapiente qui accusamus ipsum quos fugiat facere ."
+        icon: <GoLaw  size={iconSize} color={iconColor} className="rotate-icon"/>,
+        heading:"Dedicated Client Advocacy",
+        description:"Special Team to focus on customers' success"
     },
     {
         id: 6,
-        icon: <MdInsertEmoticon  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"this is heading",
-        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt repellat aspernatur quia sapiente qui accusamus ipsum quos fugiat facere temporibus quos fugiat facere temporibus."
+        icon: <GiPlayerTime  size={iconSize} color={iconColor} className="rotate-icon"/>,
+        heading:"Handle Tight Deadlines",
+        description:"We are known to meet short notice deadlines"
     },
 ]

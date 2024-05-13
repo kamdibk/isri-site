@@ -19,3 +19,9 @@
   -webkit-text-stroke-width: .7px ;
   -webkit-text-stroke-color: white ;
 }
+.dropdown-heading{
+  color:#737477;
+  font-size: 40px;
+  font-weight:400;
+  margin: 1.2rem;
+}

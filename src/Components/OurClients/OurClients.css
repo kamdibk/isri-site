@@ -30,6 +30,14 @@
   font-size: 19px;
   height: 100%;
   text-align: justify;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+}
+hr{
+  color: #d1cece;
 }
 .our-clients-boxes {
   background-color: red;

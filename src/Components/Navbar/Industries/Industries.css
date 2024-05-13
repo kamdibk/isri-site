@@ -1,0 +1,6 @@
+.industries-image{
+    background-image: url("../../../images/industries.jpg");
+    width: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,4 +1,5 @@
 import React, { useState }from 'react'
+import './SubNav.css'
 import {
     AiFillSetting,
     AiFillCloud,
@@ -14,9 +15,11 @@ import {
   import { GrGamepad } from "react-icons/gr";
   import { TbRobot } from "react-icons/tb";
   import { GiArtificialIntelligence } from "react-icons/gi";
+import AboutUs from '../AboutUS/AboutUs';
 
-const Services = () => {
+const SubNav = () => {
     const [toggleService, setToggleService] = useState(false);
+    const [toggleAboutUs, setToggleAboutUs] = useState(false);
   return (
     <div className="nav-links-dropdown">
     <div className="dropdown-nav-links">
@@ -190,8 +193,18 @@ const Services = () => {
         <li>
           <a href="#">INDUSTRIES</a>
         </li>
-        <li>
-          <a href="#">ABOUT US</a>
+        <li onClick={() => setToggleAboutUs(!toggleAboutUs)}>
+          <a href="#">
+            ABOUT US
+            {toggleAboutUs ? (
+              <AiOutlineMinus />
+            ) : (
+              <AiOutlinePlus size={22} />
+            )}
+            </a>
+            {toggleAboutUs ? (
+            <AboutUs classname1="services-dropdown" classname2="services-dropdown-links-items"/>
+            ) : null}
         </li>
         <li>
           <a href="#">PORTFOLIO</a>
@@ -208,4 +221,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default SubNav
