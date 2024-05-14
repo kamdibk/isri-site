@@ -70,6 +70,7 @@ const Navbar = () => {
                           <AiFillSetting
                             size={20}
                             style={{ marginRight: "10px" }}
+                            color="orange"
                           />
                           Software Development
                         </a>
@@ -79,7 +80,8 @@ const Navbar = () => {
                           href="#"
                           style={{ alignItems: "center", display: "flex" }}
                         >
-                          <BsCart4 size={20} style={{ marginRight: "10px" }} />
+                          <BsCart4 size={20} style={{ marginRight: "10px" }} 
+                          color="green"/>
                           eCommerce Solutions
                         </a>
                       </li>
@@ -103,6 +105,7 @@ const Navbar = () => {
                           <AiFillCloud
                             size={20}
                             style={{ marginRight: "10px" }}
+                            color="skyblue"
                           />
                           Cloud Solution
                         </a>
@@ -115,6 +118,7 @@ const Navbar = () => {
                           <AiOutlineDesktop
                             size={20}
                             style={{ marginRight: "10px" }}
+                            color="blue"
                           />
                           Website Development
                         </a>
@@ -136,6 +140,7 @@ const Navbar = () => {
                           <FaHandshake
                             size={20}
                             style={{ marginRight: "10px" }}
+                            color="#1a6ad9"
                           />
                           CRM Solutions
                         </a>
@@ -148,6 +153,7 @@ const Navbar = () => {
                           <IoEarthOutline
                             size={20}
                             style={{ marginRight: "10px" }}
+                            color="red"
                           />
                           Web Design
                         </a>
@@ -160,6 +166,7 @@ const Navbar = () => {
                           <BsFillPeopleFill
                             size={20}
                             style={{ marginRight: "10px" }}
+                            color="skyblue"
                           />
                           Hire Developer
                         </a>
@@ -183,6 +190,7 @@ const Navbar = () => {
                         >
                           <GrGamepad
                             size={20}
+                            color="gray"
                             style={{ marginRight: "10px" }}
                           />
                           Gaming Solution
@@ -205,7 +213,7 @@ const Navbar = () => {
                           href="#"
                           style={{ alignItems: "center", display: "flex" }}
                         >
-                          <TbRobot size={20} style={{ marginRight: "10px" }} />
+                          <TbRobot size={20} style={{ marginRight: "10px" }} color="#1a6403"/>
                           Robotic Process Automation
                         </a>
                       </li>
