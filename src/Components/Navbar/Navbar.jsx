@@ -21,6 +21,7 @@ import useWindowDimensions from "./../Hooks/WindowDimensions/useWindowDimensions
 import SubNav from "./Services/SubNav";
 import AboutUs from "./AboutUS/AboutUs";
 import Industries from "./Industries/Industries";
+import Technologies from "./Technologies/Technologies";
 
 const Navbar = () => {
   const [dropdownNav, setDropdownNav] = useState(false);
@@ -216,14 +217,15 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#">TECHNOLOGIES</a>
+              <Technologies />
             </li>
             <li>
               <a href="#">INDUSTRIES</a>
-              <Industries classname1="dropdown" classname2="services-links-items"/>
+              <Industries/>
             </li>
             <li>
               <a href="#">ABOUT US</a>
-              <AboutUs classname1="dropdown" classname2="services-links-items"/>
+              <AboutUs/>
             </li>
             <li>
               <a href="#">PORTFOLIO</a>

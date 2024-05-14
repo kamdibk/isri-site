@@ -16,10 +16,12 @@ import {
   import { TbRobot } from "react-icons/tb";
   import { GiArtificialIntelligence } from "react-icons/gi";
 import AboutUs from '../AboutUS/AboutUs';
+import Industries from '../Industries/Industries';
 
 const SubNav = () => {
     const [toggleService, setToggleService] = useState(false);
     const [toggleAboutUs, setToggleAboutUs] = useState(false);
+    const [toggleIndustries, setToggleIndustries] = useState(false);
   return (
     <div className="nav-links-dropdown">
     <div className="dropdown-nav-links">
@@ -190,8 +192,18 @@ const SubNav = () => {
         <li>
           <a href="#">TECHNOLOGIES</a>
         </li>
-        <li>
-          <a href="#">INDUSTRIES</a>
+        <li onClick={()=> setToggleIndustries(!toggleIndustries)}>
+        <a href="#">
+            INDUSTRIES
+            {toggleIndustries ? (
+              <AiOutlineMinus />
+            ) : (
+              <AiOutlinePlus size={22} />
+            )}
+            </a>
+            {toggleIndustries ? (
+              <Industries/>
+            ) : null}
         </li>
         <li onClick={() => setToggleAboutUs(!toggleAboutUs)}>
           <a href="#">
@@ -203,7 +215,7 @@ const SubNav = () => {
             )}
             </a>
             {toggleAboutUs ? (
-            <AboutUs classname1="services-dropdown" classname2="services-dropdown-links-items"/>
+            <AboutUs/>
             ) : null}
         </li>
         <li>

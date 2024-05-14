@@ -1,0 +1,17 @@
+.technologies-container{
+    padding: 20px;
+}
+.technologies-container ul{
+    margin-top: 6px;
+}
+.technologies-container li>a{
+    display: flex;
+    align-items: center;
+    padding-left: 0px !important;
+}
+.technologies-container li>a>:first-child{
+    margin-right: 8px;
+}
+.technologies-heading{
+    font-size: 20px;
+}

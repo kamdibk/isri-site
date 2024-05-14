@@ -18,7 +18,7 @@ const Industries = (props) => {
                 <hr />
               </div>
               {/* list items */}
-              <ul className={props.classname2}>     
+              <ul className="services-links-items">     
                 <li>
                   <a href="#" style={{ alignItems: "center", display: "flex" }}>
                     Medical & Healthcare
