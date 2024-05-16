@@ -17,11 +17,13 @@ import {
   import { GiArtificialIntelligence } from "react-icons/gi";
 import AboutUs from '../AboutUS/AboutUs';
 import Industries from '../Industries/Industries';
+import Technologies from '../Technologies/Technologies';
 
 const SubNav = () => {
     const [toggleService, setToggleService] = useState(false);
     const [toggleAboutUs, setToggleAboutUs] = useState(false);
     const [toggleIndustries, setToggleIndustries] = useState(false);
+    const [toggleTechnologies, setToggleTechnologies] = useState(false)
   return (
     <div className="nav-links-dropdown">
     <div className="dropdown-nav-links">
@@ -190,7 +192,16 @@ const SubNav = () => {
           ) : null}
         </li>
         <li>
-          <a href="#">TECHNOLOGIES</a>
+          <a href="#">TECHNOLOGIES
+          {toggleTechnologies ? (
+              <AiOutlineMinus />
+            ) : (
+              <AiOutlinePlus size={22} />
+            )}
+            </a>
+            {toggleTechnologies ? (
+              <Technologies/>
+            ) : null}
         </li>
         <li onClick={()=> setToggleIndustries(!toggleIndustries)}>
         <a href="#">

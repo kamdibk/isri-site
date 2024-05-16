@@ -237,7 +237,7 @@ const Technologies = () => {
                   <li><a href="#"><FaDatabase size={iconSize} color="yellow"/> Big Data</a></li>
                   <li><a href="#"><SiAzuredevops size={iconSize} color="orange"/>DevOps</a></li>
                   <li><a href="#"><GrServices size={iconSize}/>Banking As A Service</a></li>
-                  <li><a href="#"><BsBank  size={iconSize+5}/>Open Network For Digital Commerce</a></li>
+                  <li><a href="#"><BsBank  size={iconSize}/>Open Network For Digital Commerce</a></li>
                 </ul>
                 </div>
               </div>

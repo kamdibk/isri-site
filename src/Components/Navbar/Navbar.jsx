@@ -25,7 +25,8 @@ import Technologies from "./Technologies/Technologies";
 
 const Navbar = () => {
   const [dropdownNav, setDropdownNav] = useState(false);
-  const {width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
+
   const toggleDropdown = () => {
     setDropdownNav(!dropdownNav);
   };
@@ -37,7 +38,7 @@ const Navbar = () => {
       }
     }
     window.addEventListener("resize", handleToggleService);
-  },[width]);
+  }, [width]);
 
   return (
     <div className="fixed-nav">
@@ -80,8 +81,11 @@ const Navbar = () => {
                           href="#"
                           style={{ alignItems: "center", display: "flex" }}
                         >
-                          <BsCart4 size={20} style={{ marginRight: "10px" }} 
-                          color="green"/>
+                          <BsCart4
+                            size={20}
+                            style={{ marginRight: "10px" }}
+                            color="green"
+                          />
                           eCommerce Solutions
                         </a>
                       </li>
@@ -213,7 +217,11 @@ const Navbar = () => {
                           href="#"
                           style={{ alignItems: "center", display: "flex" }}
                         >
-                          <TbRobot size={20} style={{ marginRight: "10px" }} color="#1a6403"/>
+                          <TbRobot
+                            size={20}
+                            style={{ marginRight: "10px" }}
+                            color="#1a6403"
+                          />
                           Robotic Process Automation
                         </a>
                       </li>
@@ -229,11 +237,11 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#">INDUSTRIES</a>
-              <Industries/>
+              <Industries />
             </li>
             <li>
               <a href="#">ABOUT US</a>
-              <AboutUs/>
+              <AboutUs />
             </li>
             <li>
               <a href="#">PORTFOLIO</a>
