@@ -22,6 +22,7 @@ import SubNav from "./Services/SubNav";
 import AboutUs from "./AboutUS/AboutUs";
 import Industries from "./Industries/Industries";
 import Technologies from "./Technologies/Technologies";
+import Services from "./Services/Services";
 
 const Navbar = () => {
   const [dropdownNav, setDropdownNav] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
 
   useEffect(() => {
     function handleToggleService() {
-      if (width > 1390) {
+      if (width > 1090) {
         setDropdownNav(false);
       }
     }
@@ -50,186 +51,7 @@ const Navbar = () => {
           <ul className="nav-links-items">
             <li>
               <a href="#">SERVICES</a>
-              <div className="dropdown">
-                <div className="dropdown-lvl-1">
-                  <div className="services-image">{/* Image */}</div>
-                  <div className="services-links">
-                    <div style={{ padding: "10px" }}>
-                      <br />
-                      <span className="dropdown-heading">SERVICES</span>
-                      <br />
-                      <br />
-                      <hr />
-                    </div>
-                    {/* list items */}
-                    <ul className="services-links-items">
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <AiFillSetting
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                            color="orange"
-                          />
-                          Software Development
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <BsCart4
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                            color="green"
-                          />
-                          eCommerce Solutions
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <AiOutlineMobile
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                          />
-                          Mobile Apps Development
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <AiFillCloud
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                            color="skyblue"
-                          />
-                          Cloud Solution
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <AiOutlineDesktop
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                            color="blue"
-                          />
-                          Website Development
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <BsLaptop size={20} style={{ marginRight: "10px" }} />
-                          CMS Solutions
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <FaHandshake
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                            color="#1a6ad9"
-                          />
-                          CRM Solutions
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <IoEarthOutline
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                            color="red"
-                          />
-                          Web Design
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <BsFillPeopleFill
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                            color="skyblue"
-                          />
-                          Hire Developer
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <RiMotorbikeFill
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                          />
-                          Ride Booking
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <GrGamepad
-                            size={20}
-                            color="gray"
-                            style={{ marginRight: "10px" }}
-                          />
-                          Gaming Solution
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <GiArtificialIntelligence
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                          />
-                          AI/ML
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style={{ alignItems: "center", display: "flex" }}
-                        >
-                          <TbRobot
-                            size={20}
-                            style={{ marginRight: "10px" }}
-                            color="#1a6403"
-                          />
-                          Robotic Process Automation
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  {/* <div className="services-image"></div> */}
-                </div>
-              </div>
+              <Services />
             </li>
             <li>
               <a href="#">TECHNOLOGIES</a>
@@ -255,14 +77,17 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="com-contacts">
-          <div className="contact" style={{ borderBottom: "1px solid gray" }}>
+          <div
+            className="contact"
+            style={{ borderBottom: "1px solid gray", cursor: "pointer" }}
+          >
             <MdPhone size={27} style={{ marginRight: "10px" }} color={"red"} />
             <span className="contact-number">IN : +91-90825 82243</span>
           </div>
           <div className="contact">
             <AiOutlineMail
               size={27}
-              style={{ marginRight: "10px" }}
+              style={{ marginRight: "10px", cursor: "pointer" }}
               color={"red"}
             />
             <span className="contact-email">info@isritechnologies.com</span>

@@ -1,26 +1,39 @@
-.fixed-nav{
-    width: 100%;
-    font-weight: 500 ;
-  }
-  .navbar{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 10px 10px 0 10px;
-    border-bottom: 2px solid rgba(159, 157, 157, 0.729);
-  }
-
-  /*  */
-  .nav-links-items{
-    display: flex;
-    align-items: center;
-  }
-  .nav-links-items li,.nav-links-items li>a{
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
-    padding: 10px;
-    padding-top: 0 !important;
-    min-width: fit-content !important;
-  
-  }
+.fixed-nav {
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 0 10px;
+  border-bottom: 2px solid rgba(159, 157, 157, 0.729);
+}
+.com-logo {
+  margin-left: 10px;
+}
+.nav-links-items {
+  display: flex;
+  align-items: center;
+}
+.nav-links-items li,
+.nav-links-items li > a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  padding: 10px;
+  padding-top: 0 !important;
+  min-width: fit-content !important;
+}
+.nav-links-items > li > a:hover {
+  color: red;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.com-contacts {
+  padding: 5px;
+  margin-right: 10px;
+}

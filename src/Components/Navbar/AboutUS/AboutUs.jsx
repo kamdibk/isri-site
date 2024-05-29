@@ -4,7 +4,8 @@ import useWindowDimensions from "../../Hooks/WindowDimensions/useWindowDimension
 
 const AboutUs = (props) => {
   const { width } = useWindowDimensions();
-  if (width > 1390) {
+  // if (width > 1390) {
+  if (width > 1090) {
     return (
       <div className="dropdown">
         <div className="dropdown-lvl-1">

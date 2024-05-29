@@ -21,9 +21,39 @@
 .technologies-heading{
     font-size: 20px;
     color: rgb(86, 85, 85);
-    /* color: #1a6403; */
 
 }
 .technologies-inner-container div{
     width: 15rem;
+}
+
+/* subNav */
+.services-dropdown>.technologies-container{
+    padding: 0;
+    display: block;
+    color: black !important;
+}
+.services-dropdown>.technologies-container div{
+    margin-top: 1rem;
+}
+.services-dropdown>.technologies-container .technologies-inner-container div{
+    width: 100%;
+}
+.services-dropdown>.technologies-container ul{
+    list-style-type:none;
+    padding-left: 5px;
+}
+.services-dropdown>.technologies-container li{
+    border-top: none;
+    padding: 5px 0 5px 0 !important;
+    color: black !important;
+}
+.services-dropdown>.technologies-container li>a{
+    color: black !important;
+    display: block;
+}
+.services-dropdown>.technologies-container li>a:hover{
+    margin-left: 0;
+    transition: none;
+    color: black;
 }

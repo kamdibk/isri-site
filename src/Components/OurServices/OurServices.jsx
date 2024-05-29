@@ -19,11 +19,12 @@ const OurServices1 = () => {
   const [slideGap,setSlidegap] = useState(30);
   const {width} = useWindowDimensions();
   useEffect(()=>{
-    if(width<=1300 && width>=1020){
-      setSlidegap(55)
-      setNoOfSlides(3)
-    }
-    else if(width<=1020 && width>=670){
+    // if(width<=1300 && width>=1020){
+    //   setSlidegap(55)
+    //   setNoOfSlides(3)
+    // }
+    // else 
+    if(width<=1020 && width>=670){
       setSlidegap(65)
       setNoOfSlides(2)
     }

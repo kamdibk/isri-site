@@ -28,13 +28,13 @@ const SubNav = () => {
     <div className="nav-links-dropdown">
     <div className="dropdown-nav-links">
       <ul className="dropdown-nav-links-items">
-        <li onClick={() => setToggleService(!toggleService)}>
+        <li >
           <a href="#">
             SERVICES
             {toggleService ? (
-              <AiOutlineMinus />
+              <AiOutlineMinus onClick={() => setToggleService(!toggleService)}/>
             ) : (
-              <AiOutlinePlus size={22} />
+              <AiOutlinePlus size={22} onClick={() => setToggleService(!toggleService)}/>
             )}
           </a>
           {toggleService ? (
@@ -47,6 +47,7 @@ const SubNav = () => {
                   >
                     <AiFillSetting
                       size={20}
+                      color="orange"
                       style={{ marginRight: "10px" }}
                     />
                     Software Development
@@ -57,7 +58,7 @@ const SubNav = () => {
                     href="#"
                     style={{ alignItems: "center", display: "flex" }}
                   >
-                    <BsCart4 size={20} style={{ marginRight: "10px" }} />
+                    <BsCart4 size={20} style={{ marginRight: "10px" }} color="green" />
                     eCommerce Solutions
                   </a>
                 </li>
@@ -81,6 +82,7 @@ const SubNav = () => {
                     <AiFillCloud
                       size={20}
                       style={{ marginRight: "10px" }}
+                      color="skyblue"
                     />
                     Cloud Solution
                   </a>
@@ -93,6 +95,7 @@ const SubNav = () => {
                     <AiOutlineDesktop
                       size={20}
                       style={{ marginRight: "10px" }}
+                      color="blue"
                     />
                     Website Development
                   </a>
@@ -114,6 +117,7 @@ const SubNav = () => {
                     <FaHandshake
                       size={20}
                       style={{ marginRight: "10px" }}
+                      color="#1a6ad9"
                     />
                     CRM Solutions
                   </a>
@@ -126,6 +130,7 @@ const SubNav = () => {
                     <IoEarthOutline
                       size={20}
                       style={{ marginRight: "10px" }}
+                      color="red"
                     />
                     Web Design
                   </a>
@@ -138,6 +143,7 @@ const SubNav = () => {
                     <BsFillPeopleFill
                       size={20}
                       style={{ marginRight: "10px" }}
+                      color="skyblue"
                     />
                     Hire Developer
                   </a>
@@ -162,6 +168,7 @@ const SubNav = () => {
                     <GrGamepad
                       size={20}
                       style={{ marginRight: "10px" }}
+                      color="gray"
                     />
                     Gaming Solution
                   </a>
@@ -183,7 +190,7 @@ const SubNav = () => {
                     href="#"
                     style={{ alignItems: "center", display: "flex" }}
                   >
-                    <TbRobot size={20} style={{ marginRight: "10px" }} />
+                    <TbRobot size={20} style={{ marginRight: "10px" }} color="#1a6403"/>
                     Robotic Process Automation
                   </a>
                 </li>
@@ -191,38 +198,38 @@ const SubNav = () => {
             </div>
           ) : null}
         </li>
-        <li>
+        <li >
           <a href="#">TECHNOLOGIES
           {toggleTechnologies ? (
-              <AiOutlineMinus />
+              <AiOutlineMinus onClick={() => setToggleTechnologies(!toggleTechnologies)}/>
             ) : (
-              <AiOutlinePlus size={22} />
+              <AiOutlinePlus size={22} onClick={() => setToggleTechnologies(!toggleTechnologies)}/>
             )}
             </a>
             {toggleTechnologies ? (
               <Technologies/>
             ) : null}
         </li>
-        <li onClick={()=> setToggleIndustries(!toggleIndustries)}>
+        <li >
         <a href="#">
             INDUSTRIES
             {toggleIndustries ? (
-              <AiOutlineMinus />
+              <AiOutlineMinus onClick={()=> setToggleIndustries(!toggleIndustries)}/>
             ) : (
-              <AiOutlinePlus size={22} />
+              <AiOutlinePlus size={22} onClick={()=> setToggleIndustries(!toggleIndustries)}/>
             )}
             </a>
             {toggleIndustries ? (
               <Industries/>
             ) : null}
         </li>
-        <li onClick={() => setToggleAboutUs(!toggleAboutUs)}>
+        <li >
           <a href="#">
             ABOUT US
             {toggleAboutUs ? (
-              <AiOutlineMinus />
+              <AiOutlineMinus onClick={() => setToggleAboutUs(!toggleAboutUs)}/>
             ) : (
-              <AiOutlinePlus size={22} />
+              <AiOutlinePlus size={22} onClick={() => setToggleAboutUs(!toggleAboutUs)}/>
             )}
             </a>
             {toggleAboutUs ? (
