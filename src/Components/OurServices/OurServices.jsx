@@ -23,8 +23,11 @@ const OurServices1 = () => {
     //   setSlidegap(55)
     //   setNoOfSlides(3)
     // }
-    // else 
-    if(width<=1020 && width>=670){
+    if(width<=1070 && width>=1020){
+      setSlidegap(55)
+      setNoOfSlides(3)
+    }
+    else if(width<=1020 && width>=670){
       setSlidegap(65)
       setNoOfSlides(2)
     }
