@@ -1,30 +1,20 @@
-import "./App.css";
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import StickyContactForMobile from "./Components/StickyContactForMobile/StickyContactForMobile";
-import SliderMainComponent from "./Components/SliderMainComponent/SliderMainComponent";
-import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
-import OurServices from "./Components/OurServices/OurServices";
-import WhyChooseUs from './Components/WhyChooseUs/WhyChooseUs'
-import OurClients from "./Components/OurClients/OurClients";
-import Footer from "./Components/Footer/Footer";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Homepage from "./Pages/Homepage/Homepage";
 
 function App() {
   return (
     <div className="App">
-      <div className="App-Header">
-        <Navbar />
-      </div>
-      <div className="main-body">
-        <SliderMainComponent />
-        <OurServices />
-        <WhoWeAre />
-        <WhyChooseUs />
-        <OurClients />
-        <Footer />
-      </div>
-      <StickyContactForMobile />     
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Homepage/>} />
+        <Route exact path="/services/*" element={<Homepage/>} />
+        <Route exact path="/technologies/*" element={<Homepage/>} />
+        <Route exact path="/industries/*" element={<Homepage/>} />
+        <Route exact path="/about-us/*" element={<Homepage/>} />
+      </Routes>
+    </Router>
     </div>
   );
 }
