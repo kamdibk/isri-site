@@ -1,22 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../../assets/ISRI-LOGO.jpg";
 import { MdPhone } from "react-icons/md";
-import {
-  AiOutlineMail,
-  AiFillSetting,
-  AiFillCloud,
-  AiOutlineMobile,
-  AiOutlineDesktop,
-  AiOutlineClose,
-} from "react-icons/ai";
-import { FaHandshake } from "react-icons/fa";
-import { BsCart4, BsLaptop, BsFillPeopleFill } from "react-icons/bs";
-import { IoEarthOutline } from "react-icons/io5";
-import { RiMotorbikeFill } from "react-icons/ri";
-import { GrGamepad } from "react-icons/gr";
-import { TbRobot } from "react-icons/tb";
-import { GiArtificialIntelligence, GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineMail, AiOutlineClose } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
 import useWindowDimensions from "./../Hooks/WindowDimensions/useWindowDimensions";
 import SubNav from "./Services/SubNav";
 import AboutUs from "./AboutUS/AboutUs";
@@ -44,35 +32,36 @@ const Navbar = () => {
   return (
     <div className="fixed-nav">
       <nav className="navbar">
-        <div className="com-logo" style={{ marginLeft: "10px" }}>
-          <img src={Logo} alt="ISRI Logo" className="isri-logo" height={45} />
-        </div>
+        <Link to="/">
+          <div className="com-logo" style={{ marginLeft: "10px",cursor:"pointer" }}>
+            <img src={Logo} alt="ISRI Logo" className="isri-logo" height={45} />
+          </div></Link>
         <div className="nav-links">
           <ul className="nav-links-items">
             <li>
-              <a href="#">SERVICES</a>
+              SERVICES
               <Services />
             </li>
             <li>
-              <a href="#">TECHNOLOGIES</a>
+              TECHNOLOGIES
               <Technologies />
             </li>
             <li>
-              <a href="#">INDUSTRIES</a>
+              INDUSTRIES
               <Industries />
             </li>
             <li>
-              <a href="#">ABOUT US</a>
+              ABOUT US
               <AboutUs />
             </li>
             <li>
-              <a href="#">PORTFOLIO</a>
+              PORTFOLIO
             </li>
             <li>
-              <a href="#">CASE STUDY</a>
+              CASE STUDY
             </li>
             <li>
-              <a href="#">BLOCK</a>
+              BLOG
             </li>
           </ul>
         </div>

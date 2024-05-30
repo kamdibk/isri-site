@@ -29,7 +29,7 @@ const Services = () => {
           {/* list items */}
           <ul className="services-links-items">
             <li>
-              <a href="#" style={{ alignItems: "center", display: "flex" }}>
+              <a href="services/softwaredevelopment" style={{ alignItems: "center", display: "flex" }}>
                 <AiFillSetting
                   size={20}
                   style={{ marginRight: "10px" }}
