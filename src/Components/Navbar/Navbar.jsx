@@ -55,13 +55,13 @@ const Navbar = () => {
               <AboutUs />
             </li>
             <li>
-              PORTFOLIO
+              <Link to="portfolio">PORTFOLIO</Link>              
             </li>
             <li>
-              CASE STUDY
+              <Link to="case-study">CASE STUDY</Link>
             </li>
             <li>
-              BLOG
+              <Link to="blog">BLOG</Link>
             </li>
           </ul>
         </div>

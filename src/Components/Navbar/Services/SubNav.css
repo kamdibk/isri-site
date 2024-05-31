@@ -1,0 +1,4 @@
+.dropdown-nav-links-items>li>span{
+    display: flex;
+    justify-content: space-between;
+}
