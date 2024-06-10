@@ -2,9 +2,8 @@
     width: 100vw;
 }
 .services-pages-hero-image{
-    /* background-color: aqua; */
     height: 40rem;
 }
 .services-page-hero-heading{
-    margin-top:"2rem";
+    padding: 4rem 1rem 1rem 1rem;
 }
