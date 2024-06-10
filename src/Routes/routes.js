@@ -1,13 +1,12 @@
-import softwareDevelopment from "../images/software-development.jpg"
+// import softwareDevelopment from "../../../public"
 
 const routesConfig = {
   services: [
     {
       path: "services/software-development",
       content: {
-        heading: "Software developemt",
-        heroImageLink: "../../images/software-development.jpg",
-        heroImage: <img src={softwareDevelopment} alt="software-dev-wallpaper" />,
+        heading: "Software Development Services",
+        heroImageLink: "/img/img.jpg",
         headPoints: [
               "Software Solution and Service Provider for over Two Decades.",
               "Team of Highly Experienced Software Developers on all latest technologies.",
@@ -23,8 +22,7 @@ const routesConfig = {
       path: "services/ecommerce-solutions",
       content: {
         heading: "eCommerece Ssolutions",
-        heroImageLink: "../images/software-development.jpg",
-        heroImage: <img src={softwareDevelopment} alt="ecom-solutions-wallpaper" />,
+        heroImageLink: "/img/img2.jpg",
         headPoints: ["100% Secure Online Stores", "Payment Gateway Integration Expert", "E-Commerce Solutions powered by AI/AR and blockchain to double your business revenue.", "Awarded Shopping Cart Development Company.", "e-commerce platform featuring omnichannel integration, personalized shopping experiences, and automated marketing."]
       },
     },
