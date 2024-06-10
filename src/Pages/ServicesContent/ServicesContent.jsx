@@ -18,8 +18,8 @@ const ServicesContent = () => {
               className="services-pages-hero-image"
               style={{
                 backgroundImage: `url(${content.heroImageLink})`,
-                backgroundSize: "cover",
-                backgroundRepeat:"no-repeat"
+                // backgroundSize: "cover",
+                // backgroundRepeat:"no-repeat"
               }}
             >
               <div className="services-page-hero-heading">

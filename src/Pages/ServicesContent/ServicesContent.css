@@ -3,6 +3,9 @@
 }
 .services-pages-hero-image{
     /* height: 40rem; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
 }
 .services-page-hero-heading{
     padding: 8rem 1rem 3rem 1rem;
