@@ -1,17 +1,31 @@
+import softwareDevelopment from "../images/software-development.jpg"
+
 const routesConfig = {
   services: [
     {
       path: "services/software-development",
       content: {
         heading: "Software developemt",
-        text: "This is text",
+        heroImageLink: "../../images/software-development.jpg",
+        heroImage: <img src={softwareDevelopment} alt="software-dev-wallpaper" />,
+        headPoints: [
+              "Software Solution and Service Provider for over Two Decades.",
+              "Team of Highly Experienced Software Developers on all latest technologies.",
+              "Software Solutions for all Industry Verticals.",
+              "Software Development using Agile and Waterfall.",
+              "Dedicated Project Managers and Account Manager.",
+              "We deliver the source code to let you have complete control.",
+              "24 Hours query responses guaranteed."
+            ]
       },
     },
     {
       path: "services/ecommerce-solutions",
       content: {
         heading: "eCommerece Ssolutions",
-        text: "This is text",
+        heroImageLink: "../images/software-development.jpg",
+        heroImage: <img src={softwareDevelopment} alt="ecom-solutions-wallpaper" />,
+        headPoints: ["100% Secure Online Stores", "Payment Gateway Integration Expert", "E-Commerce Solutions powered by AI/AR and blockchain to double your business revenue.", "Awarded Shopping Cart Development Company.", "e-commerce platform featuring omnichannel integration, personalized shopping experiences, and automated marketing."]
       },
     },
     {
