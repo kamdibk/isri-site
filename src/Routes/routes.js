@@ -22,7 +22,7 @@ const routesConfig = {
       path: "services/ecommerce-solutions",
       content: {
         heading: "eCommerece Ssolutions",
-        heroImageLink: "/img/img2.jpg",
+        heroImageLink: "/img/ecom.jpg",
         headPoints: ["100% Secure Online Stores", "Payment Gateway Integration Expert", "E-Commerce Solutions powered by AI/AR and blockchain to double your business revenue.", "Awarded Shopping Cart Development Company.", "e-commerce platform featuring omnichannel integration, personalized shopping experiences, and automated marketing."]
       },
     },
