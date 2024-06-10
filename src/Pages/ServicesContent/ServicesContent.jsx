@@ -9,22 +9,28 @@ const ServicesContent = () => {
   let content = routesConfig.services.find((route) => route.path === path);
   content = content.content;
   let headingPoints = content.headPoints;
-  console.log(content.heroImageLink)
   return (
     <>
       {content ? (
         <div className="services-content-main-container">
           <div className="services-content-container">
-            <div className="services-pages-hero-image"
-              style={{ backgroundImage: `url(${content.heroImageLink})`,backgroundSize:"cover"}}>
-                <div className="services-page-hero-heading">
-                  <h2>{content.heading}</h2>
-                </div>
-              {/* {
-              headingPoints.map((element, key) => {
-                return (<h3 key={key}>{element}</h3>)
-              })
-              } */}
+            <div
+              className="services-pages-hero-image"
+              style={{
+                backgroundImage: `url(${content.heroImageLink})`,
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="services-page-hero-heading">
+                <h1>{content.heading}</h1>
+                <ul>
+                {headingPoints.map((element, key) => {
+                  return (
+                      <li key={key}>{element}</li>
+                  );
+                })}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

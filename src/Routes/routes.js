@@ -6,7 +6,7 @@ const routesConfig = {
       path: "services/software-development",
       content: {
         heading: "Software Development Services",
-        heroImageLink: "/img/img.jpg",
+        heroImageLink: "/img/software-development.jpg",
         headPoints: [
               "Software Solution and Service Provider for over Two Decades.",
               "Team of Highly Experienced Software Developers on all latest technologies.",

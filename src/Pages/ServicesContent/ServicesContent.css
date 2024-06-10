@@ -2,8 +2,16 @@
     width: 100vw;
 }
 .services-pages-hero-image{
-    height: 40rem;
+    /* height: 40rem; */
 }
 .services-page-hero-heading{
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 7rem 1rem 3rem 1rem;
+}
+.services-page-hero-heading>h1{
+    color:red;
+}
+.services-page-hero-heading>ul{
+    list-style-type:circle;
+    margin-left: 1.5rem;
+    font-size: 19px;
 }
