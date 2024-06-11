@@ -1,23 +1,47 @@
-.services-content-container{
+.services-content-container {
     width: 100vw;
 }
-.services-pages-hero-image{
+
+.services-pages-hero-image {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.services-page-hero-heading{
+
+.services-page-hero-heading {
     padding: 10rem 1rem 3rem 1rem;
 }
-.services-page-hero-heading>h1{
-    color:red;
+
+.services-page-hero-heading>h1 {
+    color: red;
 }
-.services-page-hero-heading>ul{
-    list-style-type:circle;
+
+.services-page-hero-heading>ul {
+    list-style-type: circle;
     margin-left: 1.5rem;
     font-size: 19px;
-    /* background-color: red; */
     width: 40rem;
 }
-.services-page-hero-heading>ul>li{
+
+.services-page-hero-heading>ul>li {
     line-height: 30px;
 }
+
+.service-page-quote-container {
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+.service-page-container-quote {
+    font-size: 28px;
+    font-weight: 400;
+    font-style:oblique;
+}
+
+.service-page-quoter {
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* why choose us */

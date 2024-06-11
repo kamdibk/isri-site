@@ -14,7 +14,7 @@ import { TbRobot } from "react-icons/tb";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
-const Services = () => {
+const   Services = () => {
   return (
     <div className="dropdown">
       <div className="dropdown-lvl-1">
@@ -137,7 +137,7 @@ const Services = () => {
               </Link>
             </li>
             <li>
-              <Link to="robotic-process-automation" style={{ alignItems: "center", display: "flex" }}>
+              <Link to="services/robotic-process-automation" style={{ alignItems: "center", display: "flex" }}>
                 <TbRobot
                   size={20}
                   style={{ marginRight: "10px" }}

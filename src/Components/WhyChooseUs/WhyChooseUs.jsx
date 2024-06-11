@@ -11,7 +11,6 @@ const WhyChooseUs = () => {
             <h1 className="
             h1-txt stroke-text">WE TRANSFORM YOUR BUSINESS</h1>
             <div className="whychooseus-rsn-blocks">
-                {/* <div className="whychooseus-rsn-block"></div> */}
                 {
                   WhyChooseUsData.map((key)=>{
                     return(
