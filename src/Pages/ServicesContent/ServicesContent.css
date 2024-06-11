@@ -15,4 +15,9 @@
     list-style-type:circle;
     margin-left: 1.5rem;
     font-size: 19px;
+    /* background-color: red; */
+    width: 40rem;
+}
+.services-page-hero-heading>ul>li{
+    line-height: 30px;
 }
