@@ -30,7 +30,7 @@ const routesConfig = {
       path: "services/mobile-apps-development",
       content: {
         heading: "Mobile apps development",
-        heroImageLink: "/img/ecommerce-solutions.jpg",
+        heroImageLink: "/img/mob.jpg",
         headPoints: ["100% Secure Online Stores", "Payment Gateway Integration Expert", "E-Commerce Solutions powered by AI/AR and blockchain to double your business revenue.", "Awarded Shopping Cart Development Company.", "e-commerce platform featuring omnichannel integration, personalized shopping experiences, and automated marketing."]
       },
     },
