@@ -45,3 +45,91 @@
 
 
 /* why choose us */
+.service-whychooseus-rsn-block{
+    width: 30%;
+    height: 330px;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    font-family: "Jost";
+    text-align: justify;
+}
+.service-whychooseus-rsn-block:hover{
+    box-shadow: 0px 0px 20px rgba(152, 194, 231, 0.526);
+}
+.service-rsn-block-heading{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.service-rsn-block-text{
+    padding-top: 5px;
+    font-size: 17px;
+}
+.service-rsn-block-heading:hover {
+    color: #1b3f8b;
+    transition: 1s ease;
+}
+
+@media screen and (max-width : 1446px) {
+    .service-whychooseus-rsn-block{
+        height: 340px;
+    }
+}
+@media screen and (max-width : 1351px) {
+    .service-whychooseus-rsn-block{
+        height: 370px;
+    }
+}
+@media screen and (max-width : 1309px) {
+    .service-whychooseus-rsn-block{
+        height: 390px;
+    }
+}
+@media screen and (max-width : 1089px) {
+    .service-whychooseus-rsn-block{
+        height: 350px;
+        width: 43%;
+    }
+}
+@media screen and (max-width : 950px) {
+    .service-whychooseus-rsn-block{
+        height: 340px;
+        width: 45%;
+    }
+}
+@media screen and (max-width : 912px) {
+    .service-whychooseus-rsn-block{
+        height: 350px;
+    }
+}
+@media screen and (max-width : 848px) {
+    .service-whychooseus-rsn-block{
+        height: 390px;
+    }
+}
+@media screen and (max-width : 750px) {
+    .service-whychooseus-rsn-block{
+        height: 400px;
+    }
+}
+@media screen and (max-width : 740px) {
+    .service-whychooseus-rsn-block{
+        width: 90%;
+        height: fit-content !important;
+    }
+    .pt{
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width : 690px) {
+    .services-page-hero-heading{
+        width: 80% !important;
+    }
+    .services-page-hero-heading>ul{
+        width: 95% !important;
+    }
+}

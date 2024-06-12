@@ -1,3 +1,19 @@
+// icons
+import { AiOutlineSolution } from "react-icons/ai";
+import { GiTeamIdea } from "react-icons/gi";
+import { MdOutlineSettingsSuggest,MdDashboardCustomize, MdOutlineSecurity  } from "react-icons/md";
+import { FaProjectDiagram, FaCreativeCommonsRemix, FaBalanceScaleLeft  } from "react-icons/fa";
+import { GrUserExpert, GrUserSettings} from "react-icons/gr";
+import { Ri24HoursFill,RiSecurePaymentFill  } from "react-icons/ri";
+import { IoExpand } from "react-icons/io5";
+import { TbSettingsCog  } from "react-icons/tb";
+import { LiaUserShieldSolid } from "react-icons/lia";
+import { BsPersonFillGear,BsWindowStack } from "react-icons/bs";
+import { LuClipboardCheck } from "react-icons/lu";
+
+const iconSize = 55;
+const iconColor = "rgb(7, 89, 127)";
+
 const routesConfig = {
   services: [
     {
@@ -19,37 +35,45 @@ const routesConfig = {
             "Software is a great combination between artistry and engineering.",
           quoter: "Bill Gates",
         },
-        whyUs:[
+        whyUs: [
           {
-            icon: "hi",
-            heading: "Expertise",
-            reason: "We have a team of experienced RPA professionals with in-depth knowledge of the latest RPA technologies and best practices.",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            heading: "Solutions",
+            reason:
+              "We have been providing cutting-edge and customized software solutions since our founding in 2000. We have assisted 13000+ clients across the globe in streamlining their operations through our expert software product development services.",
           },
           {
-            icon: "hi",
-            heading: "Customization",
-            reason: "We offer customized RPA solutions tailored to meet the specific needs of your business, ensuring maximum efficiency and ROI.",
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Knowledge and Expertise ",
+            reason:
+              "Our team has extensive knowledge of various industries, allowing us to create industry-specific software applications that bring significant value to your organization.",
           },
           {
-            icon: "hi",
-            heading: "Scalability",
-            reason: "Our RPA solutions can be easily scaled up or down as your business needs change, making them an ideal long-term solution.",
+            icon: (
+              <MdOutlineSettingsSuggest size={iconSize} color={iconColor} />
+            ),
+            heading: "Customized Solutions ",
+            reason:
+              "We specialize in developing custom software solutions for businesses of all sizes. Our team is comprised of experienced programmers who are known for their outstanding consulting services and for writing clean code.",
           },
           {
-            icon: "hi",
-            heading: "Reliability",
-            reason: "Our RPA solutions are designed and implemented with the highest level of quality and reliability, ensuring consistent and accurate results.",
+            icon: <FaProjectDiagram size={iconSize} color={iconColor} />,
+            heading: "Proactive Approach ",
+            reason:
+              "We understand your requirement first and then provide you best solution to achieve your unique business idea.",
           },
           {
-            icon: "hi",
-            heading: "Support",
-            reason: "We provide comprehensive support throughout the entire RPA implementation process, from initial consultation to ongoing maintenance and support, ensuring a seamless and successful implementation.",
+            icon: <GrUserExpert size={iconSize} color={iconColor} />,
+            heading: "Experienced Team",
+            reason:
+              "Our team of developers are highly experienced in latest technologies and can help you achieve the maximum scalability by developing solution as per the latest industry standards and relevance.",
           },
           {
-            icon: "hi",
-            heading: "Performance and Quality",
-            reason: "Performance and Quality We focus on industry best practices and quality standards throughout the development process to ensure that our solutions meet the highest levels of performance, reliability, and scalability. Our team conducts thorough testing and validation to identify and address any issues or bugs, ensuring that your RPA solutions deliver accurate results and optimal performance in real-world scenarios.",
-          }
+            icon: <Ri24HoursFill size={iconSize} color={iconColor} />,
+            heading: "24/7 Support ",
+            reason:
+              "SynapseIndia team is always known for its availability and great customer support. Our team of highly professional developers is always available 24/7 to promptly address any queries.",
+          },
         ],
       },
     },
@@ -72,36 +96,42 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <FaCreativeCommonsRemix size={iconSize} color={iconColor} />,
             heading: "Advanced E-commerce Technology",
-            reason: "Our e-commerce solutions feature a user-friendly interface that is easy to navigate, combined with advanced technology such as AR and VR that can help improve the overall customer experience and increase engagement.",
+            reason:
+              "Our e-commerce solutions feature a user-friendly interface that is easy to navigate, combined with advanced technology such as AR and VR that can help improve the overall customer experience and increase engagement.",
           },
           {
-            icon: "hi",
+            icon: <GrUserSettings size={iconSize} color={iconColor} />,
             heading: "Personalization at Scale",
-            reason: "We use AI and machine learning to provide personalized experiences for your customers, at scale. Our e-commerce solutions can help you deliver personalized recommendations, tailored content, and customized promotions, enhancing customer engagement and loyalty.",
+            reason:
+              "We use AI and machine learning to provide personalized experiences for your customers, at scale. Our e-commerce solutions can help you deliver personalized recommendations, tailored content, and customized promotions, enhancing customer engagement and loyalty.",
           },
           {
-            icon: "hi",
+            icon: <IoExpand size={iconSize} color={iconColor} />,
             heading: "Scalable and Flexible Architecture",
-            reason: "Our e-commerce solutions are built on a scalable and flexible architecture that can handle high traffic volumes and accommodate future growth. We use cloud computing and microservices to ensure that your e-commerce platform is always up-to-date and easily expandable.",
+            reason:
+              "Our e-commerce solutions are built on a scalable and flexible architecture that can handle high traffic volumes and accommodate future growth. We use cloud computing and microservices to ensure that your e-commerce platform is always up-to-date and easily expandable.",
           },
           {
-            icon: "hi",
+            icon: <TbSettingsCog size={iconSize} color={iconColor} />,
             heading: "Multichannel Integration",
-            reason: "Our e-commerce solutions can be seamlessly integrated with your social media channels and third-party marketplaces, providing a truly multichannel experience for your customers. Our solutions can help you manage your inventory and sales across multiple channels, improving visibility and control over your entire e-commerce operation.",
+            reason:
+              "Our e-commerce solutions can be seamlessly integrated with your social media channels and third-party marketplaces, providing a truly multichannel experience for your customers. Our solutions can help you manage your inventory and sales across multiple channels, improving visibility and control over your entire e-commerce operation.",
           },
           {
-            icon: "hi",
+            icon: <RiSecurePaymentFill  size={iconSize} color={iconColor} />,
             heading: "Secure and Reliable Payment Processing",
-            reason: "Our e-commerce solutions use the latest encryption and tokenization technologies to ensure secure and reliable payment processing. We support multiple payment options, including mobile payments and digital wallets, providing a seamless checkout experience for your customers.",
+            reason:
+              "Our e-commerce solutions use the latest encryption and tokenization technologies to ensure secure and reliable payment processing. We support multiple payment options, including mobile payments and digital wallets, providing a seamless checkout experience for your customers.",
           },
           {
-            icon: "hi",
+            icon: <MdDashboardCustomize  size={iconSize} color={iconColor} />,
             heading: "Intuitive Content Management System",
-            reason: "Our user-friendly content management system manages and updates clients' e-commerce websites effortlessly. We create and publish product listings, promotional banners, blog posts, and other content without any technical expertise.",
+            reason:
+              "Our user-friendly content management system manages and updates clients' e-commerce websites effortlessly. We create and publish product listings, promotional banners, blog posts, and other content without any technical expertise.",
           },
-        ]
+        ],
       },
     },
     {
@@ -123,36 +153,42 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Advanced E-commerce Technology",
-            reason: "Our e-commerce solutions feature a user-friendly interface that is easy to navigate, combined with advanced technology such as AR and VR that can help improve the overall customer experience and increase engagement.",
+            reason:
+              "Our e-commerce solutions feature a user-friendly interface that is easy to navigate, combined with advanced technology such as AR and VR that can help improve the overall customer experience and increase engagement.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Personalization at Scale",
-            reason: "We use AI and machine learning to provide personalized experiences for your customers, at scale. Our e-commerce solutions can help you deliver personalized recommendations, tailored content, and customized promotions, enhancing customer engagement and loyalty.",
+            reason:
+              "We use AI and machine learning to provide personalized experiences for your customers, at scale. Our e-commerce solutions can help you deliver personalized recommendations, tailored content, and customized promotions, enhancing customer engagement and loyalty.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Scalable and Flexible Architecture",
-            reason: "Our e-commerce solutions are built on a scalable and flexible architecture that can handle high traffic volumes and accommodate future growth. We use cloud computing and microservices to ensure that your e-commerce platform is always up-to-date and easily expandable.",
+            reason:
+              "Our e-commerce solutions are built on a scalable and flexible architecture that can handle high traffic volumes and accommodate future growth. We use cloud computing and microservices to ensure that your e-commerce platform is always up-to-date and easily expandable.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Multichannel Integration",
-            reason: "Our e-commerce solutions can be seamlessly integrated with your social media channels and third-party marketplaces, providing a truly multichannel experience for your customers. Our solutions can help you manage your inventory and sales across multiple channels, improving visibility and control over your entire e-commerce operation.",
+            reason:
+              "Our e-commerce solutions can be seamlessly integrated with your social media channels and third-party marketplaces, providing a truly multichannel experience for your customers. Our solutions can help you manage your inventory and sales across multiple channels, improving visibility and control over your entire e-commerce operation.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Secure and Reliable Payment Processing",
-            reason: "Our e-commerce solutions use the latest encryption and tokenization technologies to ensure secure and reliable payment processing. We support multiple payment options, including mobile payments and digital wallets, providing a seamless checkout experience for your customers.",
+            reason:
+              "Our e-commerce solutions use the latest encryption and tokenization technologies to ensure secure and reliable payment processing. We support multiple payment options, including mobile payments and digital wallets, providing a seamless checkout experience for your customers.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Intuitive Content Management System",
-            reason: "Our user-friendly content management system manages and updates clients' e-commerce websites effortlessly. We create and publish product listings, promotional banners, blog posts, and other content without any technical expertise.",
+            reason:
+              "Our user-friendly content management system manages and updates clients' e-commerce websites effortlessly. We create and publish product listings, promotional banners, blog posts, and other content without any technical expertise.",
           },
-        ]
+        ],
       },
     },
     {
@@ -174,34 +210,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <LiaUserShieldSolid size={iconSize} color={iconColor} />,
             heading: "Reliability",
-            reason: "Our cloud computing services are highly reliable, with guaranteed uptime and 24/7 support to ensure that your business operations are always up and running",
+            reason:
+              "Our cloud computing services are highly reliable, with guaranteed uptime and 24/7 support to ensure that your business operations are always up and running",
           },
           {
-            icon: "hi",
+            icon: <FaBalanceScaleLeft  size={iconSize} color={iconColor} />,
             heading: "Scalability",
-            reason: "We offer flexible and scalable cloud computing solutions that can easily accommodate your changing business needs. With our services, you can scale up or down your computing resources based on your requirements.",
+            reason:
+              "We offer flexible and scalable cloud computing solutions that can easily accommodate your changing business needs. With our services, you can scale up or down your computing resources based on your requirements.",
           },
           {
-            icon: "hi",
+            icon: <MdOutlineSecurity  size={iconSize} color={iconColor} />,
             heading: "Security",
-            reason: "We take the security of your data very seriously and offer robust security features to protect your sensitive information. Our cloud computing services include advanced encryption, multi-factor authentication, and regular security audits to ensure that your data is safe from cyber threats.",
+            reason:
+              "We take the security of your data very seriously and offer robust security features to protect your sensitive information. Our cloud computing services include advanced encryption, multi-factor authentication, and regular security audits to ensure that your data is safe from cyber threats.",
           },
           {
-            icon: "hi",
+            icon: <BsPersonFillGear size={iconSize} color={iconColor} />,
             heading: "Expertise",
-            reason: "Our team is well equipped with the latest cloud technologies, including multi-cloud environments, serverless computing, and containerization. We have the knowledge and skills to develop customized cloud solutions that are powered by cutting-edge technology.",
+            reason:
+              "Our team is well equipped with the latest cloud technologies, including multi-cloud environments, serverless computing, and containerization. We have the knowledge and skills to develop customized cloud solutions that are powered by cutting-edge technology.",
           },
           {
-            icon: "hi",
+            icon: <BsWindowStack size={iconSize} color={iconColor} />,
             heading: "Customization",
-            reason: "We understand the unique requirements and preferences of each organization when it comes to cloud computing solutions. We provide highly configurable cloud solutions that cater to our client's unique requirements. Our team works directly with you to understand your business goals and issues, whether you run a major organization or a startup.",
+            reason:
+              "We understand the unique requirements and preferences of each organization when it comes to cloud computing solutions. We provide highly configurable cloud solutions that cater to our client's unique requirements. Our team works directly with you to understand your business goals and issues, whether you run a major organization or a startup.",
           },
           {
-            icon: "hi",
+            icon: <LuClipboardCheck size={iconSize} color={iconColor} />,
             heading: "Compliance",
-            reason: "We place a high priority on compliance and follow all applicable laws and industry standards to protect the security and integrity of your data in the cloud. With our secure cloud solutions, you can feel confident knowing that your private data is protected because they are made to comply with strict regulations like GDPR, HIPAA, and PCI-DSS.",
+            reason:
+              "We place a high priority on compliance and follow all applicable laws and industry standards to protect the security and integrity of your data in the cloud. With our secure cloud solutions, you can feel confident knowing that your private data is protected because they are made to comply with strict regulations like GDPR, HIPAA, and PCI-DSS.",
           },
         ],
       },
@@ -224,34 +266,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Understand Business Requirements",
-            reason: "Together, you and our team of skilled developers will build a unique website that is suited to your unique business requirements.",
+            reason:
+              "Together, you and our team of skilled developers will build a unique website that is suited to your unique business requirements.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Agile Methodologies",
-            reason: "Your website must make use of the most recent web technology to stay competitive as technology advances quickly. Our team of professionals will quickly choose the best website development tool and make sure your project is finished in accordance with industry standards.",
+            reason:
+              "Your website must make use of the most recent web technology to stay competitive as technology advances quickly. Our team of professionals will quickly choose the best website development tool and make sure your project is finished in accordance with industry standards.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Top-Notch Client Contentment",
-            reason: "Our website design services assist clients in rising to the top of their respective industries. 85% of our clients from different industries have used our services to effectively accomplish their business goals.",
+            reason:
+              "Our website design services assist clients in rising to the top of their respective industries. 85% of our clients from different industries have used our services to effectively accomplish their business goals.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Modernize Technologies",
-            reason: "The technologies we use to develop your dream website are state of the art and most modern in terms of functionalities and usability.",
+            reason:
+              "The technologies we use to develop your dream website are state of the art and most modern in terms of functionalities and usability.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Innovative Design Approach",
-            reason: "Our team of talented designers creates visually attractive and captivating websites that attract visitors with creative flare and user-centric design principles. We make sure that your website stands out from the competition, clearly conveys your brand identity, and draws in your target audience by emphasizing innovation and creativity.",
+            reason:
+              "Our team of talented designers creates visually attractive and captivating websites that attract visitors with creative flare and user-centric design principles. We make sure that your website stands out from the competition, clearly conveys your brand identity, and draws in your target audience by emphasizing innovation and creativity.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Comprehensive Support and Maintenance",
-            reason: "We understand that launching a website is just the beginning of your online journey. Our technical team works on regular updates and security patches. We also troubleshoot and provide technical assistance to address any issues or concerns you may have, allowing you to focus on running your business while we take care of your website's maintenance needs.",
+            reason:
+              "We understand that launching a website is just the beginning of your online journey. Our technical team works on regular updates and security patches. We also troubleshoot and provide technical assistance to address any issues or concerns you may have, allowing you to focus on running your business while we take care of your website's maintenance needs.",
           },
         ],
       },
@@ -274,34 +322,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Innovative Solutions",
-            reason: "We are constantly exploring new technologies and techniques to create innovative solutions that help our clients stand out in a crowded online marketplace.  ",
+            reason:
+              "We are constantly exploring new technologies and techniques to create innovative solutions that help our clients stand out in a crowded online marketplace.  ",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Scalable and Flexible",
-            reason: "Our CMS solution is scalable and flexible, allowing you to easily add new features and functionality as your business grows and evolves.",
+            reason:
+              "Our CMS solution is scalable and flexible, allowing you to easily add new features and functionality as your business grows and evolves.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Content Collaboration",
-            reason: "Our CMS solution enables content collaboration among team members, providing a centralized platform for content creation and management.",
+            reason:
+              "Our CMS solution enables content collaboration among team members, providing a centralized platform for content creation and management.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Integration with Third-Party Services",
-            reason: "Our CMS solution seamlessly integrates with a wide range of third-party services, such as social media platforms, payment gateways, and marketing automation tools, to streamline your workflow and enhance your website's functionality.",
+            reason:
+              "Our CMS solution seamlessly integrates with a wide range of third-party services, such as social media platforms, payment gateways, and marketing automation tools, to streamline your workflow and enhance your website's functionality.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "SEO-friendly",
-            reason: "Our CMS solution is optimized for search engines, ensuring that your website is easily discoverable by your target audience.",
+            reason:
+              "Our CMS solution is optimized for search engines, ensuring that your website is easily discoverable by your target audience.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "User-friendly Interface and Admin Panel",
-            reason: "We prioritize user experience and usability in every CMS solution we develop. Our team focuses on creating intuitive user interfaces and user-friendly admin panels. With our user-centric approach, you can efficiently manage your website and ensure a seamless experience for your visitors.",
+            reason:
+              "We prioritize user experience and usability in every CMS solution we develop. Our team focuses on creating intuitive user interfaces and user-friendly admin panels. With our user-centric approach, you can efficiently manage your website and ensure a seamless experience for your visitors.",
           },
         ],
       },
@@ -326,34 +380,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Expertise",
-            reason: "Our stays up-to-date with the latest CRM technologies, including cloud-based solutions, artificial intelligence, and automation. We have the knowledge and skills to develop customized CRM solutions that are powered by cutting-edge technology.",
+            reason:
+              "Our stays up-to-date with the latest CRM technologies, including cloud-based solutions, artificial intelligence, and automation. We have the knowledge and skills to develop customized CRM solutions that are powered by cutting-edge technology.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Customized CRM Solutions",
-            reason: "We take a customized approach to CRM development, tailoring our services to meet the unique needs and goals of each client. Our team will work closely with you to understand your business processes and requirements, and design a CRM solution that fits your specific needs.",
+            reason:
+              "We take a customized approach to CRM development, tailoring our services to meet the unique needs and goals of each client. Our team will work closely with you to understand your business processes and requirements, and design a CRM solution that fits your specific needs.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Integration with Other Systems",
-            reason: "We understand that a CRM system doesn't exist in isolation. That's why we have expertise in integrating CRM solutions with other systems, including marketing automation, sales automation, and customer service software. This ensures that your CRM system is fully integrated with your other business processes and tools.",
+            reason:
+              "We understand that a CRM system doesn't exist in isolation. That's why we have expertise in integrating CRM solutions with other systems, including marketing automation, sales automation, and customer service software. This ensures that your CRM system is fully integrated with your other business processes and tools.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "User-Friendly Design",
-            reason: "We believe that a CRM system should be easy to use and intuitive for all users. That's why we prioritize user-friendly design in our CRM development process, creating systems that are not only powerful but also easy to navigate and use.",
+            reason:
+              "We believe that a CRM system should be easy to use and intuitive for all users. That's why we prioritize user-friendly design in our CRM development process, creating systems that are not only powerful but also easy to navigate and use.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Data Security and Privacy",
-            reason: "We understand the importance of data security and privacy for our clients. That's why we have robust security measures in place to protect your data from unauthorized access, breaches, and other threats. We also ensure that our CRM systems are fully compliant with all relevant data privacy regulations.",
+            reason:
+              "We understand the importance of data security and privacy for our clients. That's why we have robust security measures in place to protect your data from unauthorized access, breaches, and other threats. We also ensure that our CRM systems are fully compliant with all relevant data privacy regulations.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Comprehensive Support and Maintenance",
-            reason: "We provide comprehensive support and maintenance services to ensure the continued success of your CRM solution. With proactive monitoring and timely assistance, we ensure that your CRM solution remains optimized, secure, and aligned with your business objectives.",
+            reason:
+              "We provide comprehensive support and maintenance services to ensure the continued success of your CRM solution. With proactive monitoring and timely assistance, we ensure that your CRM solution remains optimized, secure, and aligned with your business objectives.",
           },
         ],
       },
@@ -377,34 +437,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Interactive Design",
-            reason: "We specialize in developing interactive websites that engage users and create memorable experiences. We use technologies such as WebGL, Three.js, and A-Frame to create immersive 3D experiences, as well as animations and other interactive elements",
+            reason:
+              "We specialize in developing interactive websites that engage users and create memorable experiences. We use technologies such as WebGL, Three.js, and A-Frame to create immersive 3D experiences, as well as animations and other interactive elements",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Speed Optimization",
-            reason: "We optimize website loading times to ensure that our clients' websites load quickly and provide a seamless user experience. We use technologies such as AMP (Accelerated Mobile Pages) and CDNs (Content Delivery Networks) to reduce page loading times and improve website performance.",
+            reason:
+              "We optimize website loading times to ensure that our clients' websites load quickly and provide a seamless user experience. We use technologies such as AMP (Accelerated Mobile Pages) and CDNs (Content Delivery Networks) to reduce page loading times and improve website performance.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Integration with Third-party Applications",
-            reason: "We understand that businesses rely on a variety of third-party applications to run their operations, which is why we specialize in integrating websites with third-party applications such as Salesforce, HubSpot, and Mailchimp. We use technologies such as API (Application Programming Interface) integration and webhooks to ensure seamless integration with third-party applications.",
+            reason:
+              "We understand that businesses rely on a variety of third-party applications to run their operations, which is why we specialize in integrating websites with third-party applications such as Salesforce, HubSpot, and Mailchimp. We use technologies such as API (Application Programming Interface) integration and webhooks to ensure seamless integration with third-party applications.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Customized & Responsive Design",
-            reason: "Our web design services are tailored to meet the unique needs of each business. We use the latest design technologies, such as Adobe XD and Figma, to create custom designs that are visually stunning, easy to use, and optimized for both desktop and mobile devices.",
+            reason:
+              "Our web design services are tailored to meet the unique needs of each business. We use the latest design technologies, such as Adobe XD and Figma, to create custom designs that are visually stunning, easy to use, and optimized for both desktop and mobile devices.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Team",
-            reason: "Our team of experienced designers and developers work together to deliver websites and mobile applications that are both beautiful and functional.",
+            reason:
+              "Our team of experienced designers and developers work together to deliver websites and mobile applications that are both beautiful and functional.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Dedicated Support and Maintenance",
-            reason: "We provide ongoing support and maintenance services to ensure that your website remains secure, up-to-date, and optimized for performance. Our team holds proactive monitoring and timely assistance to ensure your website continues to deliver results and support your business goals.",
+            reason:
+              "We provide ongoing support and maintenance services to ensure that your website remains secure, up-to-date, and optimized for performance. Our team holds proactive monitoring and timely assistance to ensure your website continues to deliver results and support your business goals.",
           },
         ],
       },
@@ -428,34 +494,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Expertise in Agile Methodology",
-            reason: "Our developers are experienced in working with Agile methodology, allowing us to deliver software solutions in a more iterative and collaborative manner, resulting in faster time-to-market and better quality output.",
+            reason:
+              "Our developers are experienced in working with Agile methodology, allowing us to deliver software solutions in a more iterative and collaborative manner, resulting in faster time-to-market and better quality output.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Focus on User-Centric Design",
-            reason: "Our developers focus on user-centric design to ensure that the software solution is intuitive, easy to use, and meets the needs of end-users, resulting in better user engagement and adoption.",
+            reason:
+              "Our developers focus on user-centric design to ensure that the software solution is intuitive, easy to use, and meets the needs of end-users, resulting in better user engagement and adoption.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Expertise in Diverse Industries",
-            reason: "Our developers have experience working with clients across various industries, including healthcare, finance, e-commerce, education, and more, and are equipped with the knowledge and skills needed to create tailored solutions for each sector.",
+            reason:
+              "Our developers have experience working with clients across various industries, including healthcare, finance, e-commerce, education, and more, and are equipped with the knowledge and skills needed to create tailored solutions for each sector.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Flexible Hiring Model",
-            reason: "We offer competitive pricing for our development services, and our flexible hiring models allow clients to choose an engagement model that fits their budget and project requirements.",
+            reason:
+              "We offer competitive pricing for our development services, and our flexible hiring models allow clients to choose an engagement model that fits their budget and project requirements.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Transparent and Timely Communication",
-            reason: "We believe in open and transparent communication with our clients, providing regular updates on project progress and addressing any concerns or questions promptly to ensure a smooth development process.",
+            reason:
+              "We believe in open and transparent communication with our clients, providing regular updates on project progress and addressing any concerns or questions promptly to ensure a smooth development process.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Time Zone Advantage",
-            reason: "With a significant overlap in working hours, communication and collaboration between clients and developers in India are seamless and efficient. Real-time communication channels such as video conferencing, instant messaging, and project management tools enable effective collaboration, ensuring that project timelines are met and objectives are achieved without delays.",
+            reason:
+              "With a significant overlap in working hours, communication and collaboration between clients and developers in India are seamless and efficient. Real-time communication channels such as video conferencing, instant messaging, and project management tools enable effective collaboration, ensuring that project timelines are met and objectives are achieved without delays.",
           },
         ],
       },
@@ -502,34 +574,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Experienced Team",
-            reason: "Our team of developers and designers have years of experience in the latest including Unity and AR.",
+            reason:
+              "Our team of developers and designers have years of experience in the latest including Unity and AR.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Customized Solutions",
-            reason: "We work closely with our clients to understand their unique needs and develop customized solutions that meet their specific requirements.",
+            reason:
+              "We work closely with our clients to understand their unique needs and develop customized solutions that meet their specific requirements.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Cross-Platform Expertise",
-            reason: "We specialize in developing games that can be played across multiple platforms, from PCs to mobile devices and consoles.",
+            reason:
+              "We specialize in developing games that can be played across multiple platforms, from PCs to mobile devices and consoles.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Cutting-Edge Technologies",
-            reason: "We stay up-to-date with the latest gaming technologies, including artificial intelligence, virtual reality, and more, to create immersive experiences that push the boundaries of what is possible.",
+            reason:
+              "We stay up-to-date with the latest gaming technologies, including artificial intelligence, virtual reality, and more, to create immersive experiences that push the boundaries of what is possible.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Commitment to Quality",
-            reason: "We are dedicated to delivering high-quality games that exceed our clients' expectations. We use the latest tools and techniques to ensure that our games are optimized for performance, reliability, and user engagement.",
+            reason:
+              "We are dedicated to delivering high-quality games that exceed our clients' expectations. We use the latest tools and techniques to ensure that our games are optimized for performance, reliability, and user engagement.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Proven Track Record",
-            reason: "Our portfolio of completed projects showcases our diverse capabilities and demonstrates our ability to deliver high-quality, innovative gaming experiences that captivate audiences and drive engagement. When you choose our gaming solutions, you can trust that you're partnering with a team that is committed to your success and dedicated to delivering exceptional results.",
+            reason:
+              "Our portfolio of completed projects showcases our diverse capabilities and demonstrates our ability to deliver high-quality, innovative gaming experiences that captivate audiences and drive engagement. When you choose our gaming solutions, you can trust that you're partnering with a team that is committed to your success and dedicated to delivering exceptional results.",
           },
         ],
       },
@@ -553,34 +631,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Expertise",
-            reason: "Our team of AI/ML experts has a wealth of experience in developing and implementing AI/ML solutions for businesses of all sizes. We can provide customized solutions tailored to your specific needs and help you achieve your business goals faster.",
+            reason:
+              "Our team of AI/ML experts has a wealth of experience in developing and implementing AI/ML solutions for businesses of all sizes. We can provide customized solutions tailored to your specific needs and help you achieve your business goals faster.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Cost Savings",
-            reason: "By using our AI/ML solutions, businesses can realize cost savings, as it can automate repetitive tasks, reduce the need for human labor, and increase efficiency and productivity.",
+            reason:
+              "By using our AI/ML solutions, businesses can realize cost savings, as it can automate repetitive tasks, reduce the need for human labor, and increase efficiency and productivity.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Personalized Solutions",
-            reason: "Our AI/ML solutions can provide personalized solutions to users based on their specific needs and preferences, helping businesses create a more engaging and personalized customer experience.",
+            reason:
+              "Our AI/ML solutions can provide personalized solutions to users based on their specific needs and preferences, helping businesses create a more engaging and personalized customer experience.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Better Customer Experience",
-            reason: "Our AI/ML solutions can help you improve the customer experience by providing personalized recommendations, predicting customer needs, and responding to inquiries in real-time. This can lead to higher customer satisfaction rates, increased loyalty, and ultimately, more revenue for your business.",
+            reason:
+              "Our AI/ML solutions can help you improve the customer experience by providing personalized recommendations, predicting customer needs, and responding to inquiries in real-time. This can lead to higher customer satisfaction rates, increased loyalty, and ultimately, more revenue for your business.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Innovation",
-            reason: "We believe that AI/ML solutions like ChatGPT are driving innovation across industries, enabling businesses to create new products and services that were previously impossible. By choosing us as your AI/ML solutions provider, you can stay ahead of the curve and continue to innovate in your respective field.",
+            reason:
+              "We believe that AI/ML solutions like ChatGPT are driving innovation across industries, enabling businesses to create new products and services that were previously impossible. By choosing us as your AI/ML solutions provider, you can stay ahead of the curve and continue to innovate in your respective field.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Advanced Technologies and Tools",
-            reason: "Our advanced algorithm models and powerful development framework tools empower the power of AI and ML to unlock valuable insights, automate tasks, and drive actionable intelligence for your business. Our team keeps track of the latest trends and developments in AI and ML to ensure that our solutions are always at the forefront of innovation.",
+            reason:
+              "Our advanced algorithm models and powerful development framework tools empower the power of AI and ML to unlock valuable insights, automate tasks, and drive actionable intelligence for your business. Our team keeps track of the latest trends and developments in AI and ML to ensure that our solutions are always at the forefront of innovation.",
           },
         ],
       },
@@ -604,34 +688,40 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Expertise",
-            reason: "We have a team of experienced RPA professionals with in-depth knowledge of the latest RPA technologies and best practices.",
+            reason:
+              "We have a team of experienced RPA professionals with in-depth knowledge of the latest RPA technologies and best practices.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Customization",
-            reason: "We offer customized RPA solutions tailored to meet the specific needs of your business, ensuring maximum efficiency and ROI.",
+            reason:
+              "We offer customized RPA solutions tailored to meet the specific needs of your business, ensuring maximum efficiency and ROI.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Scalability",
-            reason: "Our RPA solutions can be easily scaled up or down as your business needs change, making them an ideal long-term solution.",
+            reason:
+              "Our RPA solutions can be easily scaled up or down as your business needs change, making them an ideal long-term solution.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Reliability",
-            reason: "Our RPA solutions are designed and implemented with the highest level of quality and reliability, ensuring consistent and accurate results.",
+            reason:
+              "Our RPA solutions are designed and implemented with the highest level of quality and reliability, ensuring consistent and accurate results.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Support",
-            reason: "We provide comprehensive support throughout the entire RPA implementation process, from initial consultation to ongoing maintenance and support, ensuring a seamless and successful implementation.",
+            reason:
+              "We provide comprehensive support throughout the entire RPA implementation process, from initial consultation to ongoing maintenance and support, ensuring a seamless and successful implementation.",
           },
           {
-            icon: "hi",
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
             heading: "Performance and Quality",
-            reason: "We focus on industry best practices and quality standards throughout the development process to ensure that our solutions meet the highest levels of performance, reliability, and scalability. Our team conducts thorough testing and validation to identify and address any issues or bugs, ensuring that your RPA solutions deliver accurate results and optimal performance in real-world scenarios.",
+            reason:
+              "We focus on industry best practices and quality standards throughout the development process to ensure that our solutions meet the highest levels of performance, reliability, and scalability. Our team conducts thorough testing and validation to identify and address any issues or bugs, ensuring that your RPA solutions deliver accurate results and optimal performance in real-world scenarios.",
           },
         ],
       },

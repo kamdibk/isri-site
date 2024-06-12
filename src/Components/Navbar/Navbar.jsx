@@ -22,7 +22,7 @@ const Navbar = () => {
 
   useEffect(() => {
     function handleToggleService() {
-      if (width > 1090) {
+      if (width >= 1090) {
         setDropdownNav(false);
       }
     }

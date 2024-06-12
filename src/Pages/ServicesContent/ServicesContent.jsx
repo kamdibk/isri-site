@@ -2,6 +2,7 @@ import React from "react";
 import "./ServicesContent.css";
 import { useParams } from "react-router-dom";
 import routesConfig from "../../Routes/routes";
+import useWindowDimensions from "../../Components/Hooks/WindowDimensions/useWindowDimensions";
 
 const ServicesContent = () => {
   const { id } = useParams();
@@ -13,6 +14,8 @@ const ServicesContent = () => {
   const quoter = content.quote.quoter;
   const whyus = content.whyUs;
 
+  const {width} = useWindowDimensions();
+  console.log(width)          
   return (
     <>
       {content ? (
@@ -39,14 +42,14 @@ const ServicesContent = () => {
             </div>
             <div className="whychooseus-container">
               <div className="whychooseus-subcontainer">
-                <h4 className="heading-text">WHY US ?</h4>
+                <h4 className="heading-text pt">WHY US ?</h4>
                 <div className="whychooseus-rsn-blocks">
                   {whyus.map((key) => {
                     return (
-                      <div className="whychooseus-rsn-block" key={key}>
-                        <div className="rsn-block-icon">{key.icon}</div>
-                        <div className="rsn-block-heading">{key.heading}</div>
-                        <div className="rsn-block-text">{key.reason}</div>
+                      <div className="service-whychooseus-rsn-block" key={key}>
+                        <div className="service-rsn-block-icon">{key.icon}</div>
+                        <div className="service-rsn-block-heading">{key.heading}</div>
+                        <div className="service-rsn-block-text">{key.reason}</div>
                       </div>
                     );
                   })}
