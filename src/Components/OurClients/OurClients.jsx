@@ -50,8 +50,8 @@ const OurClients = () => {
     <div className="ourclients-main-container">
       <div className="ourclients-inner-container">
         <div className="ourclients-left-container">
-          <h4 className="heading-text-our-clients">OUR CLIENTS</h4>
           <div className="our-clients-text">
+          <h4 className="heading-text-our-clients">OUR CLIENTS</h4>
               <div className="text-first-div">
                 We work each day with mutual respect to bring trust, value, and
                 reliability to our clients.

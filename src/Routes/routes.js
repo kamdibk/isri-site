@@ -1,16 +1,60 @@
 // icons
 import { AiOutlineSolution } from "react-icons/ai";
 import { GiTeamIdea } from "react-icons/gi";
-import { MdOutlineSettingsSuggest,MdDashboardCustomize, MdOutlineSecurity  } from "react-icons/md";
-import { FaProjectDiagram, FaCreativeCommonsRemix, FaBalanceScaleLeft  } from "react-icons/fa";
-import { GrUserExpert, GrUserSettings} from "react-icons/gr";
-import { Ri24HoursFill,RiSecurePaymentFill  } from "react-icons/ri";
+import {
+  MdOutlineSettingsSuggest,
+  MdDashboardCustomize,
+  MdOutlineSecurity,
+} from "react-icons/md";
+import {
+  FaProjectDiagram,
+  FaCreativeCommonsRemix,
+  FaBalanceScaleLeft,
+} from "react-icons/fa";
+import { GrUserExpert, GrUserSettings } from "react-icons/gr";
+import { Ri24HoursFill, RiSecurePaymentFill } from "react-icons/ri";
 import { IoExpand } from "react-icons/io5";
-import { TbSettingsCog  } from "react-icons/tb";
+import { TbSettingsCog } from "react-icons/tb";
 import { LiaUserShieldSolid } from "react-icons/lia";
-import { BsPersonFillGear,BsWindowStack } from "react-icons/bs";
+import { BsPersonFillGear, BsWindowStack } from "react-icons/bs";
 import { LuClipboardCheck } from "react-icons/lu";
+import { ImGift } from "react-icons/im";
 
+// Services
+// Technologies Grid Images
+// software development Technologies images
+import img1 from "../images/servicePageTechnologies/software-development-tech/1.png";
+import img2 from "../images/servicePageTechnologies/software-development-tech/2.png";
+import img3 from "../images/servicePageTechnologies/software-development-tech/3.png";
+import img4 from "../images/servicePageTechnologies/software-development-tech/4.png";
+import img5 from "../images/servicePageTechnologies/software-development-tech/5.png";
+import img6 from "../images/servicePageTechnologies/software-development-tech/6.png";
+import img7 from "../images/servicePageTechnologies/software-development-tech/7.png";
+import img8 from "../images/servicePageTechnologies/software-development-tech/8.png";
+import img9 from "../images/servicePageTechnologies/software-development-tech/9.png";
+import img10 from "../images/servicePageTechnologies/software-development-tech/10.png";
+import img11 from "../images/servicePageTechnologies/software-development-tech/11.png";
+import img12 from "../images/servicePageTechnologies/software-development-tech/12.png";
+import img13 from "../images/servicePageTechnologies/software-development-tech/13.png";
+import img14 from "../images/servicePageTechnologies/software-development-tech/14.png";
+import img15 from "../images/servicePageTechnologies/software-development-tech/15.png";
+import img16 from "../images/servicePageTechnologies/software-development-tech/16.png";
+import img17 from "../images/servicePageTechnologies/software-development-tech/17.png";
+import img18 from "../images/servicePageTechnologies/software-development-tech/18.png";
+
+// ecommerce Solutions
+import ecomImg1 from "../images/servicePageTechnologies/Ecom-Solutions/1.png";
+import ecomImg2 from "../images/servicePageTechnologies/Ecom-Solutions/2.png";
+import ecomImg3 from "../images/servicePageTechnologies/Ecom-Solutions/3.png";
+import ecomImg4 from "../images/servicePageTechnologies/Ecom-Solutions/4.png";
+import ecomImg5 from "../images/servicePageTechnologies/Ecom-Solutions/5.png";
+import ecomImg6 from "../images/servicePageTechnologies/Ecom-Solutions/6.png";
+import ecomImg7 from "../images/servicePageTechnologies/Ecom-Solutions/7.png";
+import ecomImg8 from "../images/servicePageTechnologies/Ecom-Solutions/8.png";
+import ecomImg9 from "../images/servicePageTechnologies/Ecom-Solutions/9.png";
+import ecomImg10 from "../images/servicePageTechnologies/Ecom-Solutions/10.png";
+import ecomImg11 from "../images/servicePageTechnologies/Ecom-Solutions/11.png";
+import ecomImg12 from "../images/servicePageTechnologies/Ecom-Solutions/12.png";
 const iconSize = 55;
 const iconColor = "rgb(7, 89, 127)";
 
@@ -75,6 +119,26 @@ const routesConfig = {
               "SynapseIndia team is always known for its availability and great customer support. Our team of highly professional developers is always available 24/7 to promptly address any queries.",
           },
         ],
+        Technologies: [
+          <img src={img1} />,
+          <img src={img2} />,
+          <img src={img3} />,
+          <img src={img4} />,
+          <img src={img5} />,
+          <img src={img6} />,
+          <img src={img7} />,
+          <img src={img8} />,
+          <img src={img9} />,
+          <img src={img10} />,
+          <img src={img11} />,
+          <img src={img12} />,
+          <img src={img13} />,
+          <img src={img14} />,
+          <img src={img15} />,
+          <img src={img16} />,
+          <img src={img17} />,
+          <img src={img18} />,
+        ],
       },
     },
     {
@@ -120,17 +184,31 @@ const routesConfig = {
               "Our e-commerce solutions can be seamlessly integrated with your social media channels and third-party marketplaces, providing a truly multichannel experience for your customers. Our solutions can help you manage your inventory and sales across multiple channels, improving visibility and control over your entire e-commerce operation.",
           },
           {
-            icon: <RiSecurePaymentFill  size={iconSize} color={iconColor} />,
+            icon: <RiSecurePaymentFill size={iconSize} color={iconColor} />,
             heading: "Secure and Reliable Payment Processing",
             reason:
               "Our e-commerce solutions use the latest encryption and tokenization technologies to ensure secure and reliable payment processing. We support multiple payment options, including mobile payments and digital wallets, providing a seamless checkout experience for your customers.",
           },
           {
-            icon: <MdDashboardCustomize  size={iconSize} color={iconColor} />,
+            icon: <MdDashboardCustomize size={iconSize} color={iconColor} />,
             heading: "Intuitive Content Management System",
             reason:
               "Our user-friendly content management system manages and updates clients' e-commerce websites effortlessly. We create and publish product listings, promotional banners, blog posts, and other content without any technical expertise.",
           },
+        ],
+        Technologies: [
+          <img src={ecomImg1} />,
+          <img src={ecomImg2} />,
+          <img src={ecomImg3} />,
+          <img src={ecomImg4} />,
+          <img src={ecomImg5} />,
+          <img src={ecomImg6} />,
+          <img src={ecomImg7} />,
+          <img src={ecomImg8} />,
+          <img src={ecomImg9} />,
+          <img src={ecomImg10} />,
+          <img src={ecomImg11} />,
+          <img src={ecomImg12} />,
         ],
       },
     },
@@ -154,39 +232,21 @@ const routesConfig = {
         whyUs: [
           {
             icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
-            heading: "Advanced E-commerce Technology",
+            heading: "Knowledge and Expertise",
             reason:
-              "Our e-commerce solutions feature a user-friendly interface that is easy to navigate, combined with advanced technology such as AR and VR that can help improve the overall customer experience and increase engagement.",
+              "With years of experience, our mobile app development team can create apps for iOS and Android as well as other popular platforms. We deliver top-notch apps that cater to the needs of our customers by adhering to industry best practices and making use of cutting-edge technologies.",
           },
           {
             icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
-            heading: "Personalization at Scale",
+            heading: "Comprehensive Collaboration",
             reason:
-              "We use AI and machine learning to provide personalized experiences for your customers, at scale. Our e-commerce solutions can help you deliver personalized recommendations, tailored content, and customized promotions, enhancing customer engagement and loyalty.",
+              "Our team of experts works along throughout the project life cycle, to ideate, develop, deploy, and maintain your mobile app.",
           },
           {
             icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
-            heading: "Scalable and Flexible Architecture",
+            heading: "Custom Delivery",
             reason:
-              "Our e-commerce solutions are built on a scalable and flexible architecture that can handle high traffic volumes and accommodate future growth. We use cloud computing and microservices to ensure that your e-commerce platform is always up-to-date and easily expandable.",
-          },
-          {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
-            heading: "Multichannel Integration",
-            reason:
-              "Our e-commerce solutions can be seamlessly integrated with your social media channels and third-party marketplaces, providing a truly multichannel experience for your customers. Our solutions can help you manage your inventory and sales across multiple channels, improving visibility and control over your entire e-commerce operation.",
-          },
-          {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
-            heading: "Secure and Reliable Payment Processing",
-            reason:
-              "Our e-commerce solutions use the latest encryption and tokenization technologies to ensure secure and reliable payment processing. We support multiple payment options, including mobile payments and digital wallets, providing a seamless checkout experience for your customers.",
-          },
-          {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
-            heading: "Intuitive Content Management System",
-            reason:
-              "Our user-friendly content management system manages and updates clients' e-commerce websites effortlessly. We create and publish product listings, promotional banners, blog posts, and other content without any technical expertise.",
+              "We choose the most suitable project delivery mechanism (Agile / Waterfall) based on project needs and provide regular updates to ensure clear visibility on timelines and budget.",
           },
         ],
       },
@@ -216,13 +276,13 @@ const routesConfig = {
               "Our cloud computing services are highly reliable, with guaranteed uptime and 24/7 support to ensure that your business operations are always up and running",
           },
           {
-            icon: <FaBalanceScaleLeft  size={iconSize} color={iconColor} />,
+            icon: <FaBalanceScaleLeft size={iconSize} color={iconColor} />,
             heading: "Scalability",
             reason:
               "We offer flexible and scalable cloud computing solutions that can easily accommodate your changing business needs. With our services, you can scale up or down your computing resources based on your requirements.",
           },
           {
-            icon: <MdOutlineSecurity  size={iconSize} color={iconColor} />,
+            icon: <MdOutlineSecurity size={iconSize} color={iconColor} />,
             heading: "Security",
             reason:
               "We take the security of your data very seriously and offer robust security features to protect your sensitive information. Our cloud computing services include advanced encryption, multi-factor authentication, and regular security audits to ensure that your data is safe from cyber threats.",
@@ -307,7 +367,7 @@ const routesConfig = {
     {
       path: "services/cms-solutions",
       content: {
-        heading: "Cms Solutions",
+        heading: "CMS Solutions",
         heroImageLink: "/img/mob.jpg",
         headPoints: [
           "Streamline your content management with our powerful CMS solution.",

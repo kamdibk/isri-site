@@ -20,7 +20,7 @@ import Industries from "../Industries/Industries";
 import Technologies from "../Technologies/Technologies";
 import { Link } from "react-router-dom";
 
-const SubNav = () => {
+const SubNav = ({toggleNavbar}) => {
   const [toggleService, setToggleService] = useState(false);
   const [toggleAboutUs, setToggleAboutUs] = useState(false);
   const [toggleIndustries, setToggleIndustries] = useState(false);
@@ -50,11 +50,13 @@ const SubNav = () => {
                     <Link
                       to="services/software-development"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <AiFillSetting
                         size={20}
                         color="orange"
                         style={{ marginRight: "10px" }}
+                        onClick={toggleNavbar}
                       />
                       Software Development
                     </Link>
@@ -63,6 +65,7 @@ const SubNav = () => {
                     <Link
                       to="services/ecommerce-solutions"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <BsCart4
                         size={20}
@@ -76,6 +79,7 @@ const SubNav = () => {
                     <Link
                       to="services/mobile-apps-development"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <AiOutlineMobile
                         size={20}
@@ -88,6 +92,7 @@ const SubNav = () => {
                     <Link
                       to="services/cloud-solution"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <AiFillCloud
                         size={20}
@@ -101,6 +106,7 @@ const SubNav = () => {
                     <Link
                       to="services/website-development"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <AiOutlineDesktop
                         size={20}
@@ -114,6 +120,7 @@ const SubNav = () => {
                     <Link
                       to="services/cms-solutions"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <BsLaptop size={20} style={{ marginRight: "10px" }} />
                       CMS Solutions
@@ -123,6 +130,7 @@ const SubNav = () => {
                     <Link
                       to="services/crm-solutions"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <FaHandshake
                         size={20}
@@ -136,6 +144,7 @@ const SubNav = () => {
                     <Link
                       to="services/web-design"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <IoEarthOutline
                         size={20}
@@ -149,6 +158,7 @@ const SubNav = () => {
                     <Link
                       to="services/hire-developer"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <BsFillPeopleFill
                         size={20}
@@ -162,6 +172,7 @@ const SubNav = () => {
                     <Link
                       to="services/ride-booking"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <RiMotorbikeFill
                         size={20}
@@ -174,6 +185,7 @@ const SubNav = () => {
                     <Link
                       to="services/gaming-solution"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <GrGamepad
                         size={20}
@@ -187,6 +199,7 @@ const SubNav = () => {
                     <Link
                       to="services/ai-ml"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <GiArtificialIntelligence
                         size={20}
@@ -199,6 +212,7 @@ const SubNav = () => {
                     <Link
                       to="services/robotic-process-automation"
                       style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
                     >
                       <TbRobot
                         size={20}
@@ -226,7 +240,7 @@ const SubNav = () => {
               />
             )}
             </span>
-            {toggleTechnologies ? <Technologies /> : null}
+            {toggleTechnologies ? <Technologies toggleNavbar={toggleNavbar}/> : null}
           </li>
           <li>
             <span>
@@ -242,7 +256,7 @@ const SubNav = () => {
                 />
               )}
             </span>
-              {toggleIndustries ? <Industries /> : null}
+              {toggleIndustries ? <Industries toggleNavbar={toggleNavbar}/> : null}
           </li>
           <li>
             <span>
@@ -258,7 +272,7 @@ const SubNav = () => {
                 />
               )}
             </span>
-              {toggleAboutUs ? <AboutUs /> : null}
+              {toggleAboutUs ? <AboutUs toggleNavbar={toggleNavbar}/> : null}
           </li>
           <li>
             <Link to="portfolio">PORTFOLIO</Link>

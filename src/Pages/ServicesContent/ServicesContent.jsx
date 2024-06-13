@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ServicesContent.css";
 import { useParams } from "react-router-dom";
 import routesConfig from "../../Routes/routes";
 import useWindowDimensions from "../../Components/Hooks/WindowDimensions/useWindowDimensions";
 
 const ServicesContent = () => {
+  
+  const [isActive, setIsActive] = useState(false);
   const { id } = useParams();
   const path = `services/${id}`;
   let content = routesConfig.services.find((route) => route.path === path);
@@ -13,9 +15,38 @@ const ServicesContent = () => {
   const quote = content.quote.quote;
   const quoter = content.quote.quoter;
   const whyus = content.whyUs;
+  const Technologies = content.Technologies;
 
-  const {width} = useWindowDimensions();
-  console.log(width)          
+  const returnBoxes = () => {
+    if (id === "mobile-apps-development") {
+      return null
+    } 
+    if (id == "ecommerce-solutions") {
+      return(
+        Technologies.map((key,index) => {
+          if(index<4)
+            {return <div className="box gray-box">{key}</div>;}
+          return <div className="box">{key}</div>;
+        })
+      )
+    }
+    else{
+      return(
+        Technologies.map((key) => {
+          return <div className="box">{key}</div>;
+        })
+      )
+    }
+  };
+  useEffect(() => {
+    if (id === "mobile-apps-development") {
+      setIsActive(false);
+    } else {
+      setIsActive(true);
+    }
+    returnBoxes();
+  }, [id]);
+
   return (
     <>
       {content ? (
@@ -48,11 +79,23 @@ const ServicesContent = () => {
                     return (
                       <div className="service-whychooseus-rsn-block" key={key}>
                         <div className="service-rsn-block-icon">{key.icon}</div>
-                        <div className="service-rsn-block-heading">{key.heading}</div>
-                        <div className="service-rsn-block-text">{key.reason}</div>
+                        <div className="service-rsn-block-heading">
+                          {key.heading}
+                        </div>
+                        <div className="service-rsn-block-text">
+                          {key.reason}
+                        </div>
                       </div>
                     );
                   })}
+                </div>
+              </div>
+            </div>
+            <div className={ isActive ? "service-page-technologies-main-container" : "display-none"}>
+              <div className="service-page-technologies-inner-container">
+                <h4 className="service-page-heading">Technologies</h4>
+                <div className="service-page-technologies-grid-container">
+                  {returnBoxes()}
                 </div>
               </div>
             </div>

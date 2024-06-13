@@ -1,11 +1,11 @@
 import React from "react";
 import "./AboutUs.css";
 import useWindowDimensions from "../../Hooks/WindowDimensions/useWindowDimensions";
+import { Link } from "react-router-dom";
 
 const AboutUs = (props) => {
   const { width } = useWindowDimensions();
-  // if (width > 1390) {
-  if (width > 1090) {
+  if (width >= 1090) {
     return (
       <div className="dropdown">
         <div className="dropdown-lvl-1">
@@ -21,44 +21,44 @@ const AboutUs = (props) => {
             {/* list items */}
             <ul className="services-links-items">
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Company
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Partners & Awards
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Clients Testimonials
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Quality Assurance
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Development Approach
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Communication Strategy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Social Responsibility
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -70,44 +70,44 @@ const AboutUs = (props) => {
         <div className="services-dropdown">
         <ul className="services-dropdown-links-items">
         <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Company
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Partners & Awards
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Clients Testimonials
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Quality Assurance
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Development Approach
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Communication Strategy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
                   Social Responsibility
-                </a>
+                </Link>
               </li>
         </ul>
       </div>

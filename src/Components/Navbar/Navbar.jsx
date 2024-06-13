@@ -97,7 +97,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-      {dropdownNav ? <SubNav /> : null}
+      {dropdownNav ? <SubNav toggleNavbar={toggleDropdown} /> : null}
     </div>
   );
 };

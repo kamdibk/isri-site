@@ -1,3 +1,6 @@
+.display-none{
+    display: none;
+}
 .services-content-container {
     width: 100vw;
 }
@@ -34,7 +37,7 @@
 .service-page-container-quote {
     font-size: 28px;
     font-weight: 400;
-    font-style:oblique;
+    font-style: oblique;
 }
 
 .service-page-quoter {
@@ -45,7 +48,7 @@
 
 
 /* why choose us */
-.service-whychooseus-rsn-block{
+.service-whychooseus-rsn-block {
     width: 30%;
     height: 330px;
     margin: 1rem;
@@ -57,79 +60,157 @@
     font-family: "Jost";
     text-align: justify;
 }
-.service-whychooseus-rsn-block:hover{
+
+.service-whychooseus-rsn-block:hover {
     box-shadow: 0px 0px 20px rgba(152, 194, 231, 0.526);
 }
-.service-rsn-block-heading{
+
+.service-rsn-block-heading {
     font-size: 23px;
     font-weight: 700;
     line-height: 30px;
 }
-.service-rsn-block-text{
+
+.service-rsn-block-text {
     padding-top: 5px;
     font-size: 17px;
 }
+
 .service-rsn-block-heading:hover {
     color: #1b3f8b;
     transition: 1s ease;
 }
 
 @media screen and (max-width : 1446px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         height: 340px;
     }
 }
+
 @media screen and (max-width : 1351px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         height: 370px;
     }
 }
+
 @media screen and (max-width : 1309px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         height: 390px;
     }
 }
+
 @media screen and (max-width : 1089px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         height: 350px;
         width: 43%;
     }
 }
+
 @media screen and (max-width : 950px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         height: 340px;
         width: 45%;
     }
 }
+
 @media screen and (max-width : 912px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         height: 350px;
     }
 }
+
 @media screen and (max-width : 848px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         height: 390px;
     }
 }
+
 @media screen and (max-width : 750px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         height: 400px;
     }
 }
+
 @media screen and (max-width : 740px) {
-    .service-whychooseus-rsn-block{
+    .service-whychooseus-rsn-block {
         width: 90%;
         height: fit-content !important;
     }
-    .pt{
+
+    .pt {
         padding-top: 1rem;
     }
 }
+
 @media screen and (max-width : 690px) {
-    .services-page-hero-heading{
+    .services-page-hero-heading {
         width: 80% !important;
     }
-    .services-page-hero-heading>ul{
+
+    .services-page-hero-heading>ul {
         width: 95% !important;
+    }
+}
+
+
+/* Our Clients */
+.service-page-technologies-main-container {
+    padding: 1rem;
+}
+
+.service-page-technologies-inner-container {
+    padding: 1rem;
+    padding-right: 3.5rem;
+}
+
+.service-page-heading {
+    color: rgb(0, 0, 255);
+    font-weight: 700;
+    font-family: "Jost";
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.service-page-technologies-grid-container {
+    margin-top: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    column-gap: 4rem;
+    row-gap: 1.7rem;
+    padding: 0;
+}
+
+.service-page-technologies-grid-container img{
+    max-width: 100%;
+}
+.box {
+    padding: 0 20px;
+    height: 130px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.gray-box{
+    background-color: #4e4e4e;
+}
+@media screen and (max-width:1200px) {
+    .service-page-technologies-grid-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@media screen and (max-width:766px) {
+    .service-page-technologies-grid-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media screen and (max-width:500px) {
+    .service-page-technologies-grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3rem;
+        row-gap: 0.6rem;
     }
 }

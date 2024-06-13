@@ -33,11 +33,12 @@ import { DiDotnet,DiPhotoshop } from "react-icons/di";
 import { LiaPagerSolid } from "react-icons/lia";
 import { BsAlexa, BsBank, BsPersonFillGear } from "react-icons/bs";
 import { GrServices } from "react-icons/gr";
+import { Link } from "react-router-dom";
 // End
 const Technologies = () => {
   const { width } = useWindowDimensions();
   const iconSize = 22;
-  if (width > 1090) {
+  if (width >= 1090) {
     return (
       <div className="dropdown">
         <div className="dropdown-lvl-1">
@@ -58,39 +59,39 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaMagento color="red" size={iconSize} /> Mangento
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaShopify color="green" size={iconSize} /> Shopify
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaShopify size={iconSize} /> Shopify Plus
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaOpencart color="blue" size={iconSize} /> OpenCart
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <SiWoo color="voilet" size={iconSize} /> WooCommerce
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <SiBigcommerce size={iconSize} /> BigCommerce
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaWix size={iconSize - 4} /> Wix
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -98,19 +99,19 @@ const Technologies = () => {
                   <span className="technologies-heading">CMS Development</span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaWordpress size={iconSize} /> Wordpress
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaDrupal size={iconSize} color="blue" /> Drupal
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaJoomla size={iconSize} color="orange" /> Joomla
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -122,33 +123,33 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaPhp size={iconSize} color="blue" /> PHP Frameworks
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaLaravel size={iconSize} color="orange" />
                         Laravel
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <TbBrandMongodb size={iconSize} color="green" />
                         MEAN MERN
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaNodeJs size={iconSize} color="green" />
                         NodeJs
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaPython />
                         Python
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -158,30 +159,30 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaApple size={iconSize} />
                         iPhone
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <GrAndroid size={iconSize} color="green" />
                         Android
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         {" "}
                         <TbBrandXamarin size={iconSize} color="blue" />
                         Xamarin
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         {" "}
                         <FaReact size={iconSize} color="blue" />
                         React Native
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -193,27 +194,27 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <DiDotnet size={iconSize} color="blue" />
                         .Net Development
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <SiDynamics365 size={iconSize} />
                         MS Dynamic CRM
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <SiMicrosoftsharepoint size={iconSize} color="blue" />{" "}
                         Sharepoint
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaMicrosoft size={iconSize} /> Microsoft Bot
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -222,22 +223,22 @@ const Technologies = () => {
                     Microsoft Solutions
                   </span>
                   <ul>
-                    <li><a href="#"><FaAngular size={iconSize} color="red"/>AngularJS</a></li>
-                    <li><a href="#"><LiaPagerSolid size={iconSize}/>UI/UX</a></li>
-                    <li><a href="#"><DiPhotoshop size={iconSize}/>Graphics</a></li>
-                    <li><a href="#"><FaReact/>ReactJs</a></li>
+                    <li><Link to="#"><FaAngular size={iconSize} color="red"/>AngularJS</Link></li>
+                    <li><Link to="#"><LiaPagerSolid size={iconSize}/>UI/UX</Link></li>
+                    <li><Link to="#"><DiPhotoshop size={iconSize}/>Graphics</Link></li>
+                    <li><Link to="#"><FaReact/>ReactJs</Link></li>
                   </ul>
                 </div>
               </div>
               <div className="technologies-inner-container">
                 <div>
                 <ul>
-                  <li><a href="#"><BsAlexa size={iconSize} color="skyblue"/> Alexa Skills Development</a></li>
-                  <li><a href="#"><BsPersonFillGear size={iconSize} color="blue"/>Membership Management Solutions</a></li>
-                  <li><a href="#"><FaDatabase size={iconSize} color="yellow"/> Big Data</a></li>
-                  <li><a href="#"><SiAzuredevops size={iconSize} color="orange"/>DevOps</a></li>
-                  <li><a href="#"><GrServices size={iconSize}/>Banking As A Service</a></li>
-                  <li><a href="#"><BsBank  size={iconSize}/>Open Network For Digital Commerce</a></li>
+                  <li><Link to="#"><BsAlexa size={iconSize} color="skyblue"/> Alexa Skills Development</Link></li>
+                  <li><Link to="#"><BsPersonFillGear size={iconSize} color="blue"/>Membership Management Solutions</Link></li>
+                  <li><Link to="#"><FaDatabase size={iconSize} color="yellow"/> Big Data</Link></li>
+                  <li><Link to="#"><SiAzuredevops size={iconSize} color="orange"/>DevOps</Link></li>
+                  <li><Link to="#"><GrServices size={iconSize}/>Banking As A Service</Link></li>
+                  <li><Link to="#"><BsBank  size={iconSize}/>Open Network For Digital Commerce</Link></li>
                 </ul>
                 </div>
               </div>
@@ -257,39 +258,39 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaMagento color="red" size={iconSize} /> Mangento
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaShopify color="green" size={iconSize} /> Shopify
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaShopify size={iconSize} /> Shopify Plus
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaOpencart color="blue" size={iconSize} /> OpenCart
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <SiWoo color="voilet" size={iconSize} /> WooCommerce
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <SiBigcommerce size={iconSize} /> BigCommerce
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaWix size={iconSize - 4} /> Wix
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -297,19 +298,19 @@ const Technologies = () => {
                   <span className="technologies-heading">CMS Development</span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaWordpress size={iconSize} /> Wordpress
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaDrupal size={iconSize} color="blue" /> Drupal
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaJoomla size={iconSize} color="orange" /> Joomla
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -321,33 +322,33 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaPhp size={iconSize} color="blue" /> PHP Frameworks
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaLaravel size={iconSize} color="orange" />
                         Laravel
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <TbBrandMongodb size={iconSize} color="green" />
                         MEAN MERN
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaNodeJs size={iconSize} color="green" />
                         NodeJs
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaPython />
                         Python
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -357,30 +358,30 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaApple size={iconSize} />
                         iPhone
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <GrAndroid size={iconSize} color="green" />
                         Android
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         {" "}
                         <TbBrandXamarin size={iconSize} color="blue" />
                         Xamarin
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         {" "}
                         <FaReact size={iconSize} color="blue" />
                         React Native
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -392,27 +393,27 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <DiDotnet size={iconSize} color="blue" />
                         .Net Development
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <SiDynamics365 size={iconSize} />
                         MS Dynamic CRM
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <SiMicrosoftsharepoint size={iconSize} color="blue" />{" "}
                         Sharepoint
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <FaMicrosoft size={iconSize} /> Microsoft Bot
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -421,22 +422,22 @@ const Technologies = () => {
                     Microsoft Solutions
                   </span>
                   <ul>
-                    <li><a href="#"><FaAngular size={iconSize} color="red"/>AngularJS</a></li>
-                    <li><a href="#"><LiaPagerSolid size={iconSize}/>UI/UX</a></li>
-                    <li><a href="#"><DiPhotoshop size={iconSize}/>Graphics</a></li>
-                    <li><a href="#"><FaReact/>ReactJs</a></li>
+                    <li><Link to="#"><FaAngular size={iconSize} color="red"/>AngularJS</Link></li>
+                    <li><Link to="#"><LiaPagerSolid size={iconSize}/>UI/UX</Link></li>
+                    <li><Link to="#"><DiPhotoshop size={iconSize}/>Graphics</Link></li>
+                    <li><Link to="#"><FaReact/>ReactJs</Link></li>
                   </ul>
                 </div>
               </div>
               <div className="technologies-inner-container">
                 <div>
                 <ul>
-                  <li><a href="#"><BsAlexa size={iconSize} color="skyblue"/> Alexa Skills Development</a></li>
-                  <li><a href="#"><BsPersonFillGear size={iconSize} color="blue"/>Membership Management Solutions</a></li>
-                  <li><a href="#"><FaDatabase size={iconSize} color="yellow"/> Big Data</a></li>
-                  <li><a href="#"><SiAzuredevops size={iconSize} color="orange"/>DevOps</a></li>
-                  <li><a href="#"><GrServices size={iconSize}/>Banking As A Service</a></li>
-                  <li><a href="#"><BsBank  size={iconSize}/>Open Network For Digital Commerce</a></li>
+                  <li><Link to="#"><BsAlexa size={iconSize} color="skyblue"/> Alexa Skills Development</Link></li>
+                  <li><Link to="#"><BsPersonFillGear size={iconSize} color="blue"/>Membership Management Solutions</Link></li>
+                  <li><Link to="#"><FaDatabase size={iconSize} color="yellow"/> Big Data</Link></li>
+                  <li><Link to="#"><SiAzuredevops size={iconSize} color="orange"/>DevOps</Link></li>
+                  <li><Link to="#"><GrServices size={iconSize}/>Banking As A Service</Link></li>
+                  <li><Link to="#"><BsBank  size={iconSize}/>Open Network For Digital Commerce</Link></li>
                 </ul>
                 </div>
               </div>
