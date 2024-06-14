@@ -11,9 +11,6 @@ import {
 import { FaHandshake } from "react-icons/fa";
 import { BsCart4, BsLaptop, BsFillPeopleFill } from "react-icons/bs";
 import { IoEarthOutline } from "react-icons/io5";
-import { RiMotorbikeFill } from "react-icons/ri";
-import { GrGamepad } from "react-icons/gr";
-import { TbRobot } from "react-icons/tb";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import AboutUs from "../AboutUS/AboutUs";
 import Industries from "../Industries/Industries";

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSlider.css";
-import SharepointLogo from "../../images/sharepointlogo.png";
 import www from "../../images/www.png";
 import appIcon from "../../images/mobileAppIcon.png";
 import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions";
@@ -9,7 +8,6 @@ const HeroSlider = () => {
   const { width } = useWindowDimensions();
 
   useEffect(() => {
-    const headText = document.getElementsByClassName("sd-text");
     if (width >= 550 && width <= 1390) {
       setIconSize(80);
     } else if (width < 550) {
