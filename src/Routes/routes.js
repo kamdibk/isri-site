@@ -1,20 +1,21 @@
 // icons
-import { AiOutlineSolution } from "react-icons/ai";
+import { AiOutlineDeliveredProcedure, AiOutlineSolution } from "react-icons/ai";
 import { GiTeamIdea } from "react-icons/gi";
 import {
   MdOutlineSettingsSuggest,
   MdDashboardCustomize,
   MdOutlineSecurity,
+  MdAppSettingsAlt,
 } from "react-icons/md";
 import {
   FaProjectDiagram,
   FaCreativeCommonsRemix,
   FaBalanceScaleLeft,
 } from "react-icons/fa";
-import { GrUserExpert, GrUserSettings } from "react-icons/gr";
-import { Ri24HoursFill, RiSecurePaymentFill } from "react-icons/ri";
+import { GrGroup, GrIntegration, GrTechnology, GrUserExpert, GrUserSettings } from "react-icons/gr";
+import { Ri24HoursFill, RiLayout2Fill, RiSecurePaymentFill } from "react-icons/ri";
 import { IoExpand } from "react-icons/io5";
-import { TbSettingsCog } from "react-icons/tb";
+import { TbSettingsCog, TbTargetArrow } from "react-icons/tb";
 import { LiaUserShieldSolid } from "react-icons/lia";
 import { BsPersonFillGear, BsWindowStack } from "react-icons/bs";
 import { LuClipboardCheck } from "react-icons/lu";
@@ -125,6 +126,11 @@ import aiMlImg3 from "../images/servicePageTechnologies/AI-ML/3.png";
 import aiMlImg4 from "../images/servicePageTechnologies/AI-ML/4.png";
 import aiMlImg5 from "../images/servicePageTechnologies/AI-ML/5.png";
 import aiMlImg6 from "../images/servicePageTechnologies/AI-ML/6.png";
+import { FcCollaboration } from "react-icons/fc";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { BiSolidBookContent, BiSupport } from "react-icons/bi";
+import { HiMiniPencilSquare } from "react-icons/hi2";
+import { FaRegHandshake } from "react-icons/fa6";
 
 const iconSize = 55;
 const iconColor = "rgb(7, 89, 127)";
@@ -302,19 +308,19 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <MdAppSettingsAlt size={iconSize} color={iconColor} />,
             heading: "Knowledge and Expertise",
             reason:
               "With years of experience, our mobile app development team can create apps for iOS and Android as well as other popular platforms. We deliver top-notch apps that cater to the needs of our customers by adhering to industry best practices and making use of cutting-edge technologies.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <FcCollaboration  size={iconSize} color={iconColor} />,
             heading: "Comprehensive Collaboration",
             reason:
               "Our team of experts works along throughout the project life cycle, to ideate, develop, deploy, and maintain your mobile app.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <AiOutlineDeliveredProcedure  size={iconSize} color={iconColor} />,
             heading: "Custom Delivery",
             reason:
               "We choose the most suitable project delivery mechanism (Agile / Waterfall) based on project needs and provide regular updates to ensure clear visibility on timelines and budget.",
@@ -405,37 +411,37 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <GrGroup  size={iconSize} color={iconColor} />,
             heading: "Understand Business Requirements",
             reason:
               "Together, you and our team of skilled developers will build a unique website that is suited to your unique business requirements.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <MdOutlineSettingsSuggest  size={iconSize} color={iconColor} />,
             heading: "Agile Methodologies",
             reason:
               "Your website must make use of the most recent web technology to stay competitive as technology advances quickly. Our team of professionals will quickly choose the best website development tool and make sure your project is finished in accordance with industry standards.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <TbTargetArrow   size={iconSize} color={iconColor} />,
             heading: "Top-Notch Client Contentment",
             reason:
               "Our website design services assist clients in rising to the top of their respective industries. 85% of our clients from different industries have used our services to effectively accomplish their business goals.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <GrTechnology  size={iconSize} color={iconColor} />,
             heading: "Modernize Technologies",
             reason:
               "The technologies we use to develop your dream website are state of the art and most modern in terms of functionalities and usability.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <HiMiniPencilSquare  size={iconSize} color={iconColor} />,
             heading: "Innovative Design Approach",
             reason:
               "Our team of talented designers creates visually attractive and captivating websites that attract visitors with creative flare and user-centric design principles. We make sure that your website stands out from the competition, clearly conveys your brand identity, and draws in your target audience by emphasizing innovation and creativity.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <BiSupport  size={iconSize} color={iconColor} />,
             heading: "Comprehensive Support and Maintenance",
             reason:
               "We understand that launching a website is just the beginning of your online journey. Our technical team works on regular updates and security patches. We also troubleshoot and provide technical assistance to address any issues or concerns you may have, allowing you to focus on running your business while we take care of your website's maintenance needs.",
@@ -473,37 +479,37 @@ const routesConfig = {
         },
         whyUs: [
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <HiOutlineLightBulb  size={iconSize} color={iconColor} />,
             heading: "Innovative Solutions",
             reason:
               "We are constantly exploring new technologies and techniques to create innovative solutions that help our clients stand out in a crowded online marketplace.  ",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <IoExpand size={iconSize} color={iconColor} />,
             heading: "Scalable and Flexible",
             reason:
               "Our CMS solution is scalable and flexible, allowing you to easily add new features and functionality as your business grows and evolves.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <BiSolidBookContent size={iconSize} color={iconColor} />,
             heading: "Content Collaboration",
             reason:
               "Our CMS solution enables content collaboration among team members, providing a centralized platform for content creation and management.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <GrIntegration size={iconSize} color={iconColor} />,
             heading: "Integration with Third-Party Services",
             reason:
               "Our CMS solution seamlessly integrates with a wide range of third-party services, such as social media platforms, payment gateways, and marketing automation tools, to streamline your workflow and enhance your website's functionality.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <FaRegHandshake size={iconSize} color={iconColor} />,
             heading: "SEO-friendly",
             reason:
               "Our CMS solution is optimized for search engines, ensuring that your website is easily discoverable by your target audience.",
           },
           {
-            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            icon: <RiLayout2Fill size={iconSize} color={iconColor} />,
             heading: "User-friendly Interface and Admin Panel",
             reason:
               "We prioritize user experience and usability in every CMS solution we develop. Our team focuses on creating intuitive user interfaces and user-friendly admin panels. With our user-centric approach, you can efficiently manage your website and ensure a seamless experience for your visitors.",
