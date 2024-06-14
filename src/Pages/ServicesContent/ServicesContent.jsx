@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
-import classNames from "classnames";
 import "./ServicesContent.css";
 import { useParams } from "react-router-dom";
 import routesConfig from "../../Routes/routes";
 import useWindowDimensions from "../../Components/Hooks/WindowDimensions/useWindowDimensions";
-import { Grid } from "swiper/modules";
 
 const ServicesContent = () => {
   const { width } = useWindowDimensions();
+
   const [isActive, setIsActive] = useState(false);
   const [isWide, setIsWide] = useState(false);
+  const [isWhiteColor, setWhiteColor] = useState(false);
+  const [gridItems, setGridItems] = useState(6);
+
   const { id } = useParams();
   const path = `services/${id}`;
   let content = routesConfig.services.find((route) => route.path === path);
@@ -24,7 +26,7 @@ const ServicesContent = () => {
     if (id === "mobile-apps-development") {
       return null;
     }
-    if (id == "ecommerce-solutions") {
+    if (id === "ecommerce-solutions") {
       return Technologies.map((key, index) => {
         if (index < 4) {
           return <div className="box gray-box">{key}</div>;
@@ -40,7 +42,13 @@ const ServicesContent = () => {
 
   const changeGrid = isWide
     ? {
-        gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+        gridTemplateColumns: `repeat(${gridItems},minmax(0,1fr))`,
+      }
+    : {};
+
+  const changeToWhite = isWhiteColor
+    ? {
+        color: "white",
       }
     : {};
 
@@ -50,16 +58,21 @@ const ServicesContent = () => {
     } else {
       setIsActive(true);
     }
-    if (
-      width > 766 &&
-      (
-        id == "crm-solutions" ||
-        id == "gaming-solution" ||
-        id == "robotic-process-automation")
-    )
-      setIsWide(true);
-    else setIsWide(false);
 
+    if (id === "website-development" || id === "crm-solutions" || id==="web-design"|| id==="hire-developer" || id==="ai-ml") {
+      setWhiteColor(true);
+    } else {
+      setWhiteColor(false);
+    }
+
+    if (width > 766 && (id === "website-development" || id === "cms-solutions" || id ==="crm-solutions")) {
+      if(id ==="crm-solutions") setGridItems(4)
+      else setGridItems(5);
+      setIsWide(true);
+    } else {
+      setGridItems(6);
+      setIsWide(false);
+    }
     returnBoxes();
   }, [id, width]);
 
@@ -76,7 +89,7 @@ const ServicesContent = () => {
             >
               <div className="services-page-hero-heading">
                 <h1>{content.heading}</h1>
-                <ul>
+                <ul style={changeToWhite}>
                   {headingPoints.map((element, key) => {
                     return <li key={key}>{element}</li>;
                   })}

@@ -18,7 +18,6 @@ import { TbSettingsCog } from "react-icons/tb";
 import { LiaUserShieldSolid } from "react-icons/lia";
 import { BsPersonFillGear, BsWindowStack } from "react-icons/bs";
 import { LuClipboardCheck } from "react-icons/lu";
-import { ImGift } from "react-icons/im";
 
 // Services
 // Technologies Grid Images
@@ -55,14 +54,6 @@ import ecomImg9 from "../images/servicePageTechnologies/Ecom-Solutions/9.png";
 import ecomImg10 from "../images/servicePageTechnologies/Ecom-Solutions/10.png";
 import ecomImg11 from "../images/servicePageTechnologies/Ecom-Solutions/11.png";
 import ecomImg12 from "../images/servicePageTechnologies/Ecom-Solutions/12.png";
-
-// mobile app development
-import mobImg1 from "../images/servicePageTechnologies/cloud-solution/1.png";
-import mobImg2 from "../images/servicePageTechnologies/cloud-solution/2.png";
-import mobImg3 from "../images/servicePageTechnologies/cloud-solution/3.png";
-import mobImg4 from "../images/servicePageTechnologies/cloud-solution/4.png";
-import mobImg5 from "../images/servicePageTechnologies/cloud-solution/5.png";
-import mobImg6 from "../images/servicePageTechnologies/cloud-solution/6.png";
 
 // Website Development
 import webdevimg1 from "../images/servicePageTechnologies/Website-dev/1.png";
@@ -126,16 +117,6 @@ import hireDevImg10 from "../images/servicePageTechnologies/Hire-developer/10.pn
 import hireDevImg11 from "../images/servicePageTechnologies/Hire-developer/11.png";
 import hireDevImg12 from "../images/servicePageTechnologies/Hire-developer/12.png";
 
-// Gaming Solution
-import gamingSolImg1 from "../images/servicePageTechnologies/Gaming-Solution/1.png";
-import gamingSolImg2 from "../images/servicePageTechnologies/Gaming-Solution/2.png";
-import gamingSolImg3 from "../images/servicePageTechnologies/Gaming-Solution/3.png";
-import gamingSolImg4 from "../images/servicePageTechnologies/Gaming-Solution/4.png";
-import gamingSolImg5 from "../images/servicePageTechnologies/Gaming-Solution/5.png";
-import gamingSolImg6 from "../images/servicePageTechnologies/Gaming-Solution/6.png";
-import gamingSolImg7 from "../images/servicePageTechnologies/Gaming-Solution/7.png";
-import gamingSolImg8 from "../images/servicePageTechnologies/Gaming-Solution/8.png";
-
 // AI-ML
 import aiMlImg1 from "../images/servicePageTechnologies/AI-ML/1.png";
 import aiMlImg2 from "../images/servicePageTechnologies/AI-ML/2.png";
@@ -143,17 +124,6 @@ import aiMlImg3 from "../images/servicePageTechnologies/AI-ML/3.png";
 import aiMlImg4 from "../images/servicePageTechnologies/AI-ML/4.png";
 import aiMlImg5 from "../images/servicePageTechnologies/AI-ML/5.png";
 import aiMlImg6 from "../images/servicePageTechnologies/AI-ML/6.png";
-
-// RPA Solutions
-import rpaImg1 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/1.png";
-import rpaImg2 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/2.png";
-import rpaImg3 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/3.png";
-import rpaImg4 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/4.png";
-import rpaImg5 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/5.png";
-import rpaImg6 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/6.png";
-import rpaImg7 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/7.png";
-import rpaImg8 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/8.png";
-
 
 const iconSize = 55;
 const iconColor = "rgb(7, 89, 127)";
@@ -220,24 +190,24 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={img1} />,
-          <img src={img2} />,
-          <img src={img3} />,
-          <img src={img4} />,
-          <img src={img5} />,
-          <img src={img6} />,
-          <img src={img7} />,
-          <img src={img8} />,
-          <img src={img9} />,
-          <img src={img10} />,
-          <img src={img11} />,
-          <img src={img12} />,
-          <img src={img13} />,
-          <img src={img14} />,
-          <img src={img15} />,
-          <img src={img16} />,
-          <img src={img17} />,
-          <img src={img18} />,
+          <img src={img1}  alt=""/>,
+          <img src={img2}  alt=""/>,
+          <img src={img3}  alt=""/>,
+          <img src={img4}  alt=""/>,
+          <img src={img5}  alt=""/>,
+          <img src={img6}  alt=""/>,
+          <img src={img7}  alt=""/>,
+          <img src={img8}  alt=""/>,
+          <img src={img9}  alt=""/>,
+          <img src={img10} alt=""/>,
+          <img src={img11} alt=""/>,
+          <img src={img12} alt=""/>,
+          <img src={img13} alt=""/>,
+          <img src={img14} alt=""/>,
+          <img src={img15} alt=""/>,
+          <img src={img16} alt=""/>,
+          <img src={img17} alt=""/>,
+          <img src={img18} alt=""/>,
         ],
       },
     },
@@ -297,18 +267,18 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={ecomImg1} />,
-          <img src={ecomImg2} />,
-          <img src={ecomImg3} />,
-          <img src={ecomImg4} />,
-          <img src={ecomImg5} />,
-          <img src={ecomImg6} />,
-          <img src={ecomImg7} />,
-          <img src={ecomImg8} />,
-          <img src={ecomImg9} />,
-          <img src={ecomImg10} />,
-          <img src={ecomImg11} />,
-          <img src={ecomImg12} />,
+          <img src={ecomImg1}  alt=""/>,
+          <img src={ecomImg2}  alt=""/>,
+          <img src={ecomImg3}  alt=""/>,
+          <img src={ecomImg4}  alt=""/>,
+          <img src={ecomImg5}  alt=""/>,
+          <img src={ecomImg6}  alt=""/>,
+          <img src={ecomImg7}  alt=""/>,
+          <img src={ecomImg8}  alt=""/>,
+          <img src={ecomImg9}  alt=""/>,
+          <img src={ecomImg10} alt=""/>,
+          <img src={ecomImg11} alt=""/>,
+          <img src={ecomImg12} alt=""/>,
         ],
       },
     },
@@ -355,7 +325,7 @@ const routesConfig = {
       path: "services/cloud-solution",
       content: {
         heading: "Cloud Solutions",
-        heroImageLink: "/img/mob.jpg",
+        heroImageLink: "/img/cloud-development.jpg",
         headPoints: [
           "Comprehensive Cloud Solution provider.",
           "Expertise and Experience in designing and implementing cloud solutions.",
@@ -407,12 +377,12 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={img1} />,
-          <img src={img2} />,
-          <img src={img3} />,
-          <img src={img4} />,
-          <img src={img5} />,
-          <img src={img6} />,
+          <img src={img1} alt=""/>,
+          <img src={img2} alt=""/>,
+          <img src={img3} alt=""/>,
+          <img src={img4} alt=""/>,
+          <img src={img5} alt=""/>,
+          <img src={img6} alt=""/>,
         ]
       },
     },
@@ -420,7 +390,7 @@ const routesConfig = {
       path: "services/website-development",
       content: {
         heading: "Website Development company",
-        heroImageLink: "/img/mob.jpg",
+        heroImageLink: "/img/webDev.jpg",
         headPoints: [
           "13,000+ Websites Delivered",
           "Hire Certified Website Developers",
@@ -471,16 +441,16 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={webdevimg1} />,
-          <img src={webdevimg2} />,
-          <img src={webdevimg3} />,
-          <img src={webdevimg4} />,
-          <img src={webdevimg5} />,
-          <img src={webdevimg6} />,
-          <img src={webdevimg7} />,
-          <img src={webdevimg8} />,
-          <img src={webdevimg9} />,
-          <img src={webdevimg10} />,
+          <img src={webdevimg1}  alt=""/>,
+          <img src={webdevimg2}  alt=""/>,
+          <img src={webdevimg3}  alt=""/>,
+          <img src={webdevimg4}  alt=""/>,
+          <img src={webdevimg5}  alt=""/>,
+          <img src={webdevimg6}  alt=""/>,
+          <img src={webdevimg7}  alt=""/>,
+          <img src={webdevimg8}  alt=""/>,
+          <img src={webdevimg9}  alt=""/>,
+          <img src={webdevimg10} alt=""/>,
         ]
       },
     },
@@ -488,7 +458,7 @@ const routesConfig = {
       path: "services/cms-solutions",
       content: {
         heading: "CMS Solutions",
-        heroImageLink: "/img/mob.jpg",
+        heroImageLink: "/img/cms-web-development.jpg",
         headPoints: [
           "Streamline your content management with our powerful CMS solution.",
           "Easy to customize your website's functionality and features.",
@@ -539,16 +509,16 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={cmsimg1} />,
-          <img src={cmsimg2} />,
-          <img src={cmsimg3} />,
-          <img src={cmsimg4} />,
-          <img src={cmsimg5} />,
-          <img src={cmsimg6} />,
-          <img src={cmsimg7} />,
-          <img src={cmsimg8} />,
-          <img src={cmsimg9} />,
-          <img src={cmsimg10} />,
+          <img src={cmsimg1}  alt=""/>,
+          <img src={cmsimg2}  alt=""/>,
+          <img src={cmsimg3}  alt=""/>,
+          <img src={cmsimg4}  alt=""/>,
+          <img src={cmsimg5}  alt=""/>,
+          <img src={cmsimg6}  alt=""/>,
+          <img src={cmsimg7}  alt=""/>,
+          <img src={cmsimg8}  alt=""/>,
+          <img src={cmsimg9}  alt=""/>,
+          <img src={cmsimg10} alt=""/>,
         ]
       },
     },
@@ -556,7 +526,7 @@ const routesConfig = {
       path: "services/crm-solutions",
       content: {
         heading: "CRM Development Company",
-        heroImageLink: "/img/mob.jpg",
+        heroImageLink: "/img/crm-dev.png",
         headPoints: [
           "Automate repetitive task, freeing up your effort to focus on other tasks.",
           "Real-time data and insights into your customer interaction.",
@@ -609,14 +579,14 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={crmimg1} />,
-          <img src={crmimg2} />,
-          <img src={crmimg3} />,
-          <img src={crmimg4} />,
-          <img src={crmimg5} />,
-          <img src={crmimg6} />,
-          <img src={crmimg7} />,
-          <img src={crmimg8} />,
+          <img src={crmimg1} alt=""/>,
+          <img src={crmimg2} alt=""/>,
+          <img src={crmimg3} alt=""/>,
+          <img src={crmimg4} alt=""/>,
+          <img src={crmimg5} alt=""/>,
+          <img src={crmimg6} alt=""/>,
+          <img src={crmimg7} alt=""/>,
+          <img src={crmimg8} alt=""/>,
         ]
       },
     },
@@ -624,7 +594,7 @@ const routesConfig = {
       path: "services/web-design",
       content: {
         heading: "Web Design Services",
-        heroImageLink: "/img/mob.jpg",
+        heroImageLink: "/img/web-design2.jpg",
         headPoints: [
           "Mobile-first and responsive designs.",
           "Comprehensive SEO and online marketing strategies.",
@@ -676,18 +646,18 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={webDesImg1} />,
-          <img src={webDesImg2} />,
-          <img src={webDesImg3} />,
-          <img src={webDesImg4} />,
-          <img src={webDesImg5} />,
-          <img src={webDesImg6} />,
-          <img src={webDesImg7} />,
-          <img src={webDesImg8} />,
-          <img src={webDesImg9} />,
-          <img src={webDesImg10} />,
-          <img src={webDesImg11} />,
-          <img src={webDesImg12} />,
+          <img src={webDesImg1}  alt=""/>,
+          <img src={webDesImg2}  alt=""/>,
+          <img src={webDesImg3}  alt=""/>,
+          <img src={webDesImg4}  alt=""/>,
+          <img src={webDesImg5}  alt=""/>,
+          <img src={webDesImg6}  alt=""/>,
+          <img src={webDesImg7}  alt=""/>,
+          <img src={webDesImg8}  alt=""/>,
+          <img src={webDesImg9}  alt=""/>,
+          <img src={webDesImg10} alt=""/>,
+          <img src={webDesImg11} alt=""/>,
+          <img src={webDesImg12} alt=""/>,
         ]
       },
     },
@@ -695,7 +665,7 @@ const routesConfig = {
       path: "services/hire-developer",
       content: {
         heading: "Hire Dedicated Developers",
-        heroImageLink: "/img/mob.jpg",
+        heroImageLink: "/img/hire-developer.jpg",
         headPoints: [
           "Expertise in a wide range of programming languages and tools.",
           "Experienced and skilled developers with a proven track record of success.",
@@ -747,18 +717,18 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={hireDevImg1} />,
-          <img src={hireDevImg2} />,
-          <img src={hireDevImg3} />,
-          <img src={hireDevImg4} />,
-          <img src={hireDevImg5} />,
-          <img src={hireDevImg6} />,
-          <img src={hireDevImg7} />,
-          <img src={hireDevImg8} />,
-          <img src={hireDevImg9} />,
-          <img src={hireDevImg10} />,
-          <img src={hireDevImg11} />,
-          <img src={hireDevImg12} />,
+          <img src={hireDevImg1}  alt=""/>,
+          <img src={hireDevImg2}  alt=""/>,
+          <img src={hireDevImg3}  alt=""/>,
+          <img src={hireDevImg4}  alt=""/>,
+          <img src={hireDevImg5}  alt=""/>,
+          <img src={hireDevImg6}  alt=""/>,
+          <img src={hireDevImg7}  alt=""/>,
+          <img src={hireDevImg8}  alt=""/>,
+          <img src={hireDevImg9}  alt=""/>,
+          <img src={hireDevImg10} alt=""/>,
+          <img src={hireDevImg11} alt=""/>,
+          <img src={hireDevImg12} alt=""/>,
         ]
       },
     },
@@ -766,7 +736,7 @@ const routesConfig = {
       path: "services/ai-ml",
       content: {
         heading: "AI & Machine Learning Solutions",
-        heroImageLink: "/img/mob.jpg",
+        heroImageLink: "/img/aiml.jpg",
         headPoints: [
           "Predictive maintenance in business processes/operations.",
           "Enhanced and Engaging Customer experience.",
@@ -818,12 +788,12 @@ const routesConfig = {
           },
         ],
         Technologies: [
-          <img src={aiMlImg1} />,
-          <img src={aiMlImg2} />,
-          <img src={aiMlImg3} />,
-          <img src={aiMlImg4} />,
-          <img src={aiMlImg5} />,
-          <img src={aiMlImg6} />,
+          <img src={aiMlImg1} alt=""/>,
+          <img src={aiMlImg2} alt=""/>,
+          <img src={aiMlImg3} alt=""/>,
+          <img src={aiMlImg4} alt=""/>,
+          <img src={aiMlImg5} alt=""/>,
+          <img src={aiMlImg6} alt=""/>,
         ]
       },
     },
