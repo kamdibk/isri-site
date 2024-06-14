@@ -55,6 +55,106 @@ import ecomImg9 from "../images/servicePageTechnologies/Ecom-Solutions/9.png";
 import ecomImg10 from "../images/servicePageTechnologies/Ecom-Solutions/10.png";
 import ecomImg11 from "../images/servicePageTechnologies/Ecom-Solutions/11.png";
 import ecomImg12 from "../images/servicePageTechnologies/Ecom-Solutions/12.png";
+
+// mobile app development
+import mobImg1 from "../images/servicePageTechnologies/cloud-solution/1.png";
+import mobImg2 from "../images/servicePageTechnologies/cloud-solution/2.png";
+import mobImg3 from "../images/servicePageTechnologies/cloud-solution/3.png";
+import mobImg4 from "../images/servicePageTechnologies/cloud-solution/4.png";
+import mobImg5 from "../images/servicePageTechnologies/cloud-solution/5.png";
+import mobImg6 from "../images/servicePageTechnologies/cloud-solution/6.png";
+
+// Website Development
+import webdevimg1 from "../images/servicePageTechnologies/Website-dev/1.png";
+import webdevimg2 from "../images/servicePageTechnologies/Website-dev/2.png";
+import webdevimg3 from "../images/servicePageTechnologies/Website-dev/3.png";
+import webdevimg4 from "../images/servicePageTechnologies/Website-dev/4.png";
+import webdevimg5 from "../images/servicePageTechnologies/Website-dev/5.png";
+import webdevimg6 from "../images/servicePageTechnologies/Website-dev/6.png";
+import webdevimg7 from "../images/servicePageTechnologies/Website-dev/7.png";
+import webdevimg8 from "../images/servicePageTechnologies/Website-dev/8.png";
+import webdevimg9 from "../images/servicePageTechnologies/Website-dev/9.png";
+import webdevimg10 from "../images/servicePageTechnologies/Website-dev/10.png";
+
+// CMS Solutions
+import cmsimg1 from "../images/servicePageTechnologies/CMS-solution/1.png";
+import cmsimg2 from "../images/servicePageTechnologies/CMS-solution/2.png";
+import cmsimg3 from "../images/servicePageTechnologies/CMS-solution/3.png";
+import cmsimg4 from "../images/servicePageTechnologies/CMS-solution/4.png";
+import cmsimg5 from "../images/servicePageTechnologies/CMS-solution/5.png";
+import cmsimg6 from "../images/servicePageTechnologies/CMS-solution/6.png";
+import cmsimg7 from "../images/servicePageTechnologies/CMS-solution/7.png";
+import cmsimg8 from "../images/servicePageTechnologies/CMS-solution/8.png";
+import cmsimg9 from "../images/servicePageTechnologies/CMS-solution/9.png";
+import cmsimg10 from "../images/servicePageTechnologies/CMS-solution/10.png";
+
+// CRM Solutions
+import crmimg1 from "../images/servicePageTechnologies/CRM-solution/1.png";
+import crmimg2 from "../images/servicePageTechnologies/CRM-solution/2.png";
+import crmimg3 from "../images/servicePageTechnologies/CRM-solution/3.png";
+import crmimg4 from "../images/servicePageTechnologies/CRM-solution/4.png";
+import crmimg5 from "../images/servicePageTechnologies/CRM-solution/5.png";
+import crmimg6 from "../images/servicePageTechnologies/CRM-solution/6.png";
+import crmimg7 from "../images/servicePageTechnologies/CRM-solution/7.png";
+import crmimg8 from "../images/servicePageTechnologies/CRM-solution/8.png";
+
+// Web-design
+import webDesImg1 from "../images/servicePageTechnologies/Web-Design/1.png";
+import webDesImg2 from "../images/servicePageTechnologies/Web-Design/2.png";
+import webDesImg3 from "../images/servicePageTechnologies/Web-Design/3.png";
+import webDesImg4 from "../images/servicePageTechnologies/Web-Design/4.png";
+import webDesImg5 from "../images/servicePageTechnologies/Web-Design/5.png";
+import webDesImg6 from "../images/servicePageTechnologies/Web-Design/6.png";
+import webDesImg7 from "../images/servicePageTechnologies/Web-Design/7.png";
+import webDesImg8 from "../images/servicePageTechnologies/Web-Design/8.png";
+import webDesImg9 from "../images/servicePageTechnologies/Web-Design/9.png";
+import webDesImg10 from "../images/servicePageTechnologies/Web-Design/10.png";
+import webDesImg11 from "../images/servicePageTechnologies/Web-Design/11.png";
+import webDesImg12 from "../images/servicePageTechnologies/Web-Design/12.png";
+
+// hire developer
+import hireDevImg1 from "../images/servicePageTechnologies/Hire-developer/1.png";
+import hireDevImg2 from "../images/servicePageTechnologies/Hire-developer/2.png";
+import hireDevImg3 from "../images/servicePageTechnologies/Hire-developer/3.png";
+import hireDevImg4 from "../images/servicePageTechnologies/Hire-developer/4.png";
+import hireDevImg5 from "../images/servicePageTechnologies/Hire-developer/5.png";
+import hireDevImg6 from "../images/servicePageTechnologies/Hire-developer/6.png";
+import hireDevImg7 from "../images/servicePageTechnologies/Hire-developer/7.png";
+import hireDevImg8 from "../images/servicePageTechnologies/Hire-developer/8.png";
+import hireDevImg9 from "../images/servicePageTechnologies/Hire-developer/9.png";
+import hireDevImg10 from "../images/servicePageTechnologies/Hire-developer/10.png";
+import hireDevImg11 from "../images/servicePageTechnologies/Hire-developer/11.png";
+import hireDevImg12 from "../images/servicePageTechnologies/Hire-developer/12.png";
+
+// Gaming Solution
+import gamingSolImg1 from "../images/servicePageTechnologies/Gaming-Solution/1.png";
+import gamingSolImg2 from "../images/servicePageTechnologies/Gaming-Solution/2.png";
+import gamingSolImg3 from "../images/servicePageTechnologies/Gaming-Solution/3.png";
+import gamingSolImg4 from "../images/servicePageTechnologies/Gaming-Solution/4.png";
+import gamingSolImg5 from "../images/servicePageTechnologies/Gaming-Solution/5.png";
+import gamingSolImg6 from "../images/servicePageTechnologies/Gaming-Solution/6.png";
+import gamingSolImg7 from "../images/servicePageTechnologies/Gaming-Solution/7.png";
+import gamingSolImg8 from "../images/servicePageTechnologies/Gaming-Solution/8.png";
+
+// AI-ML
+import aiMlImg1 from "../images/servicePageTechnologies/AI-ML/1.png";
+import aiMlImg2 from "../images/servicePageTechnologies/AI-ML/2.png";
+import aiMlImg3 from "../images/servicePageTechnologies/AI-ML/3.png";
+import aiMlImg4 from "../images/servicePageTechnologies/AI-ML/4.png";
+import aiMlImg5 from "../images/servicePageTechnologies/AI-ML/5.png";
+import aiMlImg6 from "../images/servicePageTechnologies/AI-ML/6.png";
+
+// RPA Solutions
+import rpaImg1 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/1.png";
+import rpaImg2 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/2.png";
+import rpaImg3 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/3.png";
+import rpaImg4 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/4.png";
+import rpaImg5 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/5.png";
+import rpaImg6 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/6.png";
+import rpaImg7 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/7.png";
+import rpaImg8 from "../images/servicePageTechnologies/Robotics-Proccess-Automation/8.png";
+
+
 const iconSize = 55;
 const iconColor = "rgb(7, 89, 127)";
 
@@ -306,6 +406,14 @@ const routesConfig = {
               "We place a high priority on compliance and follow all applicable laws and industry standards to protect the security and integrity of your data in the cloud. With our secure cloud solutions, you can feel confident knowing that your private data is protected because they are made to comply with strict regulations like GDPR, HIPAA, and PCI-DSS.",
           },
         ],
+        Technologies: [
+          <img src={img1} />,
+          <img src={img2} />,
+          <img src={img3} />,
+          <img src={img4} />,
+          <img src={img5} />,
+          <img src={img6} />,
+        ]
       },
     },
     {
@@ -362,6 +470,18 @@ const routesConfig = {
               "We understand that launching a website is just the beginning of your online journey. Our technical team works on regular updates and security patches. We also troubleshoot and provide technical assistance to address any issues or concerns you may have, allowing you to focus on running your business while we take care of your website's maintenance needs.",
           },
         ],
+        Technologies: [
+          <img src={webdevimg1} />,
+          <img src={webdevimg2} />,
+          <img src={webdevimg3} />,
+          <img src={webdevimg4} />,
+          <img src={webdevimg5} />,
+          <img src={webdevimg6} />,
+          <img src={webdevimg7} />,
+          <img src={webdevimg8} />,
+          <img src={webdevimg9} />,
+          <img src={webdevimg10} />,
+        ]
       },
     },
     {
@@ -418,6 +538,18 @@ const routesConfig = {
               "We prioritize user experience and usability in every CMS solution we develop. Our team focuses on creating intuitive user interfaces and user-friendly admin panels. With our user-centric approach, you can efficiently manage your website and ensure a seamless experience for your visitors.",
           },
         ],
+        Technologies: [
+          <img src={cmsimg1} />,
+          <img src={cmsimg2} />,
+          <img src={cmsimg3} />,
+          <img src={cmsimg4} />,
+          <img src={cmsimg5} />,
+          <img src={cmsimg6} />,
+          <img src={cmsimg7} />,
+          <img src={cmsimg8} />,
+          <img src={cmsimg9} />,
+          <img src={cmsimg10} />,
+        ]
       },
     },
     {
@@ -476,6 +608,16 @@ const routesConfig = {
               "We provide comprehensive support and maintenance services to ensure the continued success of your CRM solution. With proactive monitoring and timely assistance, we ensure that your CRM solution remains optimized, secure, and aligned with your business objectives.",
           },
         ],
+        Technologies: [
+          <img src={crmimg1} />,
+          <img src={crmimg2} />,
+          <img src={crmimg3} />,
+          <img src={crmimg4} />,
+          <img src={crmimg5} />,
+          <img src={crmimg6} />,
+          <img src={crmimg7} />,
+          <img src={crmimg8} />,
+        ]
       },
     },
     {
@@ -533,6 +675,20 @@ const routesConfig = {
               "We provide ongoing support and maintenance services to ensure that your website remains secure, up-to-date, and optimized for performance. Our team holds proactive monitoring and timely assistance to ensure your website continues to deliver results and support your business goals.",
           },
         ],
+        Technologies: [
+          <img src={webDesImg1} />,
+          <img src={webDesImg2} />,
+          <img src={webDesImg3} />,
+          <img src={webDesImg4} />,
+          <img src={webDesImg5} />,
+          <img src={webDesImg6} />,
+          <img src={webDesImg7} />,
+          <img src={webDesImg8} />,
+          <img src={webDesImg9} />,
+          <img src={webDesImg10} />,
+          <img src={webDesImg11} />,
+          <img src={webDesImg12} />,
+        ]
       },
     },
     {
@@ -590,6 +746,20 @@ const routesConfig = {
               "With a significant overlap in working hours, communication and collaboration between clients and developers in India are seamless and efficient. Real-time communication channels such as video conferencing, instant messaging, and project management tools enable effective collaboration, ensuring that project timelines are met and objectives are achieved without delays.",
           },
         ],
+        Technologies: [
+          <img src={hireDevImg1} />,
+          <img src={hireDevImg2} />,
+          <img src={hireDevImg3} />,
+          <img src={hireDevImg4} />,
+          <img src={hireDevImg5} />,
+          <img src={hireDevImg6} />,
+          <img src={hireDevImg7} />,
+          <img src={hireDevImg8} />,
+          <img src={hireDevImg9} />,
+          <img src={hireDevImg10} />,
+          <img src={hireDevImg11} />,
+          <img src={hireDevImg12} />,
+        ]
       },
     },
     {
@@ -670,6 +840,16 @@ const routesConfig = {
               "Our portfolio of completed projects showcases our diverse capabilities and demonstrates our ability to deliver high-quality, innovative gaming experiences that captivate audiences and drive engagement. When you choose our gaming solutions, you can trust that you're partnering with a team that is committed to your success and dedicated to delivering exceptional results.",
           },
         ],
+        Technologies: [
+          <img src={gamingSolImg1} />,
+          <img src={gamingSolImg2} />,
+          <img src={gamingSolImg3} />,
+          <img src={gamingSolImg4} />,
+          <img src={gamingSolImg5} />,
+          <img src={gamingSolImg6} />,
+          <img src={gamingSolImg7} />,
+          <img src={gamingSolImg8} />,
+        ]
       },
     },
     {
@@ -727,6 +907,14 @@ const routesConfig = {
               "Our advanced algorithm models and powerful development framework tools empower the power of AI and ML to unlock valuable insights, automate tasks, and drive actionable intelligence for your business. Our team keeps track of the latest trends and developments in AI and ML to ensure that our solutions are always at the forefront of innovation.",
           },
         ],
+        Technologies: [
+          <img src={aiMlImg1} />,
+          <img src={aiMlImg2} />,
+          <img src={aiMlImg3} />,
+          <img src={aiMlImg4} />,
+          <img src={aiMlImg5} />,
+          <img src={aiMlImg6} />,
+        ]
       },
     },
     {
@@ -784,6 +972,16 @@ const routesConfig = {
               "We focus on industry best practices and quality standards throughout the development process to ensure that our solutions meet the highest levels of performance, reliability, and scalability. Our team conducts thorough testing and validation to identify and address any issues or bugs, ensuring that your RPA solutions deliver accurate results and optimal performance in real-world scenarios.",
           },
         ],
+        Technologies: [
+          <img src={rpaImg1} />,
+          <img src={rpaImg2} />,
+          <img src={rpaImg3} />,
+          <img src={rpaImg4} />,
+          <img src={rpaImg5} />,
+          <img src={rpaImg6} />,
+          <img src={rpaImg7} />,
+          <img src={rpaImg8} />,
+        ]
       },
     },
   ],

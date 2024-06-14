@@ -56,7 +56,6 @@
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
-
     font-family: "Jost";
     text-align: justify;
 }
@@ -171,7 +170,7 @@
     font-size: 1.2rem;
 }
 
-.service-page-technologies-grid-container {
+.service-page-technologies-grid-container{
     margin-top: 1.3rem;
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -179,6 +178,15 @@
     row-gap: 1.7rem;
     padding: 0;
 }
+.service-page-technologies-grid-container2{
+    margin-top: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: 4rem;
+    row-gap: 1.7rem;
+    padding: 0;
+}
+
 
 .service-page-technologies-grid-container img{
     max-width: 100%;

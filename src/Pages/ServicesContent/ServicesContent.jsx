@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
+import classNames from "classnames";
 import "./ServicesContent.css";
 import { useParams } from "react-router-dom";
 import routesConfig from "../../Routes/routes";
 import useWindowDimensions from "../../Components/Hooks/WindowDimensions/useWindowDimensions";
+import { Grid } from "swiper/modules";
 
 const ServicesContent = () => {
-  
+  const { width } = useWindowDimensions();
   const [isActive, setIsActive] = useState(false);
+  const [isWide, setIsWide] = useState(false);
   const { id } = useParams();
   const path = `services/${id}`;
   let content = routesConfig.services.find((route) => route.path === path);
@@ -19,33 +22,46 @@ const ServicesContent = () => {
 
   const returnBoxes = () => {
     if (id === "mobile-apps-development") {
-      return null
-    } 
-    if (id == "ecommerce-solutions") {
-      return(
-        Technologies.map((key,index) => {
-          if(index<4)
-            {return <div className="box gray-box">{key}</div>;}
-          return <div className="box">{key}</div>;
-        })
-      )
+      return null;
     }
-    else{
-      return(
-        Technologies.map((key) => {
-          return <div className="box">{key}</div>;
-        })
-      )
+    if (id == "ecommerce-solutions") {
+      return Technologies.map((key, index) => {
+        if (index < 4) {
+          return <div className="box gray-box">{key}</div>;
+        }
+        return <div className="box">{key}</div>;
+      });
+    } else {
+      return Technologies.map((key) => {
+        return <div className="box">{key}</div>;
+      });
     }
   };
+
+  const changeGrid = isWide
+    ? {
+        gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+      }
+    : {};
+
   useEffect(() => {
     if (id === "mobile-apps-development") {
       setIsActive(false);
     } else {
       setIsActive(true);
     }
+    if (
+      width > 766 &&
+      (
+        id == "crm-solutions" ||
+        id == "gaming-solution" ||
+        id == "robotic-process-automation")
+    )
+      setIsWide(true);
+    else setIsWide(false);
+
     returnBoxes();
-  }, [id]);
+  }, [id, width]);
 
   return (
     <>
@@ -91,10 +107,19 @@ const ServicesContent = () => {
                 </div>
               </div>
             </div>
-            <div className={ isActive ? "service-page-technologies-main-container" : "display-none"}>
+            <div
+              className={
+                isActive
+                  ? "service-page-technologies-main-container"
+                  : "display-none"
+              }
+            >
               <div className="service-page-technologies-inner-container">
                 <h4 className="service-page-heading">Technologies</h4>
-                <div className="service-page-technologies-grid-container">
+                <div
+                  className={"service-page-technologies-grid-container"}
+                  style={changeGrid}
+                >
                   {returnBoxes()}
                 </div>
               </div>
