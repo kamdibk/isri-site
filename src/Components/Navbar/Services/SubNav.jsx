@@ -170,33 +170,6 @@ const SubNav = ({toggleNavbar}) => {
                   </li>
                   <li>
                     <Link
-                      to="services/ride-booking"
-                      style={{ alignItems: "center", display: "flex" }}
-                      onClick={toggleNavbar}
-                    >
-                      <RiMotorbikeFill
-                        size={20}
-                        style={{ marginRight: "10px" }}
-                      />
-                      Ride Booking Solutions
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="services/gaming-solution"
-                      style={{ alignItems: "center", display: "flex" }}
-                      onClick={toggleNavbar}
-                    >
-                      <GrGamepad
-                        size={20}
-                        style={{ marginRight: "10px" }}
-                        color="gray"
-                      />
-                      Gaming Solution
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       to="services/ai-ml"
                       style={{ alignItems: "center", display: "flex" }}
                       onClick={toggleNavbar}
@@ -206,20 +179,6 @@ const SubNav = ({toggleNavbar}) => {
                         style={{ marginRight: "10px" }}
                       />
                       AI/ML
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="services/robotic-process-automation"
-                      style={{ alignItems: "center", display: "flex" }}
-                      onClick={toggleNavbar}
-                    >
-                      <TbRobot
-                        size={20}
-                        style={{ marginRight: "10px" }}
-                        color="#1a6403"
-                      />
-                      Robotic Process Automation
                     </Link>
                   </li>
                 </ul>

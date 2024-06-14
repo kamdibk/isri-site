@@ -112,38 +112,12 @@ const   Services = () => {
               </Link>
             </li>
             <li>
-              <Link to="services/ride-booking" style={{ alignItems: "center", display: "flex" }}>
-                <RiMotorbikeFill size={20} style={{ marginRight: "10px" }} />
-                Ride Booking
-              </Link>
-            </li>
-            <li>
-              <Link to="services/gaming-solution" style={{ alignItems: "center", display: "flex" }}>
-                <GrGamepad
-                  size={20}
-                  color="gray"
-                  style={{ marginRight: "10px" }}
-                />
-                Gaming Solution
-              </Link>
-            </li>
-            <li>
               <Link to="services/ai-ml" style={{ alignItems: "center", display: "flex" }}>
                 <GiArtificialIntelligence
                   size={20}
                   style={{ marginRight: "10px" }}
                 />
                 AI/ML
-              </Link>
-            </li>
-            <li>
-              <Link to="services/robotic-process-automation" style={{ alignItems: "center", display: "flex" }}>
-                <TbRobot
-                  size={20}
-                  style={{ marginRight: "10px" }}
-                  color="#1a6403"
-                />
-                Robotic Process Automation
               </Link>
             </li>
           </ul>
