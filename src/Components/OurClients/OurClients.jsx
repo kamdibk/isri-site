@@ -8,9 +8,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const OurClients = () => {
+  
   const { width } = useWindowDimensions();
   const [itemSwitch, SetItemSwitch] = useState(false);
   const [noOfItems, setNoOfItems] = useState(6);
+  
   useEffect(() => {
     if (width <= 820 && width >= 1200) {
       SetItemSwitch(true);

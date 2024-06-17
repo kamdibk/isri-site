@@ -1,6 +1,6 @@
 import React from 'react'
 import './SliderMainComponent.css'
-import HeroSlider from '../HeroSlider/HeroSlider'
+import HeroSlider from '../HeroSlider1/HeroSlider'
 const SliderMainComponent = () => {
   return (
     <div className="SliderMainComponent-main">

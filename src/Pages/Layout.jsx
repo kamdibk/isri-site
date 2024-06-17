@@ -16,34 +16,3 @@ const Layout = () => {
 };
 
 export default Layout;
-
-/*
-
-
-    <>
-      <div className="App-Header">
-        <Navbar />
-      </div>
-      <div className="main-body">
-        <SliderMainComponent />
-        <OurServices />
-        <WhoWeAre />
-        <WhyChooseUs />
-        <OurClients />
-        <Footer />
-      </div>
-      <StickyContactForMobile />
-    </>
-
-
-
-
-
-
-
-
-
-
-
-
-*/

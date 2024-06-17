@@ -1,0 +1,19 @@
+.hero-carousel-div{
+    height: 100%;
+    width: 100%;
+}
+.hero-carousel-div{
+    display: flex;
+    align-items: center;
+}
+.hero-carousel-text{
+    color: white;
+}
+.sd-text {
+    margin-left: 20px;
+    color: white;
+    font-size: 2.4rem;
+}
+.small-text{
+    font-size: 1.8rem !important;
+}

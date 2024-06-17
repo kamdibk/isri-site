@@ -3,7 +3,9 @@ import "./HeroSlider.css";
 import www from "../../images/www.png";
 import appIcon from "../../images/mobileAppIcon.png";
 import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions";
+
 const HeroSlider = () => {
+  
   const [iconSize, setIconSize] = useState(100);
   const { width } = useWindowDimensions();
 
@@ -14,6 +16,7 @@ const HeroSlider = () => {
       setIconSize(60);
     }
   }, [width]);
+
   useEffect(() => {
     let slider = document.querySelector(".slider .list");
     let items = document.querySelectorAll(".slider .list .item");
@@ -42,7 +45,7 @@ const HeroSlider = () => {
       <div className="list" id="list">
         <div className="item" id="item">
           <div className="logo-and-text">
-            <img src={www} height={iconSize} />
+            <img src={www} height={iconSize} alt="" />
             <div className="sd-text">
               Responsive Website
               <br />
@@ -58,10 +61,9 @@ const HeroSlider = () => {
         </div>
         <div className="item" id="item">
           <div className="logo-and-text">
-            <img src={www} height={iconSize} />
+            <img src={www} height={iconSize} alt="" />
             <div className="sd-text">
-              Artificial Intelligence <br />
-              & Machine Learning
+              Artificial Intelligence <br />& Machine Learning
             </div>
           </div>
           {/* <p className="share-dev-text">
@@ -70,7 +72,7 @@ const HeroSlider = () => {
         </div>
         <div className="item" id="item">
           <div className="logo-and-text">
-            <img src={appIcon} height={iconSize} />
+            <img src={appIcon} height={iconSize} alt="" />
             <div className="sd-text">
               Digital Transformation <br />
               With a Human Touch
@@ -83,7 +85,7 @@ const HeroSlider = () => {
         </div>
         <div className="item" id="item">
           <div className="logo-and-text">
-            <img src={appIcon} height={iconSize} />
+            <img src={appIcon} height={iconSize} alt="" />
             <div className="sd-text">
               Enterprise
               <br />
@@ -91,19 +93,19 @@ const HeroSlider = () => {
             </div>
           </div>
           <p className="share-dev-text">
-          Think Big, Think Different with our Mobile Solutions
+            Think Big, Think Different with our Mobile Solutions
           </p>
         </div>
         <div className="item" id="item">
           <div className="logo-and-text">
-            <img src={appIcon} height={iconSize} />
+            <img src={appIcon} height={iconSize} alt="" />
             <div className="sd-text">
-                E-Commerce Is Way More <br />
-                Than Online Shopping
+              E-Commerce Is Way More <br />
+              Than Online Shopping
             </div>
           </div>
           <p className="share-dev-text">
-               Transformation Solutions to grow your E-Commerce Business
+            Transformation Solutions to grow your E-Commerce Business
           </p>
         </div>
       </div>
