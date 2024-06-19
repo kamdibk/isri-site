@@ -6,7 +6,7 @@ import { GiPlayerTime } from "react-icons/gi";
 
 const iconSize = 55;
 // const iconColor = "rgb(7, 89, 127)"
-const iconColor = "rgb(84,84,84)"
+const iconColor = "#800000"
 
 
 export const WhyChooseUsData = [

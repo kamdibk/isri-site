@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect, useRef} from "react";
 import "./OurServices.css";
 import { OurservicesData } from "../../Data/OurServicesData";
 import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions";
@@ -14,7 +14,19 @@ import { Pagination,Navigation } from "swiper/modules";
 import { BiPlus } from "react-icons/bi";
 //icon-end
 
+// Framer
+import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
+
 const OurServices1 = () => {
+  // Framer
+  const ref = useRef(null)
+  const isInView = useInView(ref,{once: true})
+
+  useEffect(()=>{
+    console.log(isInView)
+  },[isInView])
+
+
   const [noOfSlides,setNoOfSlides] = useState(4)
   const [slideGap,setSlidegap] = useState(30);
   const {width} = useWindowDimensions();
@@ -41,7 +53,7 @@ const OurServices1 = () => {
   },[width])
   
   return (
-    <div className="ourservices-swiper-container">
+    <div className="ourservices-swiper-container" ref={ref}>
       <Swiper 
         slidesPerView={noOfSlides} 
         spaceBetween={slideGap} 
@@ -53,7 +65,7 @@ const OurServices1 = () => {
         {
         OurservicesData.map((key)=>{
           return(
-            <SwiperSlide key={key.id} className={key.id === 1 ? "first-slide" : ""}>
+            <SwiperSlide key={key.id} className={key.id === 1 ? "first-slide" : ""} >
             <div className="ourservices-icon">
                  {key.icon}
             </div>

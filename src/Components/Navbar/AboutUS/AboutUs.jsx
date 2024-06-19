@@ -8,7 +8,7 @@ const AboutUs = (props) => {
   if (width >= 1090) {
     return (
       <div className="dropdown">
-        <div className="dropdown-lvl-1">
+        <div className="dropdown-lvl-1 right-space">
           <div className="aboutus-image">{/* Image */}</div>
           <div className="services-links">
             <div style={{ padding: "10px" }}>

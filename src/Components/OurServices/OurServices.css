@@ -90,10 +90,10 @@
     right: -14px !important;
 }
 .swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
-	color: #800000;
+	color: rgb(84, 84, 84);
 }
 .swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
-    color: #800000;
+    color: rgb(84, 84, 84);
 }
 @media screen and (max-width:1266px) {
     .ourservices-swiper-container>.swiper .swiper-slide {

@@ -1,3 +1,6 @@
+.right-space{
+    right: 0.3rem;
+}
 .technologies-container{
     padding: 20px;
     display: flex;

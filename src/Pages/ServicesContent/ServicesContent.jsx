@@ -119,9 +119,9 @@ const ServicesContent = () => {
               <div className="whychooseus-subcontainer">
                 <h4 className="heading-text pt">WHY US ?</h4>
                 <div className="whychooseus-rsn-blocks">
-                  {whyus.map((key) => {
+                  {whyus.map((key,index) => {
                     return (
-                      <div className="service-whychooseus-rsn-block" key={key}>
+                      <div className="service-whychooseus-rsn-block" key={index}>
                         <div className="service-rsn-block-icon">{key.icon}</div>
                         <div className="service-rsn-block-heading">
                           {key.heading}

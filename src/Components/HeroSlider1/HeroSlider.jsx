@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import "./HeroSlider.css";
 import { heroSliderData } from "../../Data/HeroSliderData";
 import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions.js";
@@ -6,34 +6,35 @@ import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions.j
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// Framer Motion
+import { motion, useInView } from "framer-motion";
 
 const HeroSlider = () => {
-  const {width} = useWindowDimensions()
-  const [isSmall, setIsSmall] = useState(false)
+  // Framer
+  const ref = useRef(null);
+  const isInView = useInView(ref)
   useEffect(()=>{
-    // if(width>=456){
-    //   setIsSmall(true)
-    //   const headingDiv = document.getElementsByClassName("sd-text");
-    //   headingDiv.classList.add('small-text');
-    // }
-    // else{
-    //     setIsSmall(false)
-    // }
+    console.log(isInView)
+  },[isInView])
+
+  const { width } = useWindowDimensions();
+  const [isSmall, setIsSmall] = useState(false);
+  useEffect(() => {
     const headingDivs = document.getElementsByClassName("sd-text");
 
     if (width <= 456) {
       setIsSmall(true);
       for (let i = 0; i < headingDivs.length; i++) {
-        headingDivs[i].classList.add('small-text');
+        headingDivs[i].classList.add("small-text");
       }
     } else {
       setIsSmall(false);
       for (let i = 0; i < headingDivs.length; i++) {
-        headingDivs[i].classList.remove('small-text');
+        headingDivs[i].classList.remove("small-text");
       }
     }
-  },[width])
-  
+  }, [width]);
+
   const settings = {
     arrows: false,
     dots: false,
@@ -51,7 +52,17 @@ const HeroSlider = () => {
       <Slider {...settings}>
         {heroSliderData.map((key) => {
           return (
-            <div key={key}>
+            <motion.div
+            ref={ref}
+              key={key}
+              variants={{
+                hidden: {opacity: 0,y: 75,},
+                visible: {opacity: 1,y: 0,},
+              }}
+              initial="hidden"
+              animate="visible"
+              transition={{duration:0.5,delay:0.25}}
+            >
               <div className="hero-carousel-div">
                 {key.logo}
                 {key.heading}
@@ -59,7 +70,7 @@ const HeroSlider = () => {
               <div className="hero-carousel-text">
                 {key.text ? key.text : ""}
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </Slider>
