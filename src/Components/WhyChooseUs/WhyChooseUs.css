@@ -7,22 +7,19 @@
     width: 100vw;
     box-sizing: border-box;
     padding: 3rem 4rem;
-    background-color: #0f172a;
+    /* background-color: #0f172a; */
+    background-color: #800000;
     overflow: hidden;
 }
 .heading-text{
     font-weight: 600;
     color: white;
 }
+
 .whychooseus-content{
     margin: 2rem;
     overflow: hidden;
 }
-
-/* .hr {
-    color: rgba(209, 206, 206, 0.543);
-    margin: 0 1rem;
-} */
 
 .h1-txt{
     margin-top: 32px;
@@ -30,6 +27,11 @@
     font-size: 40px;
     font-weight: 600;
 }
+.stroke-text2{
+    color: transparent;
+    -webkit-text-stroke-width: .7px ;
+    -webkit-text-stroke-color: #bcadad ;
+  }
 .whychooseus-rsn-blocks{
     box-sizing: border-box;
     width: 100%;
@@ -70,15 +72,12 @@
 .rsn-block-text{
     font-size: 17px;
 }
+/*
 .rsn-block-heading:hover {
     color: #1b3f8b;
     transition: 1s ease;
 }
-/* .rotate-icon:hover{
-    rotate: 180deg;
-    transition: 1s;
-} */
-
+*/
 @media screen and (max-width:1200px) {
     .whychooseus-subcontainer{
         padding-left:  1rem;

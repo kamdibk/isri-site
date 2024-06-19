@@ -64,7 +64,7 @@ const OurServices1 = () => {
               {key.text}
             </div>
             <div className="ourservices-button">
-              <BiPlus size={30} color="blue" style={{ marginRight: "20px" }} />{" "}
+              <BiPlus size={30} color="#c10417" style={{ marginRight: "20px" }} />{" "}
               {"   "} Read More
             </div>
             </SwiperSlide>

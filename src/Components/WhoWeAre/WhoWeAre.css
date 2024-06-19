@@ -18,7 +18,9 @@
 }
 .whoweare-heading-txt{
     font-weight: 600;
-    color:blue;
+    /* color:blue; */
+    color:#c10417;
+
 }
 .whoweare-sub-txt {
     font-size: 36px;
@@ -94,7 +96,8 @@
 }
 
 .who-we-are-num {
-    color: rgb(8, 106, 216);
+    /* color: rgb(8, 106, 216); */
+    color: #c10417;
     font-family: "Barlow";
     font-size: 24px;
     font-weight: 600;

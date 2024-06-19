@@ -163,7 +163,8 @@
 }
 
 .service-page-heading {
-    color: rgb(0, 0, 255);
+    /* color: rgb(0, 0, 255); */
+    color: #800000;
     font-weight: 700;
     font-family: "Jost";
     margin-top: 1rem;

@@ -6,9 +6,14 @@ import OurClients from "../../Components/OurClients/OurClients";
 import Footer from "../../Components/Footer/Footer";
 import StickyContactForMobile from "../../Components/StickyContactForMobile/StickyContactForMobile";
 import OurServices from "../../Components/OurServices/OurServices";
+import { motion } from "framer-motion";
 const Homepage = () => {
   return (
-    <>
+    <motion.div
+    initial={{ width : 0}}
+    animate={{ width: "100%" }}
+    exit={{ x : window.innerWidth }}
+    >
       <SliderMainComponent />
       <OurServices />
       <WhoWeAre />
@@ -16,7 +21,7 @@ const Homepage = () => {
       <OurClients />
       <Footer />
       <StickyContactForMobile />
-    </>
+    </motion.div>
   );
 };
 

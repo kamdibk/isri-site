@@ -1,9 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import { motion } from "framer-motion";
 const IndustriesContent = () => {
   return (
-    <div>IndustriesContent</div>
-  )
-}
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth }}
+    >
+      IndustriesContent
+    </motion.div>
+  );
+};
 
-export default IndustriesContent
+export default IndustriesContent;

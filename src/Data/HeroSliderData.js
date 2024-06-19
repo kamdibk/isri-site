@@ -1,4 +1,3 @@
-import SharepointLogo from "../images/sharepointlogo.png";
 import www from "../images/www.png";
 import appIcon from "../images/mobileAppIcon.png";
 import ecomLogo from "../images/ecom-logo.png"

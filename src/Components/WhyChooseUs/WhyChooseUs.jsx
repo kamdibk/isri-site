@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
         <div className="whychooseus-content">
           <h4 className="heading-text">WHY CHOOSE US</h4>
             <h1 className="
-            h1-txt stroke-text">WE TRANSFORM YOUR BUSINESS</h1>
+            h1-txt stroke-text2">WE TRANSFORM YOUR BUSINESS</h1>
             <div className="whychooseus-rsn-blocks">
                 {
                   WhyChooseUsData.map((key)=>{

@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [width]);
 
   return (
-    <div className="fixed-nav">
+    <div className="fixed-nav" style={{zIndex:"100"}}>
       <nav className="navbar">
         <Link to="/">
           <div className="com-logo" style={{ marginLeft: "10px",cursor:"pointer" }}>
@@ -65,7 +65,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="com-contacts">
+        {/* <div className="com-contacts">
           <div
             className="contact"
             style={{ borderBottom: "1px solid gray", cursor: "pointer" }}
@@ -88,7 +88,7 @@ const Navbar = () => {
               )}
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="mobile-ham-icon" onClick={toggleDropdown}>
           {dropdownNav ? (
             <AiOutlineClose size={25} className="rotetateclose" />

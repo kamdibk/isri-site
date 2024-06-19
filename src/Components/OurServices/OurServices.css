@@ -1,8 +1,10 @@
 .ourservices-swiper-container {
     width: 100vw;
-    background-image: url('../../images/service-bg3.jpg');
+    /* background-image: url('../../images/service-bg3.jpg'); */
+    background-image: url('../../images/ourServices3.jpg');
     box-sizing: border-box;
     padding: 0 2rem;
+    padding-top: 0.1px;
 }
 
 .ourservices-swiper-container>.swiper {
@@ -33,12 +35,13 @@
     align-items: center;
     margin: 1rem 0;
     min-height: fit-content;
+    /* color: #b22929; */
 }
 
-.ourservices-heading:hover {
+/* .ourservices-heading:hover {
     color: #1b3f8b;
     transition: 1s;
-}
+} */
 
 .ourservices-text {
     margin-top: 0.8rem !important;
@@ -85,6 +88,12 @@
 
 .swiper-button-next {
     right: -14px !important;
+}
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+	color: #800000;
+}
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+    color: #800000;
 }
 @media screen and (max-width:1266px) {
     .ourservices-swiper-container>.swiper .swiper-slide {

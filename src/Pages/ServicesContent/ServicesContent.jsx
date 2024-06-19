@@ -3,7 +3,7 @@ import "./ServicesContent.css";
 import { useParams } from "react-router-dom";
 import routesConfig from "../../Routes/routes";
 import useWindowDimensions from "../../Components/Hooks/WindowDimensions/useWindowDimensions";
-
+import { motion } from "framer-motion";
 const ServicesContent = () => {
   const { width } = useWindowDimensions();
 
@@ -59,14 +59,25 @@ const ServicesContent = () => {
       setIsActive(true);
     }
 
-    if (id === "website-development" || id === "crm-solutions" || id==="web-design"|| id==="hire-developer" || id==="ai-ml") {
+    if (
+      id === "website-development" ||
+      id === "crm-solutions" ||
+      id === "web-design" ||
+      id === "hire-developer" ||
+      id === "ai-ml"
+    ) {
       setWhiteColor(true);
     } else {
       setWhiteColor(false);
     }
 
-    if (width > 766 && (id === "website-development" || id === "cms-solutions" || id ==="crm-solutions")) {
-      if(id ==="crm-solutions") setGridItems(4)
+    if (
+      width > 766 &&
+      (id === "website-development" ||
+        id === "cms-solutions" ||
+        id === "crm-solutions")
+    ) {
+      if (id === "crm-solutions") setGridItems(4);
       else setGridItems(5);
       setIsWide(true);
     } else {
@@ -77,7 +88,11 @@ const ServicesContent = () => {
   }, [id, width]);
 
   return (
-    <>
+    <motion.div
+    initial={{ width : 0}}
+    animate={{ width: "100%" }}
+    exit={{ x : window.innerWidth }}
+    >
       {content ? (
         <div className="services-content-main-container">
           <div className="services-content-container">
@@ -143,7 +158,7 @@ const ServicesContent = () => {
         // End
         <h1>Content not found</h1>
       )}
-    </>
+    </motion.div>
   );
 };
 

@@ -21,7 +21,8 @@
   overflow: hidden;
 }
 .heading-text-our-clients {
-  color: rgb(0, 0, 255);
+  /* color: rgb(0, 0, 255); */
+  color: #800000;
   font-weight: 700;
   font-family: "Jost";
 }
@@ -40,7 +41,7 @@ hr{
   color: #d1cece;
 }
 .our-clients-boxes {
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   height: 100px;
   width: 100px !important;
   margin: 1rem ;

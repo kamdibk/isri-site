@@ -2,10 +2,11 @@
     height: 800px;
     width: 100vw;
     /* background-image: url('../../images/texture_dark_lines_126785_4000x2666cpy2.jpg'); */
-    background-image: url('../../images/hero-wallaper1.jpg');
+    background-image: url('../../images/hero-wallaper1 - Copy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .child-slider{
     position: absolute;
     width: 50%;
@@ -18,6 +19,7 @@
         height: 700px;
     }
 }
+
 @media screen and (max-width: 1390px) and (min-width:550px){
     .child-slider{
         width: 700px;
@@ -28,12 +30,14 @@
         height: 600px;
     }
 }
+
 @media screen and (max-width: 766px) and (min-width:550px){
     .child-slider{
         width: 89%;
         left:10px;
     }
 }
+
 @media screen and (max-width: 550px) {
     .child-slider{
         width: 95.5vw;

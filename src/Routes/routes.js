@@ -133,7 +133,8 @@ import { HiMiniPencilSquare } from "react-icons/hi2";
 import { FaRegHandshake } from "react-icons/fa6";
 
 const iconSize = 55;
-const iconColor = "rgb(7, 89, 127)";
+// const iconColor = "rgb(7, 89, 127)";
+const iconColor = "rgb(84,84,84)";
 
 const routesConfig = {
   services: [

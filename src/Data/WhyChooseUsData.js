@@ -5,7 +5,8 @@ import { TbCertificate } from "react-icons/tb";
 import { GiPlayerTime } from "react-icons/gi";
 
 const iconSize = 55;
-const iconColor = "rgb(7, 89, 127)"
+// const iconColor = "rgb(7, 89, 127)"
+const iconColor = "rgb(84,84,84)"
 
 
 export const WhyChooseUsData = [

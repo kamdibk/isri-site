@@ -7,8 +7,10 @@ import { FiShoppingCart } from "react-icons/fi";
 import { BiBookContent } from "react-icons/bi";
 import { BsPeople } from "react-icons/bs";
 
-const clr = "#07597F"
+// const clr = "#07597F"
+const clr = "#800000"
 const size = 60;
+
 export const OurservicesData = [
   {
     id:1,
