@@ -89,9 +89,9 @@ const ServicesContent = () => {
 
   return (
     <motion.div
-    initial={{ width : 0}}
-    animate={{ width: "100%" }}
-    exit={{ x : window.innerWidth }}
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth }}
     >
       {content ? (
         <div className="services-content-main-container">
@@ -119,9 +119,12 @@ const ServicesContent = () => {
               <div className="whychooseus-subcontainer">
                 <h4 className="heading-text pt">WHY US ?</h4>
                 <div className="whychooseus-rsn-blocks">
-                  {whyus.map((key,index) => {
+                  {whyus.map((key, index) => {
                     return (
-                      <div className="service-whychooseus-rsn-block" key={index}>
+                      <div
+                        className="service-whychooseus-rsn-block"
+                        key={index}
+                      >
                         <div className="service-rsn-block-icon">{key.icon}</div>
                         <div className="service-rsn-block-heading">
                           {key.heading}

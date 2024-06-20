@@ -1,0 +1,7 @@
+.testcomponent-container {
+    height: 800px;
+    width: 100vw;
+    background-color: aqua;
+    padding: 8rem;
+    box-sizing: border-box;
+}

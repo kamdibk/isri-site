@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./HeroSlider.css";
 import { heroSliderData } from "../../Data/HeroSliderData";
 import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions.js";
@@ -12,10 +12,10 @@ import { motion, useInView } from "framer-motion";
 const HeroSlider = () => {
   // Framer
   const ref = useRef(null);
-  const isInView = useInView(ref)
-  useEffect(()=>{
-    console.log(isInView)
-  },[isInView])
+  const isInView = useInView(ref);
+  useEffect(() => {
+
+  }, [isInView]);
 
   const { width } = useWindowDimensions();
   const [isSmall, setIsSmall] = useState(false);
@@ -53,15 +53,15 @@ const HeroSlider = () => {
         {heroSliderData.map((key) => {
           return (
             <motion.div
-            ref={ref}
+              ref={ref}
               key={key}
               variants={{
-                hidden: {opacity: 0,y: 75,},
-                visible: {opacity: 1,y: 0,},
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
               animate="visible"
-              transition={{duration:0.5,delay:0.25}}
+              transition={{ duration: 0.5, delay: 0.25 }}
             >
               <div className="hero-carousel-div">
                 {key.logo}
