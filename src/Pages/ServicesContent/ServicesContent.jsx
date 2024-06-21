@@ -73,7 +73,7 @@ const ServicesContent = () => {
 
     if (
       width > 766 &&
-      (id === "website-development" ||
+      ( id === "website-development" ||
         id === "cms-solutions" ||
         id === "crm-solutions")
     ) {

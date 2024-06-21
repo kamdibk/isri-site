@@ -4,21 +4,16 @@ import sign from "../../images/sign.png";
 import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions";
 import SplitString from "../../Utils/SplitString";
 // Framer
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion, useInView, useAnimation, transform } from "framer-motion";
 
 const WhoWeAre = () => {
   const ref = useRef();
-  const pageHeading = SplitString("WHO WE ARE");
   const subHead1 = SplitString("Highly Tailored IT Design,");
   const subHead2 = SplitString("Management & Support");
   const subHead3 = SplitString("Services.");
   const text = SplitString(
     "Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent for all your software development needs."
   );
-  const name = SplitString("Lorem Bhau");
-  const designation = SplitString("CEO, Somewhere");
-  const queryText = SplitString("Call to ask any question");
-  const contactNum = SplitString("+91 0987654321");
 
   const [showDiv, setShowDiv] = useState(false);
   const { width } = useWindowDimensions();
@@ -34,6 +29,7 @@ const WhoWeAre = () => {
   const isInView = useInView(ref, { once: true });
   const mainControl = useAnimation();
   const slideControl = useAnimation();
+  const slideDownControl = useAnimation();
 
   const slideVarients = {
     start1: { opacity: 0, x: "-13%" },
@@ -45,12 +41,19 @@ const WhoWeAre = () => {
     hidden: { opacity: 0 },
     reveal: { opacity: 1 },
   };
+
+  const fadeInVariant = {
+    initial: { opacity: 0, y : '-20%' }, 
+    reveal: { opacity: 1,  y : 0},
+  };
+
   useEffect(() => {
     if (isInView) {
       mainControl.start("reveal");
       slideControl.start("reveal");
+      slideDownControl.start("reveal");
     }
-  }, [isInView, mainControl, slideControl]);
+  }, [isInView, mainControl, slideControl, slideDownControl]);
 
   return (
     <div className="whoweare-container" ref={ref}>
@@ -117,7 +120,13 @@ const WhoWeAre = () => {
                 </motion.span>
               ))}
             </motion.div>
-            <div className="inner-div">
+            <motion.div
+              className="inner-div"
+              variants={fadeInVariant}
+              initial="initial"
+              animate={slideDownControl}
+              transition={{ duration: 1}}
+            >
               <div className="inner-div-child-left">
                 <div className="who-we-are-left-sign">
                   <img src={sign} alt="sig" className="sign-img" />
@@ -127,9 +136,9 @@ const WhoWeAre = () => {
               </div>
               <div className="inner-div-child-right">
                 <div className="who-we-are-text">Call to ask any question</div>
-                <div className="who-we-are-num">+91 90825 82243</div>
+                <div className="who-we-are-num">+91 0987654321</div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
           <motion.div
             className="whoweare-container-right"

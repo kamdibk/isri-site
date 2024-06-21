@@ -105,3 +105,20 @@
         margin: 8px;
     }
 }
+
+
+.h1-txt.stroke-text2 {
+    /* Your existing styles */
+    position: relative;
+    z-index: 1; /* Ensure text is above the green slide */
+  }
+  
+  .green-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: green;
+    z-index: 0; /* Ensure the slide is below the text */
+  }
