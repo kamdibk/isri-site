@@ -59,7 +59,7 @@ const Technologies = () => {
                   </span>
                   <ul>
                     <li>
-                      <Link to="#">
+                      <Link to="technologies/manento">
                         <FaMagento color="red" size={iconSize} /> Mangento
                       </Link>
                     </li>

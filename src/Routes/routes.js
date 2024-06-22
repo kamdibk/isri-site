@@ -22,119 +22,123 @@ import { LuClipboardCheck } from "react-icons/lu";
 
 // Services
 
-// Technologies Grid Images
-// software development Technologies images
-import img1 from "../images/servicePageTechnologies/software-development-tech/1.png";
-import img2 from "../images/servicePageTechnologies/software-development-tech/2.png";
-import img3 from "../images/servicePageTechnologies/software-development-tech/3.png";
-import img4 from "../images/servicePageTechnologies/software-development-tech/4.png";
-import img5 from "../images/servicePageTechnologies/software-development-tech/5.png";
-import img6 from "../images/servicePageTechnologies/software-development-tech/6.png";
-import img7 from "../images/servicePageTechnologies/software-development-tech/7.png";
-import img8 from "../images/servicePageTechnologies/software-development-tech/8.png";
-import img9 from "../images/servicePageTechnologies/software-development-tech/9.png";
-import img10 from "../images/servicePageTechnologies/software-development-tech/10.png";
-import img11 from "../images/servicePageTechnologies/software-development-tech/11.png";
-import img12 from "../images/servicePageTechnologies/software-development-tech/12.png";
-import img13 from "../images/servicePageTechnologies/software-development-tech/13.png";
-import img14 from "../images/servicePageTechnologies/software-development-tech/14.png";
-import img15 from "../images/servicePageTechnologies/software-development-tech/15.png";
-import img16 from "../images/servicePageTechnologies/software-development-tech/16.png";
-import img17 from "../images/servicePageTechnologies/software-development-tech/17.png";
-import img18 from "../images/servicePageTechnologies/software-development-tech/18.png";
+  // Technologies Grid Images
+  // software development Technologies images
+  import img1 from "../images/servicePageTechnologies/software-development-tech/1.png";
+  import img2 from "../images/servicePageTechnologies/software-development-tech/2.png";
+  import img3 from "../images/servicePageTechnologies/software-development-tech/3.png";
+  import img4 from "../images/servicePageTechnologies/software-development-tech/4.png";
+  import img5 from "../images/servicePageTechnologies/software-development-tech/5.png";
+  import img6 from "../images/servicePageTechnologies/software-development-tech/6.png";
+  import img7 from "../images/servicePageTechnologies/software-development-tech/7.png";
+  import img8 from "../images/servicePageTechnologies/software-development-tech/8.png";
+  import img9 from "../images/servicePageTechnologies/software-development-tech/9.png";
+  import img10 from "../images/servicePageTechnologies/software-development-tech/10.png";
+  import img11 from "../images/servicePageTechnologies/software-development-tech/11.png";
+  import img12 from "../images/servicePageTechnologies/software-development-tech/12.png";
+  import img13 from "../images/servicePageTechnologies/software-development-tech/13.png";
+  import img14 from "../images/servicePageTechnologies/software-development-tech/14.png";
+  import img15 from "../images/servicePageTechnologies/software-development-tech/15.png";
+  import img16 from "../images/servicePageTechnologies/software-development-tech/16.png";
+  import img17 from "../images/servicePageTechnologies/software-development-tech/17.png";
+  import img18 from "../images/servicePageTechnologies/software-development-tech/18.png";
 
-// ecommerce Solutions
-import ecomImg1 from "../images/servicePageTechnologies/Ecom-Solutions/1.png";
-import ecomImg2 from "../images/servicePageTechnologies/Ecom-Solutions/2.png";
-import ecomImg3 from "../images/servicePageTechnologies/Ecom-Solutions/3.png";
-import ecomImg4 from "../images/servicePageTechnologies/Ecom-Solutions/4.png";
-import ecomImg5 from "../images/servicePageTechnologies/Ecom-Solutions/5.png";
-import ecomImg6 from "../images/servicePageTechnologies/Ecom-Solutions/6.png";
-import ecomImg7 from "../images/servicePageTechnologies/Ecom-Solutions/7.png";
-import ecomImg8 from "../images/servicePageTechnologies/Ecom-Solutions/8.png";
-import ecomImg9 from "../images/servicePageTechnologies/Ecom-Solutions/9.png";
-import ecomImg10 from "../images/servicePageTechnologies/Ecom-Solutions/10.png";
-import ecomImg11 from "../images/servicePageTechnologies/Ecom-Solutions/11.png";
-import ecomImg12 from "../images/servicePageTechnologies/Ecom-Solutions/12.png";
+  // ecommerce Solutions
+  import ecomImg1 from "../images/servicePageTechnologies/Ecom-Solutions/1.png";
+  import ecomImg2 from "../images/servicePageTechnologies/Ecom-Solutions/2.png";
+  import ecomImg3 from "../images/servicePageTechnologies/Ecom-Solutions/3.png";
+  import ecomImg4 from "../images/servicePageTechnologies/Ecom-Solutions/4.png";
+  import ecomImg5 from "../images/servicePageTechnologies/Ecom-Solutions/5.png";
+  import ecomImg6 from "../images/servicePageTechnologies/Ecom-Solutions/6.png";
+  import ecomImg7 from "../images/servicePageTechnologies/Ecom-Solutions/7.png";
+  import ecomImg8 from "../images/servicePageTechnologies/Ecom-Solutions/8.png";
+  import ecomImg9 from "../images/servicePageTechnologies/Ecom-Solutions/9.png";
+  import ecomImg10 from "../images/servicePageTechnologies/Ecom-Solutions/10.png";
+  import ecomImg11 from "../images/servicePageTechnologies/Ecom-Solutions/11.png";
+  import ecomImg12 from "../images/servicePageTechnologies/Ecom-Solutions/12.png";
 
-// Website Development
-import webdevimg1 from "../images/servicePageTechnologies/Website-dev/1.png";
-import webdevimg2 from "../images/servicePageTechnologies/Website-dev/2.png";
-import webdevimg3 from "../images/servicePageTechnologies/Website-dev/3.png";
-import webdevimg4 from "../images/servicePageTechnologies/Website-dev/4.png";
-import webdevimg5 from "../images/servicePageTechnologies/Website-dev/5.png";
-import webdevimg6 from "../images/servicePageTechnologies/Website-dev/6.png";
-import webdevimg7 from "../images/servicePageTechnologies/Website-dev/7.png";
-import webdevimg8 from "../images/servicePageTechnologies/Website-dev/8.png";
-import webdevimg9 from "../images/servicePageTechnologies/Website-dev/9.png";
-import webdevimg10 from "../images/servicePageTechnologies/Website-dev/10.png";
+  // Website Development
+  import webdevimg1 from "../images/servicePageTechnologies/Website-dev/1.png";
+  import webdevimg2 from "../images/servicePageTechnologies/Website-dev/2.png";
+  import webdevimg3 from "../images/servicePageTechnologies/Website-dev/3.png";
+  import webdevimg4 from "../images/servicePageTechnologies/Website-dev/4.png";
+  import webdevimg5 from "../images/servicePageTechnologies/Website-dev/5.png";
+  import webdevimg6 from "../images/servicePageTechnologies/Website-dev/6.png";
+  import webdevimg7 from "../images/servicePageTechnologies/Website-dev/7.png";
+  import webdevimg8 from "../images/servicePageTechnologies/Website-dev/8.png";
+  import webdevimg9 from "../images/servicePageTechnologies/Website-dev/9.png";
+  import webdevimg10 from "../images/servicePageTechnologies/Website-dev/10.png";
 
-// CMS Solutions
-import cmsimg1 from "../images/servicePageTechnologies/CMS-solution/1.png";
-import cmsimg2 from "../images/servicePageTechnologies/CMS-solution/2.png";
-import cmsimg3 from "../images/servicePageTechnologies/CMS-solution/3.png";
-import cmsimg4 from "../images/servicePageTechnologies/CMS-solution/4.png";
-import cmsimg5 from "../images/servicePageTechnologies/CMS-solution/5.png";
-import cmsimg6 from "../images/servicePageTechnologies/CMS-solution/6.png";
-import cmsimg7 from "../images/servicePageTechnologies/CMS-solution/7.png";
-import cmsimg8 from "../images/servicePageTechnologies/CMS-solution/8.png";
-import cmsimg9 from "../images/servicePageTechnologies/CMS-solution/9.png";
-import cmsimg10 from "../images/servicePageTechnologies/CMS-solution/10.png";
+  // CMS Solutions
+  import cmsimg1 from "../images/servicePageTechnologies/CMS-solution/1.png";
+  import cmsimg2 from "../images/servicePageTechnologies/CMS-solution/2.png";
+  import cmsimg3 from "../images/servicePageTechnologies/CMS-solution/3.png";
+  import cmsimg4 from "../images/servicePageTechnologies/CMS-solution/4.png";
+  import cmsimg5 from "../images/servicePageTechnologies/CMS-solution/5.png";
+  import cmsimg6 from "../images/servicePageTechnologies/CMS-solution/6.png";
+  import cmsimg7 from "../images/servicePageTechnologies/CMS-solution/7.png";
+  import cmsimg8 from "../images/servicePageTechnologies/CMS-solution/8.png";
+  import cmsimg9 from "../images/servicePageTechnologies/CMS-solution/9.png";
+  import cmsimg10 from "../images/servicePageTechnologies/CMS-solution/10.png";
 
-// CRM Solutions
-import crmimg1 from "../images/servicePageTechnologies/CRM-solution/1.png";
-import crmimg2 from "../images/servicePageTechnologies/CRM-solution/2.png";
-import crmimg3 from "../images/servicePageTechnologies/CRM-solution/3.png";
-import crmimg4 from "../images/servicePageTechnologies/CRM-solution/4.png";
-import crmimg5 from "../images/servicePageTechnologies/CRM-solution/5.png";
-import crmimg6 from "../images/servicePageTechnologies/CRM-solution/6.png";
-import crmimg7 from "../images/servicePageTechnologies/CRM-solution/7.png";
-import crmimg8 from "../images/servicePageTechnologies/CRM-solution/8.png";
+  // CRM Solutions
+  import crmimg1 from "../images/servicePageTechnologies/CRM-solution/1.png";
+  import crmimg2 from "../images/servicePageTechnologies/CRM-solution/2.png";
+  import crmimg3 from "../images/servicePageTechnologies/CRM-solution/3.png";
+  import crmimg4 from "../images/servicePageTechnologies/CRM-solution/4.png";
+  import crmimg5 from "../images/servicePageTechnologies/CRM-solution/5.png";
+  import crmimg6 from "../images/servicePageTechnologies/CRM-solution/6.png";
+  import crmimg7 from "../images/servicePageTechnologies/CRM-solution/7.png";
+  import crmimg8 from "../images/servicePageTechnologies/CRM-solution/8.png";
 
-// Web-design
-import webDesImg1 from "../images/servicePageTechnologies/Web-Design/1.png";
-import webDesImg2 from "../images/servicePageTechnologies/Web-Design/2.png";
-import webDesImg3 from "../images/servicePageTechnologies/Web-Design/3.png";
-import webDesImg4 from "../images/servicePageTechnologies/Web-Design/4.png";
-import webDesImg5 from "../images/servicePageTechnologies/Web-Design/5.png";
-import webDesImg6 from "../images/servicePageTechnologies/Web-Design/6.png";
-import webDesImg7 from "../images/servicePageTechnologies/Web-Design/7.png";
-import webDesImg8 from "../images/servicePageTechnologies/Web-Design/8.png";
-import webDesImg9 from "../images/servicePageTechnologies/Web-Design/9.png";
-import webDesImg10 from "../images/servicePageTechnologies/Web-Design/10.png";
-import webDesImg11 from "../images/servicePageTechnologies/Web-Design/11.png";
-import webDesImg12 from "../images/servicePageTechnologies/Web-Design/12.png";
+  // Web-design
+  import webDesImg1 from "../images/servicePageTechnologies/Web-Design/1.png";
+  import webDesImg2 from "../images/servicePageTechnologies/Web-Design/2.png";
+  import webDesImg3 from "../images/servicePageTechnologies/Web-Design/3.png";
+  import webDesImg4 from "../images/servicePageTechnologies/Web-Design/4.png";
+  import webDesImg5 from "../images/servicePageTechnologies/Web-Design/5.png";
+  import webDesImg6 from "../images/servicePageTechnologies/Web-Design/6.png";
+  import webDesImg7 from "../images/servicePageTechnologies/Web-Design/7.png";
+  import webDesImg8 from "../images/servicePageTechnologies/Web-Design/8.png";
+  import webDesImg9 from "../images/servicePageTechnologies/Web-Design/9.png";
+  import webDesImg10 from "../images/servicePageTechnologies/Web-Design/10.png";
+  import webDesImg11 from "../images/servicePageTechnologies/Web-Design/11.png";
+  import webDesImg12 from "../images/servicePageTechnologies/Web-Design/12.png";
 
-// hire developer
-import hireDevImg1 from "../images/servicePageTechnologies/Hire-developer/1.png";
-import hireDevImg2 from "../images/servicePageTechnologies/Hire-developer/2.png";
-import hireDevImg3 from "../images/servicePageTechnologies/Hire-developer/3.png";
-import hireDevImg4 from "../images/servicePageTechnologies/Hire-developer/4.png";
-import hireDevImg5 from "../images/servicePageTechnologies/Hire-developer/5.png";
-import hireDevImg6 from "../images/servicePageTechnologies/Hire-developer/6.png";
-import hireDevImg7 from "../images/servicePageTechnologies/Hire-developer/7.png";
-import hireDevImg8 from "../images/servicePageTechnologies/Hire-developer/8.png";
-import hireDevImg9 from "../images/servicePageTechnologies/Hire-developer/9.png";
-import hireDevImg10 from "../images/servicePageTechnologies/Hire-developer/10.png";
-import hireDevImg11 from "../images/servicePageTechnologies/Hire-developer/11.png";
-import hireDevImg12 from "../images/servicePageTechnologies/Hire-developer/12.png";
+  // hire developer
+  import hireDevImg1 from "../images/servicePageTechnologies/Hire-developer/1.png";
+  import hireDevImg2 from "../images/servicePageTechnologies/Hire-developer/2.png";
+  import hireDevImg3 from "../images/servicePageTechnologies/Hire-developer/3.png";
+  import hireDevImg4 from "../images/servicePageTechnologies/Hire-developer/4.png";
+  import hireDevImg5 from "../images/servicePageTechnologies/Hire-developer/5.png";
+  import hireDevImg6 from "../images/servicePageTechnologies/Hire-developer/6.png";
+  import hireDevImg7 from "../images/servicePageTechnologies/Hire-developer/7.png";
+  import hireDevImg8 from "../images/servicePageTechnologies/Hire-developer/8.png";
+  import hireDevImg9 from "../images/servicePageTechnologies/Hire-developer/9.png";
+  import hireDevImg10 from "../images/servicePageTechnologies/Hire-developer/10.png";
+  import hireDevImg11 from "../images/servicePageTechnologies/Hire-developer/11.png";
+  import hireDevImg12 from "../images/servicePageTechnologies/Hire-developer/12.png";
 
-// AI-ML
-import aiMlImg1 from "../images/servicePageTechnologies/AI-ML/1.png";
-import aiMlImg2 from "../images/servicePageTechnologies/AI-ML/2.png";
-import aiMlImg3 from "../images/servicePageTechnologies/AI-ML/3.png";
-import aiMlImg4 from "../images/servicePageTechnologies/AI-ML/4.png";
-import aiMlImg5 from "../images/servicePageTechnologies/AI-ML/5.png";
-import aiMlImg6 from "../images/servicePageTechnologies/AI-ML/6.png";
-import { FcCollaboration } from "react-icons/fc";
-import { HiOutlineLightBulb } from "react-icons/hi";
-import { BiSolidBookContent, BiSupport } from "react-icons/bi";
-import { HiMiniPencilSquare } from "react-icons/hi2";
-import { FaRegHandshake } from "react-icons/fa6";
+  // AI-ML
+  import aiMlImg1 from "../images/servicePageTechnologies/AI-ML/1.png";
+  import aiMlImg2 from "../images/servicePageTechnologies/AI-ML/2.png";
+  import aiMlImg3 from "../images/servicePageTechnologies/AI-ML/3.png";
+  import aiMlImg4 from "../images/servicePageTechnologies/AI-ML/4.png";
+  import aiMlImg5 from "../images/servicePageTechnologies/AI-ML/5.png";
+  import aiMlImg6 from "../images/servicePageTechnologies/AI-ML/6.png";
+  import { FcCollaboration } from "react-icons/fc";
+  import { HiOutlineLightBulb } from "react-icons/hi";
+  import { BiSolidBookContent, BiSupport } from "react-icons/bi";
+  import { HiMiniPencilSquare } from "react-icons/hi2";
+  import { FaRegHandshake } from "react-icons/fa6";
+import Technologies from "../Components/Navbar/Technologies/Technologies";
 
-const iconSize = 55;
-// const iconColor = "rgb(7, 89, 127)";
-const iconColor = "rgb(84,84,84)";
+  const iconSize = 55;
+  // const iconColor = "rgb(7, 89, 127)";
+  const iconColor = "rgb(84,84,84)";
+
+// Industries
+
 
 const routesConfig = {
   services: [
@@ -843,6 +847,46 @@ const routesConfig = {
       path: "industries/automotive",
       content: "automotive",
     },
+  ],
+  Technologies:[
+    {
+      path: "technologies/magento",
+      content:""
+    },
+  ],
+  AboutUs:[
+    {
+      path:"about-us/company",
+      content:[]
+    },
+    {
+      path:"about-us/partners-and-awards",
+      content:[]
+    },
+    {
+      path:"about-us/client-testimonials",
+      content:[]
+    },
+    {
+      path:"about-us/quality-assurance",
+      content:[]
+    },
+    {
+      path:"about-us/careers",
+      content:[]
+    },
+    {
+      path:"about-us/development-approach",
+      content:[]
+    },
+    {
+      path:"about-us/communication-strategy",
+      content:[]
+    },
+    {
+      path:"about-us/social-responsibility",
+      content:[]
+    }
   ],
 };
 export default routesConfig;

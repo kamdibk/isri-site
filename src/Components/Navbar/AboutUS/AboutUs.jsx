@@ -21,42 +21,66 @@ const AboutUs = ({ toggleNavbar }) => {
             {/* list items */}
             <ul className="services-links-items">
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="about-us/company"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Company
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="about-us/partners-and-awards"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Partners & Awards
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="about-us/client-testimonials"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Clients Testimonials
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="about-us/quality-assurance"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Quality Assurance
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="about-us/careers"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="about-us/development-approach"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Development Approach
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="about-us/communication-strategy"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Communication Strategy
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="about-us/social-responsibility"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Social Responsibility
                 </Link>
               </li>
@@ -71,7 +95,7 @@ const AboutUs = ({ toggleNavbar }) => {
         <ul className="services-dropdown-links-items">
           <li>
             <Link
-              to="#"
+              to="about-us/company"
               style={{ alignItems: "center", display: "flex" }}
               onClick={toggleNavbar}
             >
@@ -80,7 +104,7 @@ const AboutUs = ({ toggleNavbar }) => {
           </li>
           <li>
             <Link
-              to="#"
+              to="about-us/partners-and-awards"
               style={{ alignItems: "center", display: "flex" }}
               onClick={toggleNavbar}
             >
@@ -89,7 +113,7 @@ const AboutUs = ({ toggleNavbar }) => {
           </li>
           <li>
             <Link
-              to="#"
+              to="about-us/client-testimonials"
               style={{ alignItems: "center", display: "flex" }}
               onClick={toggleNavbar}
             >
@@ -98,7 +122,7 @@ const AboutUs = ({ toggleNavbar }) => {
           </li>
           <li>
             <Link
-              to="#"
+              to="about-us/quality-assurance"
               style={{ alignItems: "center", display: "flex" }}
               onClick={toggleNavbar}
             >
@@ -107,7 +131,7 @@ const AboutUs = ({ toggleNavbar }) => {
           </li>
           <li>
             <Link
-              to="#"
+              to="about-us/careers"
               style={{ alignItems: "center", display: "flex" }}
               onClick={toggleNavbar}
             >
@@ -116,7 +140,7 @@ const AboutUs = ({ toggleNavbar }) => {
           </li>
           <li>
             <Link
-              to="#"
+              to="about-us/development-approach"
               style={{ alignItems: "center", display: "flex" }}
               onClick={toggleNavbar}
             >
@@ -125,7 +149,7 @@ const AboutUs = ({ toggleNavbar }) => {
           </li>
           <li>
             <Link
-              to="#"
+              to="about-us/communication-strategy"
               style={{ alignItems: "center", display: "flex" }}
               onClick={toggleNavbar}
             >
@@ -134,7 +158,7 @@ const AboutUs = ({ toggleNavbar }) => {
           </li>
           <li>
             <Link
-              to="#"
+              to="about-us/social-responsibility"
               style={{ alignItems: "center", display: "flex" }}
               onClick={toggleNavbar}
             >
