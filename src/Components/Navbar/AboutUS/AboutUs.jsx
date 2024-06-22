@@ -3,7 +3,7 @@ import "./AboutUs.css";
 import useWindowDimensions from "../../Hooks/WindowDimensions/useWindowDimensions";
 import { Link } from "react-router-dom";
 
-const AboutUs = (props) => {
+const AboutUs = ({ toggleNavbar }) => {
   const { width } = useWindowDimensions();
   if (width >= 1090) {
     return (
@@ -66,52 +66,84 @@ const AboutUs = (props) => {
       </div>
     );
   } else {
-    return(
-        <div className="services-dropdown">
+    return (
+      <div className="services-dropdown">
         <ul className="services-dropdown-links-items">
-        <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
-                  Company
-                </Link>
-              </li>
-              <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
-                  Partners & Awards
-                </Link>
-              </li>
-              <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
-                  Clients Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
-                  Quality Assurance
-                </Link>
-              </li>
-              <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
-                  Development Approach
-                </Link>
-              </li>
-              <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
-                  Communication Strategy
-                </Link>
-              </li>
-              <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
-                  Social Responsibility
-                </Link>
-              </li>
+          <li>
+            <Link
+              to="#"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
+              Company
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
+              Partners & Awards
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
+              Clients Testimonials
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
+              Quality Assurance
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
+              Careers
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
+              Development Approach
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
+              Communication Strategy
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
+              Social Responsibility
+            </Link>
+          </li>
         </ul>
       </div>
-    )
+    );
   }
 };
 

@@ -21,47 +21,74 @@ const Industries = ({ toggleNavbar }) => {
             {/* list items */}
             <ul className="services-links-items">
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/medical-and-healthcare"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Medical & Healthcare
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/education"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Education
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/banking-and-finance"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Banking & Finance
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/media-and-entertainment"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Media & Entertainment
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/retial-and-wholesale"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Retail & Wholesale
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/customer-products"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Consumer Products
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/travel"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Travel
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/real-estate"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Real Estate
                 </Link>
               </li>
               <li>
-                <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+                <Link
+                  to="industries/automotive"
+                  style={{ alignItems: "center", display: "flex" }}
+                >
                   Automotive
                 </Link>
               </li>
@@ -76,50 +103,82 @@ const Industries = ({ toggleNavbar }) => {
         <ul className="services-dropdown-links-items">
           <li>
             <Link
-              to="#"
+              to="industries/medical-and-healthcare"
               style={{ alignItems: "center", display: "flex" }}
-              onClink={toggleNavbar}
+              onClick={toggleNavbar}
             >
               Medical & Healthcare
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+            <Link
+              to="industries/education"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
               Education
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+            <Link
+              to="industries/banking-and-finance"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
               Banking & Finance
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+            <Link
+              to="industries/media-and-entertainment"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
               Media & Entertainment
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+            <Link
+              to="industries/retial-and-wholesale"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
               Retail & Wholesale
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+            <Link
+              to="industries/customer-products"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
               Consumer Products
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+            <Link
+              to="industries/travel"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
               Travel
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+            <Link
+              to="industries/real-estate"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
               Real Estate
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ alignItems: "center", display: "flex" }}>
+            <Link
+              to="industries/automotive"
+              style={{ alignItems: "center", display: "flex" }}
+              onClick={toggleNavbar}
+            >
               Automotive
             </Link>
           </li>

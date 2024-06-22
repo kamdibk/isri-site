@@ -809,39 +809,39 @@ const routesConfig = {
   industries: [
     {
       path: "industries/medical-and-healthcare",
-      content: "this is sample content",
+      content: "medical and health",
     },
     {
       path: "industries/education",
-      content: "this is sample content",
+      content: "education",
     },
     {
       path: "industries/banking-and-finance",
-      content: "this is sample content",
+      content: "bacnking and finance",
     },
     {
       path: "industries/media-and-entertainment",
-      content: "this is sample content",
+      content: "media and entertainment",
     },
     {
       path: "industries/retial-and-wholesale",
-      content: "this is sample content",
+      content: "retial and wholesale",
     },
     {
       path: "industries/customer-products",
-      content: "this is sample content",
+      content: "customer products",
     },
     {
       path: "industries/travel",
-      content: "this is sample content",
+      content: "travel",
     },
     {
       path: "industries/real-estate",
-      content: "this is sample content",
+      content: "real estate",
     },
     {
       path: "industries/automotive",
-      content: "this is sample content",
+      content: "automotive",
     },
   ],
 };

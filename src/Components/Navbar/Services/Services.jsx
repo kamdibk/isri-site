@@ -11,7 +11,7 @@ import { IoEarthOutline } from "react-icons/io5";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
-const   Services = () => {
+const Services = () => {
   return (
     <div className="dropdown">
       <div className="dropdown-lvl-1">
@@ -27,7 +27,10 @@ const   Services = () => {
           {/* list items */}
           <ul className="services-links-items">
             <li>
-              <Link to="services/software-development" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/software-development"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <AiFillSetting
                   size={20}
                   style={{ marginRight: "10px" }}
@@ -37,7 +40,10 @@ const   Services = () => {
               </Link>
             </li>
             <li>
-              <Link to="services/ecommerce-solutions" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/ecommerce-solutions"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <BsCart4
                   size={20}
                   style={{ marginRight: "10px" }}
@@ -47,23 +53,32 @@ const   Services = () => {
               </Link>
             </li>
             <li>
-              <Link to="services/mobile-apps-development" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/mobile-apps-development"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <AiOutlineMobile size={20} style={{ marginRight: "10px" }} />
                 Mobile Apps Development
               </Link>
             </li>
             <li>
-              <Link to="services/cloud-solution" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/cloud-solution"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <AiFillCloud
                   size={20}
                   style={{ marginRight: "10px" }}
                   color="skyblue"
                 />
                 Cloud Solution
-              </Link  >
+              </Link>
             </li>
             <li>
-              <Link to="services/website-development" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/website-development"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <AiOutlineDesktop
                   size={20}
                   style={{ marginRight: "10px" }}
@@ -73,13 +88,19 @@ const   Services = () => {
               </Link>
             </li>
             <li>
-              <Link to="services/cms-solutions" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/cms-solutions"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <BsLaptop size={20} style={{ marginRight: "10px" }} />
                 CMS Solutions
               </Link>
             </li>
             <li>
-              <Link to="services/crm-solutions" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/crm-solutions"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <FaHandshake
                   size={20}
                   style={{ marginRight: "10px" }}
@@ -89,7 +110,10 @@ const   Services = () => {
               </Link>
             </li>
             <li>
-              <Link to="services/web-design" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/web-design"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <IoEarthOutline
                   size={20}
                   style={{ marginRight: "10px" }}
@@ -99,7 +123,10 @@ const   Services = () => {
               </Link>
             </li>
             <li>
-              <Link to="services/hire-developer" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/hire-developer"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <BsFillPeopleFill
                   size={20}
                   style={{ marginRight: "10px" }}
@@ -109,7 +136,10 @@ const   Services = () => {
               </Link>
             </li>
             <li>
-              <Link to="services/ai-ml" style={{ alignItems: "center", display: "flex" }}>
+              <Link
+                to="services/ai-ml"
+                style={{ alignItems: "center", display: "flex" }}
+              >
                 <GiArtificialIntelligence
                   size={20}
                   style={{ marginRight: "10px" }}

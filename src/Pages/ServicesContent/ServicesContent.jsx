@@ -6,7 +6,6 @@ import useWindowDimensions from "../../Components/Hooks/WindowDimensions/useWind
 import { motion } from "framer-motion";
 const ServicesContent = () => {
   const { width } = useWindowDimensions();
-
   const [isActive, setIsActive] = useState(false);
   const [isWide, setIsWide] = useState(false);
   const [isWhiteColor, setWhiteColor] = useState(false);
@@ -73,7 +72,7 @@ const ServicesContent = () => {
 
     if (
       width > 766 &&
-      ( id === "website-development" ||
+      (id === "website-development" ||
         id === "cms-solutions" ||
         id === "crm-solutions")
     ) {

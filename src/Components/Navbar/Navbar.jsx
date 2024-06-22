@@ -5,7 +5,7 @@ import Logo from "../../assets/ISRI-LOGO.jpg";
 import {  AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import useWindowDimensions from "./../Hooks/WindowDimensions/useWindowDimensions";
-import SubNav from "./Services/SubNav";
+import SubNav from "./SubNav/SubNav";
 import AboutUs from "./AboutUS/AboutUs";
 import Industries from "./Industries/Industries";
 import Technologies from "./Technologies/Technologies";

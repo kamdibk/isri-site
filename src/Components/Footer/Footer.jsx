@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import Logo from "../../assets/ISRI-LOGO.jpg";
+import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions";
 const Footer = () => {
+  const { width } = useWindowDimensions();
+  const [isSmall, setIsSmall] = useState(false);
+
+  useEffect(() => {
+    if (width <= 550) setIsSmall(true);
+    else setIsSmall(false);
+  }, [width]);
+
+  const dynamicDisplay = isSmall
+    ? {
+        display: "block",
+      }
+    : {
+        display: "none",
+      };
+
   return (
     <div className="footer-main-container">
+      <div className="footer-logo-div">
+        <img src={Logo} alt="ISRI Logo" className="f-isri-logo" height={50} />
+      </div>
       <div className="footer-inner-container">
         <div className="footer-left-container">
           <div className="logo-container">
-          <img src={Logo} alt="ISRI Logo" className="f-isri-logo" height={50}/>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium, doloremque.
           </div>
         </div>
         <div className="footer-right-container">
@@ -21,6 +42,7 @@ const Footer = () => {
           />
         </div>
       </div>
+      <div className="bottomSpaceManagerDiv" style={dynamicDisplay}></div>
     </div>
   );
 };
