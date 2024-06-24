@@ -1,23 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./ServicesContent.css";
 import { useParams } from "react-router-dom";
 import routesConfig from "../../Routes/routes";
 import useWindowDimensions from "../../Components/Hooks/WindowDimensions/useWindowDimensions";
-import { motion } from "framer-motion";
+import Footer from '../../Components/Footer/Footer'
+import { motion, useAnimation, useInView } from "framer-motion";
+import SplitString from "../../Utils/SplitString";
+
 const ServicesContent = () => {
   const { width } = useWindowDimensions();
   const [isActive, setIsActive] = useState(false);
   const [isWide, setIsWide] = useState(false);
   const [isWhiteColor, setWhiteColor] = useState(false);
   const [gridItems, setGridItems] = useState(6);
-
   const { id } = useParams();
   const path = `services/${id}`;
   let content = routesConfig.services.find((route) => route.path === path);
   content = content.content;
   const headingPoints = content.headPoints;
-  const quote = content.quote.quote;
-  const quoter = content.quote.quoter;
+  const quote = SplitString(content.quote.quote);
+  const quoter = SplitString(content.quote.quoter);
   const whyus = content.whyUs;
   const Technologies = content.Technologies;
   const whatWeDo = content.whatWeDo;
@@ -31,23 +33,44 @@ const ServicesContent = () => {
       return Technologies.map((key, index) => {
         if (index < 4) {
           return (
-            <div className="box gray-box" key={index}>
+            <motion.div
+              className="box gray-box"
+              key={index}
+              variants={charVariants}
+              initial="hidden"
+              animate={techTransition}
+              transition={{ duration: 2 }}
+            >
               {key}
-            </div>
+            </motion.div>
           );
         }
         return (
-          <div className="box" key={index}>
+          <motion.div
+            className="box"
+            key={index}
+            variants={charVariants}
+            initial="hidden"
+            animate={techTransition}
+            transition={{ duration: 2 }}
+          >
             {key}
-          </div>
+          </motion.div>
         );
       });
     } else {
       return Technologies.map((key, index) => {
         return (
-          <div className="box" key={index}>
+          <motion.div
+            className="box"
+            key={index}
+            variants={charVariants}
+            initial="hidden"
+            animate={techTransition}
+            transition={{ duration: 2 }}
+          >
             {key}
-          </div>
+          </motion.div>
         );
       });
     }
@@ -123,7 +146,52 @@ const ServicesContent = () => {
         border: "1px solid black",
       }
     : {};
-    
+
+  // Framer Motion
+  const heroCompRef = useRef();
+  const quoteCompRef = useRef();
+  const whyUSRef = useRef();
+  const whyChooseUsRef = useRef();
+  const technologiesRef = useRef();
+
+  const isHeroCompInView = useInView(heroCompRef, { once: true });
+  const isQuoteInView = useInView(quoteCompRef, { once: true });
+  const isWhyUSInView = useInView(whyUSRef, { once: true });
+  const iswhyChooseUsInView = useInView(whyChooseUsRef, { once: true });
+  const isTechnologiesInView = useInView(technologiesRef, { once: true });
+
+  const slideUpTransition = useAnimation();
+  const slideUpTransition2 = useAnimation();
+  const slideUpTransition3 = useAnimation();
+  const charTransition = useAnimation();
+  const techTransition = useAnimation();
+
+  useEffect(() => {
+    if (isHeroCompInView) slideUpTransition.start("reveal");
+    if (isQuoteInView) charTransition.start("reveal");
+    if (isWhyUSInView) slideUpTransition2.start("reveal");
+    if (iswhyChooseUsInView) slideUpTransition3.start("reveal");
+    if (isTechnologiesInView) techTransition.start("reveal");
+  }, [
+    isHeroCompInView,
+    isQuoteInView,
+    slideUpTransition,
+    charTransition,
+    isWhyUSInView,
+    iswhyChooseUsInView,
+    isTechnologiesInView,
+  ]);
+
+  const slideUpVarient = {
+    initial: { opacity: 0, y: 75 },
+    reveal: { opacity: 1, y: 0 },
+  };
+
+  const charVariants = {
+    hidden: { opacity: 0 },
+    reveal: { opacity: 1 },
+  };
+
   return (
     <motion.div
       initial={{ width: 0 }}
@@ -139,31 +207,82 @@ const ServicesContent = () => {
               style={{
                 backgroundImage: `url(${content.heroImageLink})`,
               }}
+              ref={heroCompRef}
             >
               <div className="services-page-hero-heading">
-                <h1>{content.heading}</h1>
-                <ul style={changeToWhite}>
+                <motion.h1
+                  variants={slideUpVarient}
+                  initial="initial"
+                  animate={slideUpTransition}
+                  transition={{ duration: 1 }}
+                >
+                  {content.heading}
+                </motion.h1>
+                <motion.ul
+                  style={changeToWhite}
+                  variants={slideUpVarient}
+                  initial="initial"
+                  animate={slideUpTransition}
+                  transition={{ delay: 0.3, duration: 1 }}
+                >
                   {headingPoints.map((element, key) => {
                     return <li key={key}>{element}</li>;
                   })}
-                </ul>
+                </motion.ul>
               </div>
             </div>
             {/* Quote */}
-            <div className="service-page-quote-container">
-              <center className="service-page-container-quote">{quote}</center>
-              <center className="service-page-quoter"> - {quoter}</center>
-            </div>
+            <motion.div
+              className="service-page-quote-container"
+              ref={quoteCompRef}
+            >
+              <motion.center
+                className="service-page-container-quote"
+                initial="hidden"
+                animate={charTransition}
+                transition={{ staggerChildren: 0.03 }}
+              >
+                {quote.map((char, index) => (
+                  <motion.span
+                    key={index}
+                    variants={charVariants}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.center>
+              <motion.center
+                className="service-page-quoter"
+                animate={charTransition}
+                transition={{ staggerChildren: 0.03 }}
+                initial="hidden"
+              >
+                {" "}
+                {quoter.map((char, index) => (
+                  <motion.span
+                    variants={charVariants}
+                    transition={{ delay: 2, duration: 3 }}
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.center>
+            </motion.div>
             {/* why choose us */}
-            <div className="whychooseus-container">
+            <div className="whychooseus-container" ref={whyUSRef}>
               <div className="whychooseus-subcontainer">
-                <h4 className="heading-text pt">WHY US ?</h4>
+                <h4 className="service-page-heading pt">WHY US ?</h4>
                 <div className="whychooseus-rsn-blocks">
                   {whyus.map((key, index) => {
                     return (
-                      <div
+                      <motion.div
                         className="service-whychooseus-rsn-block"
                         key={index}
+                        initial="initial"
+                        variants={slideUpVarient}
+                        animate={slideUpTransition2}
+                        transition={{ duration: 2 }}
                       >
                         <div className="service-rsn-block-icon">{key.icon}</div>
                         <div className="service-rsn-block-heading">
@@ -172,7 +291,7 @@ const ServicesContent = () => {
                         <div className="service-rsn-block-text">
                           {key.reason}
                         </div>
-                      </div>
+                      </motion.div>
                     );
                   })}
                 </div>
@@ -185,9 +304,15 @@ const ServicesContent = () => {
                   ? "service-page-technologies-main-container"
                   : "display-none"
               }
+              ref={technologiesRef}
             >
               <div className="service-page-technologies-inner-container">
-                <h4 className="service-page-heading">Technologies</h4>
+                <h4
+                  className="service-page-heading"
+                  style={{ paddingLeft: "2rem" }}
+                >
+                  Technologies
+                </h4>
                 <div
                   className={"service-page-technologies-grid-container"}
                   style={changeGrid}
@@ -197,17 +322,21 @@ const ServicesContent = () => {
               </div>
             </div>
             {/* What We Do */}
-            <div className="whychooseus-container">
+            <div className="whychooseus-container" ref={whyChooseUsRef}>
               <div className="whychooseus-subcontainer" style={mobContainer}>
                 <h4 className="service-page-heading" style={headingStyle}>
                   What We Do
                 </h4>
                 <div className="whychooseus-rsn-blocks">
                   {whatWeDo.map((key, index) => (
-                    <div
+                    <motion.iv
                       className="service-whychooseus-rsn-block h-ext"
                       key={index}
                       style={reasonBlock}
+                      initial="initial"
+                      variants={slideUpVarient}
+                      animate={slideUpTransition3}
+                      transition={{ duration: 2 }}
                     >
                       <div className="service-rsn-block-icon">{key.icon}</div>
                       <div className="service-rsn-block-heading">
@@ -223,11 +352,14 @@ const ServicesContent = () => {
                           </ul>
                         ) : null}
                       </div>
-                    </div>
+                    </motion.iv>
                   ))}
                 </div>
               </div>
             </div>
+            <div>Our Development Works</div>
+            <div>Why ISRI is one of the best IT companies</div>
+            <Footer/>
           </div>
         </div>
       ) : (

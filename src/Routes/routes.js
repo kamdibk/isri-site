@@ -159,7 +159,7 @@ const routesConfig = {
         quote: {
           quote:
             "Software is a great combination between artistry and engineering.",
-          quoter: "Bill Gates",
+          quoter: "- Bill Gates",
         },
         whyUs: [
           {
@@ -279,7 +279,7 @@ const routesConfig = {
         quote: {
           quote:
             '"Good websites get applause, Great websites get business." - So, if you want to create a great e-commerce website, it`s important to hire experts who have the knowledge and experience to develop and manage it effectively. ',
-          quoter: "Paul Cookson, a digital marketing expert, and author",
+          quoter: "- Paul Cookson, a digital marketing expert, and author",
         },
         whyUs: [
           {
@@ -382,7 +382,7 @@ const routesConfig = {
         quote: {
           quote:
             "In my opinion, the future of mobile is the future of everything.",
-          quoter: "Matt Galligan, Co-founder of Circa",
+          quoter: "- Matt Galligan, Co-founder of Circa",
         },
         whyUs: [
           {
@@ -453,7 +453,7 @@ const routesConfig = {
         quote: {
           quote:
             'The cloud is the great equalizer... it`s not about having the biggest or most expensive data center anymore, it`s about how quickly you can scale up and down." ',
-          quoter: "Werner Vogels, CTO of Amazon",
+          quoter: "- Werner Vogels, CTO of Amazon",
         },
         whyUs: [
           {
@@ -549,7 +549,7 @@ const routesConfig = {
         ],
         quote: {
           quote: "Simplicity is the ultimate sophistication.",
-          quoter: "Leonardo Da Vinci",
+          quoter: "- Leonardo Da Vinci",
         },
         whyUs: [
           {
@@ -649,7 +649,7 @@ const routesConfig = {
         quote: {
           quote:
             "A CMS should provide you with the tools to create, manage, and distribute your content effectively, without requiring you to become a technology expert.",
-          quoter: "Mark Boulton, Designer and Art Director",
+          quoter: "- Mark Boulton, Designer and Art Director",
         },
         whyUs: [
           {
@@ -751,7 +751,7 @@ const routesConfig = {
         quote: {
           quote:
             "CRM is all about building relationships with your customers. The technology is just a tool that helps you do that more effectively.",
-          quoter: "Paul Greenberg",
+          quoter: "- Paul Greenberg",
         },
         whyUs: [
           {
@@ -850,7 +850,7 @@ const routesConfig = {
         quote: {
           quote:
             "Design is not just what it looks like and feels like. Design is how it works",
-          quoter: "Steve Jobs",
+          quoter: "- Steve Jobs",
         },
         whyUs: [
           {
@@ -953,7 +953,7 @@ const routesConfig = {
         quote: {
           quote:
             '"The best developer is the one who can not only write good code but also communicate well, work collaboratively, and continuously learn and improve."',
-          quoter: "Simon Allardice",
+          quoter: "- Simon Allardice",
         },
         whyUs: [
           {
@@ -1056,7 +1056,7 @@ const routesConfig = {
         quote: {
           quote:
             "Artificial intelligence is one of the most profound things we`re working on as humanity. It has the potential to fundamentally change the way we live, work and communicate with each other. ",
-          quoter: "Sundar Pichai",
+          quoter: "- Sundar Pichai",
         },
         whyUs: [
           {
@@ -1104,6 +1104,38 @@ const routesConfig = {
           <img src={aiMlImg5} alt="" />,
           <img src={aiMlImg6} alt="" />,
         ],
+        whatWeDo: [
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Language Processing",
+            text: "Our team can develop natural language processing (NLP) solutions using GPT-3 and other language models for various applications, such as chatbots, voice assistants, sentiment analysis, and text summarization.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Computer Vision",
+            text: "We can develop computer vision solutions using OpenCV and other libraries for various applications, such as object detection and recognition, image and video analysis, and autonomous vehicles.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Reinforcement Learning",
+            text: "Our team can develop reinforcement learning algorithms using Gym and other frameworks for various applications, such as game playing, robotics, and optimization problems.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Code Generation",
+            text: "We can develop code generation solutions using Codex and other AI systems for various applications, such as automated programming and code optimization.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Creative & Custom AI",
+            text: "We can develop creative AI solutions using DALL-E and other AI systems for various applications, such as generating art, music, and other creative outputs with full customization based on business use cses.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Predictive Analytics",
+            text: "Predictive analytics is a service offered by AI/ML solutions providers that leverage machine learning algorithms to analyze historical data, identify patterns, and make predictions about future outcomes or trends. This service enables businesses to gain actionable insights, optimize decision-making, and anticipate potential opportunities or risks based on data-driven predictions.",
+          },
+        ]
       },
     },
   ],

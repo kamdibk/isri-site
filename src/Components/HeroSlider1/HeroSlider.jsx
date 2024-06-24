@@ -13,9 +13,9 @@ const HeroSlider = () => {
   // Framer
   const ref = useRef(null);
   const isInView = useInView(ref);
-  useEffect(() => {
+    // useEffect(() => {
 
-  }, [isInView]);
+    // }, [isInView]);
 
   const { width } = useWindowDimensions();
   const [isSmall, setIsSmall] = useState(false);
