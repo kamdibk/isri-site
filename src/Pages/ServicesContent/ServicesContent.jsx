@@ -20,6 +20,8 @@ const ServicesContent = () => {
   const quoter = content.quote.quoter;
   const whyus = content.whyUs;
   const Technologies = content.Technologies;
+  const whatWeDo = content.whatWeDo;
+  const [isMobileRoute, setIsMobileRoute] = useState(false);
 
   const returnBoxes = () => {
     if (id === "mobile-apps-development") {
@@ -28,13 +30,25 @@ const ServicesContent = () => {
     if (id === "ecommerce-solutions") {
       return Technologies.map((key, index) => {
         if (index < 4) {
-          return <div className="box gray-box">{key}</div>;
+          return (
+            <div className="box gray-box" key={index}>
+              {key}
+            </div>
+          );
         }
-        return <div className="box">{key}</div>;
+        return (
+          <div className="box" key={index}>
+            {key}
+          </div>
+        );
       });
     } else {
-      return Technologies.map((key) => {
-        return <div className="box">{key}</div>;
+      return Technologies.map((key, index) => {
+        return (
+          <div className="box" key={index}>
+            {key}
+          </div>
+        );
       });
     }
   };
@@ -83,9 +97,33 @@ const ServicesContent = () => {
       setGridItems(6);
       setIsWide(false);
     }
+
+    if (id === "mobile-apps-development") {
+      setIsMobileRoute(true);
+    } else {
+      setIsMobileRoute(false);
+    }
     returnBoxes();
   }, [id, width]);
 
+  const mobContainer = isMobileRoute
+    ? {
+        background: "white",
+        padding: "3rem",
+      }
+    : {};
+  const headingStyle = isMobileRoute
+    ? {
+        paddingLeft: "1rem",
+      }
+    : {};
+  const reasonBlock = isMobileRoute
+    ? {
+        height: "500px",
+        border: "1px solid black",
+      }
+    : {};
+    
   return (
     <motion.div
       initial={{ width: 0 }}
@@ -95,6 +133,7 @@ const ServicesContent = () => {
       {content ? (
         <div className="services-content-main-container">
           <div className="services-content-container">
+            {/* Hero Image */}
             <div
               className="services-pages-hero-image"
               style={{
@@ -110,10 +149,12 @@ const ServicesContent = () => {
                 </ul>
               </div>
             </div>
+            {/* Quote */}
             <div className="service-page-quote-container">
               <center className="service-page-container-quote">{quote}</center>
               <center className="service-page-quoter"> - {quoter}</center>
             </div>
+            {/* why choose us */}
             <div className="whychooseus-container">
               <div className="whychooseus-subcontainer">
                 <h4 className="heading-text pt">WHY US ?</h4>
@@ -137,6 +178,7 @@ const ServicesContent = () => {
                 </div>
               </div>
             </div>
+            {/* Technologies */}
             <div
               className={
                 isActive
@@ -151,6 +193,38 @@ const ServicesContent = () => {
                   style={changeGrid}
                 >
                   {returnBoxes()}
+                </div>
+              </div>
+            </div>
+            {/* What We Do */}
+            <div className="whychooseus-container">
+              <div className="whychooseus-subcontainer" style={mobContainer}>
+                <h4 className="service-page-heading" style={headingStyle}>
+                  What We Do
+                </h4>
+                <div className="whychooseus-rsn-blocks">
+                  {whatWeDo.map((key, index) => (
+                    <div
+                      className="service-whychooseus-rsn-block h-ext"
+                      key={index}
+                      style={reasonBlock}
+                    >
+                      <div className="service-rsn-block-icon">{key.icon}</div>
+                      <div className="service-rsn-block-heading">
+                        {key.heading}
+                      </div>
+                      <div className="service-rsn-block-text">
+                        {key.text}
+                        {key.points ? (
+                          <ul className="block-unordered-list">
+                            {key.points.map((key, index) => (
+                              <li key={index}>{key}</li>
+                            ))}
+                          </ul>
+                        ) : null}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
