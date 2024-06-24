@@ -131,7 +131,6 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { BiSolidBookContent, BiSupport } from "react-icons/bi";
 import { HiMiniPencilSquare } from "react-icons/hi2";
 import { FaRegHandshake } from "react-icons/fa6";
-import Technologies from "../Components/Navbar/Technologies/Technologies";
 
 const iconSize = 55;
 // const iconColor = "rgb(7, 89, 127)";
@@ -1139,6 +1138,144 @@ const routesConfig = {
       },
     },
   ],
+  Technologies: [
+    {
+      path: "technologies/magento",
+      content: "magento"
+    },
+    {
+      path: "technologies/shopify",
+      content: "shopify"
+    },
+    {
+      path: "technologies/shopify-plus",
+      content: "shopify-plus"
+    },
+    {
+      path: "technologies/opencart",
+      content: "open-cart"
+    },
+    {
+      path: "technologies/woocommerce",
+      content: "woocommerce"
+    },
+    {
+      path: "technologies/bigcommerce",
+      content: "bigcommerce"
+    },
+    {
+      path: "technologies/wix",
+      content: "wix"
+    },
+    {
+      path: "technologies/wordpress",
+      content: "wordpress"
+    },
+    {
+      path: "technologies/drupal",
+      content: "drupal"
+    },
+    {
+      path: "technologies/joompla",
+      content: "joomla"
+    },
+    {
+      path: "technologies/php-framework",
+      content: "php-framework"
+    },
+    {
+      path: "technologies/laravel",
+      content: "laravel"
+    },
+    {
+      path: "technologies/mean-mern",
+      content: "mean-mern"
+    },
+    {
+      path: "technologies/nodejs",
+      content: "nodejs"
+    },
+    {
+      path: "technologies/python",
+      content: "python"
+    },
+    {
+      path: "technologies/iphone",
+      content: "iphone"
+    },
+    {
+      path: "technologies/android",
+      content: "android"
+    },
+    {
+      path: "technologies/xamarin",
+      content: "xamarin"
+    },
+    {
+      path: "technologies/react-native",
+      content: "react-native"
+    },
+    {
+      path: "technologies/dotnet-development",
+      content: "dotnet-development"
+    },
+    {
+      path: "technologies/ms-dynamic-crm",
+      content: "ms-dynamic-crm"
+    },
+    {
+      path: "technologies/sharepoint",
+      content: "sharepoint"
+    },
+    {
+      path: "technologies/microsoft-bot",
+      content: "microsoft-bot"
+    },
+    {
+      path: "technologies/angularjs",
+      content: "angularjs"
+    },
+    {
+      path: "technologies/ui-ux",
+      content: "ui-ux"
+    },
+    {
+      path: "technologies/graphics",
+      content: "graphics"
+    },
+    {
+      path: "technologies/reactjs",
+      content: "reactjs"
+    },
+    {
+      path: "technologies/alexa-skills-development",
+      content: "alexa-skills-development"
+    },
+    {
+      path: "technologies/membership-management-solutions",
+      content: "membership-management-solutions"
+    },
+    {
+      path: "technologies/big-data",
+      content: "big-data"
+    },
+    {
+      path: "technologies/devops",
+      content: "devops"
+    },
+    {
+      path: "technologies/banking-as-a-service",
+      content: "banking-as-a-service"
+    },
+    {
+      path: "technologies/open-network-for-digital-commerce",
+      content: "open-network-for-digital-commerce"
+    },
+    {
+      path: "technologies/magento",
+      content: ""
+    },
+  ],
   industries: [
     {
       path: "industries/medical-and-healthcare",
@@ -1175,12 +1312,6 @@ const routesConfig = {
     {
       path: "industries/automotive",
       content: "automotive",
-    },
-  ],
-  Technologies: [
-    {
-      path: "technologies/magento",
-      content: ""
     },
   ],
   AboutUs: [
