@@ -199,7 +199,7 @@ const routesConfig = {
             icon: <Ri24HoursFill size={iconSize} color={iconColor} />,
             heading: "24/7 Support ",
             reason:
-              "SynapseIndia team is always known for its availability and great customer support. Our team of highly professional developers is always available 24/7 to promptly address any queries.",
+              "Our team is always known for its availability and great customer support. Our team of highly professional developers is always available 24/7 to promptly address any queries.",
           },
         ],
         Technologies: [
@@ -363,7 +363,7 @@ const routesConfig = {
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
             heading: "Personalized Customer Experiences",
-            text: "Personalized customer experiences involve tailoring eCommerce platforms and interfaces to meet the unique preferences, behaviors, and needs of individual users. SynapseIndia's e-commerce development services include implementing personalized product recommendations, dynamic pricing strategies, targeted promotions, and customized content delivery mechanisms.",
+            text: "Personalized customer experiences involve tailoring eCommerce platforms and interfaces to meet the unique preferences, behaviors, and needs of individual users. Our e-commerce development services include implementing personalized product recommendations, dynamic pricing strategies, targeted promotions, and customized content delivery mechanisms.",
           },
         ]
       },
@@ -1147,7 +1147,7 @@ const routesConfig = {
         heroImageLink: "/backgrounds/technologies/magento.jpg",
         heading: "Magento Development Company",
         text: "We specialize in Magento development, dedicated to crafting exceptional e-commerce experiences. With years of expertise and a proven track record, we're committed to realizing your digital vision.",
-        whyCoose:""
+        whyCoose: ""
       }
     },
     {
@@ -1286,7 +1286,30 @@ const routesConfig = {
   industries: [
     {
       path: "industries/medical-and-healthcare",
-      content: "medical and health",
+      content: {
+        divs: [
+          {
+            image: "",
+            heading: "Medical & healthCare Software Development Company",
+            text: "We merge technology with healthcare app development to create solutions that optimize patient care, streamline operations, and enhance overall efficiency. With a profound understanding of medical marketing services, we craft tailored solutions that meet the unique challenges faced by healthcare providers, practitioners, and organizations.",
+          },
+          {
+            image: "",
+            heading: "Medical and Healthcare Software & Web Development",
+            text: "We believe in designing customised healthcare mobile app development for hospitals, clinics, healthcare facilities, and entrepreneurs seeking high-quality digital solutions. Our highly skilled developers deliver optimized patient care and efficient healthcare management tools using the power of artificial intelligence, machine learning, and cloud computing.",
+          },
+          {
+            imgage: "",
+            heading: "Healthcare Solution Development",
+            text: "Today's healthcare sector needs high-quality software solutions to operate with patient data, manage hospital technology, perform illness diagnostics, and calculate medical indicators. As a result, healthcare application development is in high demand. Experienced IT engineers and programmers can complete nearly any work given to them thanks to the variety of contemporary software technologies, and our team is no exception. Our skilled healthcare app developers worked on several projects for the global e-health sector and delivered positive outcomes.",
+          },
+          {
+            image: "",
+            heading: "Healthcare Mobile App Development",
+            text: "The number of healthcare applications also keeps expanding along with the mobile sector. Numerous health organizations appeal to us for the development of medical applications for mobile devices as a result of the popularity of reference apps, care planning apps, prescription reminder apps, and facility management solutions on app stores. We have a lot of expertise in developing apps of different levels of complexity and addressing problems. Healthcare mobile app development is important and challenging, and We will offer our services to you.",
+          },
+        ]
+      },
     },
     {
       path: "industries/education",
