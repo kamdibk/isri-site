@@ -133,10 +133,7 @@ import { HiMiniPencilSquare } from "react-icons/hi2";
 import { FaRegHandshake } from "react-icons/fa6";
 
 
-// Technologies
-
-
-
+// Industries
 
 
 
