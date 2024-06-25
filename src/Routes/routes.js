@@ -132,12 +132,17 @@ import { BiSolidBookContent, BiSupport } from "react-icons/bi";
 import { HiMiniPencilSquare } from "react-icons/hi2";
 import { FaRegHandshake } from "react-icons/fa6";
 
+
+// Technologies
+
+
+
+
+
+
 const iconSize = 55;
 // const iconColor = "rgb(7, 89, 127)";
 const iconColor = "rgb(84,84,84)";
-
-// Industries
-
 
 const routesConfig = {
   services: [
@@ -145,7 +150,7 @@ const routesConfig = {
       path: "services/software-development",
       content: {
         heading: "Software Development Services",
-        heroImageLink: "/img/software-development.jpg",
+        heroImageLink: "/backgrounds/services/software-development.jpg",
         headPoints: [
           "Software Solution and Service Provider for over Two Decades.",
           "Team of Highly Experienced Software Developers on all latest technologies.",
@@ -267,7 +272,7 @@ const routesConfig = {
       path: "services/ecommerce-solutions",
       content: {
         heading: "eCommerece Ssolutions",
-        heroImageLink: "/img/ecommerce-solutions.jpg",
+        heroImageLink: "/backgrounds/services/ecommerce-solutions.jpg",
         headPoints: [
           "100% Secure Online Stores",
           "Payment Gateway Integration Expert",
@@ -370,7 +375,7 @@ const routesConfig = {
       path: "services/mobile-apps-development",
       content: {
         heading: "Mobile apps development",
-        heroImageLink: "/img/mob.jpg",
+        heroImageLink: "/backgrounds/services/mob.jpg",
         headPoints: [
           "High-quality, custom-built mobile apps for businesses of all sizes",
           "Payment Gateway Integration Expert",
@@ -441,7 +446,7 @@ const routesConfig = {
       path: "services/cloud-solution",
       content: {
         heading: "Cloud Solutions",
-        heroImageLink: "/img/cloud-development.jpg",
+        heroImageLink: "/backgrounds/services/cloud-development.jpg",
         headPoints: [
           "Comprehensive Cloud Solution provider.",
           "Expertise and Experience in designing and implementing cloud solutions.",
@@ -538,7 +543,7 @@ const routesConfig = {
       path: "services/website-development",
       content: {
         heading: "Website Development company",
-        heroImageLink: "/img/webDev.jpg",
+        heroImageLink: "/backgrounds/services/webDev.jpg",
         headPoints: [
           "13,000+ Websites Delivered",
           "Hire Certified Website Developers",
@@ -638,7 +643,7 @@ const routesConfig = {
       path: "services/cms-solutions",
       content: {
         heading: "CMS Solutions",
-        heroImageLink: "/img/cms-web-development.jpg",
+        heroImageLink: "/backgrounds/services/cms-web-development.jpg",
         headPoints: [
           "Streamline your content management with our powerful CMS solution.",
           "Easy to customize your website's functionality and features.",
@@ -738,7 +743,7 @@ const routesConfig = {
       path: "services/crm-solutions",
       content: {
         heading: "CRM Development Company",
-        heroImageLink: "/img/crm-dev.png",
+        heroImageLink: "/backgrounds/services/crm-dev.png",
         headPoints: [
           "Automate repetitive task, freeing up your effort to focus on other tasks.",
           "Real-time data and insights into your customer interaction.",
@@ -838,7 +843,7 @@ const routesConfig = {
       path: "services/web-design",
       content: {
         heading: "Web Design Services",
-        heroImageLink: "/img/web-design2.jpg",
+        heroImageLink: "/backgrounds/services/web-design2.jpg",
         headPoints: [
           "Mobile-first and responsive designs.",
           "Comprehensive SEO and online marketing strategies.",
@@ -941,7 +946,7 @@ const routesConfig = {
       path: "services/hire-developer",
       content: {
         heading: "Hire Dedicated Developers",
-        heroImageLink: "/img/hire-developer.jpg",
+        heroImageLink: "/backgrounds/services/hire-developer.jpg",
         headPoints: [
           "Expertise in a wide range of programming languages and tools.",
           "Experienced and skilled developers with a proven track record of success.",
@@ -1044,7 +1049,7 @@ const routesConfig = {
       path: "services/ai-ml",
       content: {
         heading: "AI & Machine Learning Solutions",
-        heroImageLink: "/img/aiml.jpg",
+        heroImageLink: "/backgrounds/services/aiml.jpg",
         headPoints: [
           "Predictive maintenance in business processes/operations.",
           "Enhanced and Engaging Customer experience.",
@@ -1141,7 +1146,12 @@ const routesConfig = {
   Technologies: [
     {
       path: "technologies/magento",
-      content: "magento"
+      content: {
+        heroImageLink: "/backgrounds/technologies/magento.jpg",
+        heading: "Magento Development Company",
+        text: "We specialize in Magento development, dedicated to crafting exceptional e-commerce experiences. With years of expertise and a proven track record, we're committed to realizing your digital vision.",
+        whyCoose:""
+      }
     },
     {
       path: "technologies/shopify",
@@ -1287,7 +1297,7 @@ const routesConfig = {
     },
     {
       path: "industries/banking-and-finance",
-      content: "bacnking and finance",
+      content: "banking and finance",
     },
     {
       path: "industries/media-and-entertainment",

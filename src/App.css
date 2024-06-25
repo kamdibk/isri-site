@@ -13,7 +13,7 @@
 }
 .main-body {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .stroke-text{
   color: transparent;

@@ -41,10 +41,10 @@ const Navbar = () => {
               SERVICES
               <Services />
             </li>
-            <li>
+            {/* <li>
               TECHNOLOGIES
               <Technologies />
-            </li>
+            </li> */}
             <li>
               INDUSTRIES
               <Industries />
