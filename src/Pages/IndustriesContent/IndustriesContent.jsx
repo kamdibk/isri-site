@@ -35,10 +35,13 @@ const IndustriesContent = () => {
             style={dynamicFlexDirection}
           >
             <div className="inner-left">
-              <h2>{key.heading}</h2>
+              <div className="industries-heading">{key.heading}</div>
+              <hr />
               <span className="text-span">{key.text}</span>
             </div>
-            <div className="inner-right"><img src={`${key.image}`} alt="" /></div>
+            <div className="inner-right">
+              <img src={`${key.image}`} alt="" />
+              </div>
           </div>
         );
       })}

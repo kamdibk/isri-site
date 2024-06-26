@@ -1289,22 +1289,22 @@ const routesConfig = {
       content: {
         divs: [
           {
-            image: "",
+            image: "/backgrounds/industries/1.jpg",
             heading: "Medical & healthCare Software Development Company",
             text: "We merge technology with healthcare app development to create solutions that optimize patient care, streamline operations, and enhance overall efficiency. With a profound understanding of medical marketing services, we craft tailored solutions that meet the unique challenges faced by healthcare providers, practitioners, and organizations.",
           },
           {
-            image: "",
+            image: "/backgrounds/industries/3.jpg",
             heading: "Medical and Healthcare Software & Web Development",
             text: "We believe in designing customised healthcare mobile app development for hospitals, clinics, healthcare facilities, and entrepreneurs seeking high-quality digital solutions. Our highly skilled developers deliver optimized patient care and efficient healthcare management tools using the power of artificial intelligence, machine learning, and cloud computing.",
           },
           {
-            imgage: "",
+            image: "/backgrounds/industries/hero_img-1.png.webp",
             heading: "Healthcare Solution Development",
             text: "Today's healthcare sector needs high-quality software solutions to operate with patient data, manage hospital technology, perform illness diagnostics, and calculate medical indicators. As a result, healthcare application development is in high demand. Experienced IT engineers and programmers can complete nearly any work given to them thanks to the variety of contemporary software technologies, and our team is no exception. Our skilled healthcare app developers worked on several projects for the global e-health sector and delivered positive outcomes.",
           },
           {
-            image: "",
+            image: "/backgrounds/industries/1.jpg",
             heading: "Healthcare Mobile App Development",
             text: "The number of healthcare applications also keeps expanding along with the mobile sector. Numerous health organizations appeal to us for the development of medical applications for mobile devices as a result of the popularity of reference apps, care planning apps, prescription reminder apps, and facility management solutions on app stores. We have a lot of expertise in developing apps of different levels of complexity and addressing problems. Healthcare mobile app development is important and challenging, and We will offer our services to you.",
           },
