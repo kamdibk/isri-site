@@ -38,7 +38,7 @@ const IndustriesContent = () => {
               <h2>{key.heading}</h2>
               <span className="text-span">{key.text}</span>
             </div>
-            <div className="inner-right"><div className="div"/></div>
+            <div className="inner-right"><img src={`${key.image}`} alt="" /></div>
           </div>
         );
       })}
