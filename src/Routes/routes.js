@@ -12,8 +12,18 @@ import {
   FaCreativeCommonsRemix,
   FaBalanceScaleLeft,
 } from "react-icons/fa";
-import { GrGroup, GrIntegration, GrTechnology, GrUserExpert, GrUserSettings } from "react-icons/gr";
-import { Ri24HoursFill, RiLayout2Fill, RiSecurePaymentFill } from "react-icons/ri";
+import {
+  GrGroup,
+  GrIntegration,
+  GrTechnology,
+  GrUserExpert,
+  GrUserSettings,
+} from "react-icons/gr";
+import {
+  Ri24HoursFill,
+  RiLayout2Fill,
+  RiSecurePaymentFill,
+} from "react-icons/ri";
 import { IoExpand } from "react-icons/io5";
 import { TbSettingsCog, TbTargetArrow } from "react-icons/tb";
 import { LiaUserShieldSolid } from "react-icons/lia";
@@ -132,10 +142,7 @@ import { BiSolidBookContent, BiSupport } from "react-icons/bi";
 import { HiMiniPencilSquare } from "react-icons/hi2";
 import { FaRegHandshake } from "react-icons/fa6";
 
-
 // Industries
-
-
 
 const iconSize = 55;
 // const iconColor = "rgb(7, 89, 127)";
@@ -234,8 +241,8 @@ const routesConfig = {
               "Web design",
               "CMS & CRM solutions",
               "Cloud solutions",
-              "System Architecture"
-            ]
+              "System Architecture",
+            ],
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
@@ -262,7 +269,7 @@ const routesConfig = {
             heading: "User Experience (UX) Design",
             text: "With our intuitive User Experience (UX) design we focus on enhancing the overall satisfaction and usability of a software product by ensuring a seamless and enjoyable interaction between the user and the application.",
           },
-        ]
+        ],
       },
     },
     {
@@ -365,7 +372,7 @@ const routesConfig = {
             heading: "Personalized Customer Experiences",
             text: "Personalized customer experiences involve tailoring eCommerce platforms and interfaces to meet the unique preferences, behaviors, and needs of individual users. Our e-commerce development services include implementing personalized product recommendations, dynamic pricing strategies, targeted promotions, and customized content delivery mechanisms.",
           },
-        ]
+        ],
       },
     },
     {
@@ -399,7 +406,9 @@ const routesConfig = {
               "Our team of experts works along throughout the project life cycle, to ideate, develop, deploy, and maintain your mobile app.",
           },
           {
-            icon: <AiOutlineDeliveredProcedure size={iconSize} color={iconColor} />,
+            icon: (
+              <AiOutlineDeliveredProcedure size={iconSize} color={iconColor} />
+            ),
             heading: "Custom Delivery",
             reason:
               "We choose the most suitable project delivery mechanism (Agile / Waterfall) based on project needs and provide regular updates to ensure clear visibility on timelines and budget.",
@@ -436,7 +445,7 @@ const routesConfig = {
             heading: "Decentralized Applications (DApps)",
             text: "We facilitate Blockchain development of decentralized applications (DApps), which run on a distributed network of nodes rather than centralized servers. Mobile apps can act as interfaces for interacting with DApps, providing users with access to decentralized services, marketplaces, and governance mechanisms while preserving data sovereignty and censorship resistance.",
           },
-        ]
+        ],
       },
     },
     {
@@ -533,7 +542,7 @@ const routesConfig = {
             heading: "Compliance",
             text: "We place a high priority on compliance and follow all applicable laws and industry standards to protect the security and integrity of your data in the cloud. With our secure cloud solutions, you can feel confident knowing that your private data is protected because they are made to comply with strict regulations like GDPR, HIPAA, and PCI-DSS.",
           },
-        ]
+        ],
       },
     },
     {
@@ -560,7 +569,9 @@ const routesConfig = {
               "Together, you and our team of skilled developers will build a unique website that is suited to your unique business requirements.",
           },
           {
-            icon: <MdOutlineSettingsSuggest size={iconSize} color={iconColor} />,
+            icon: (
+              <MdOutlineSettingsSuggest size={iconSize} color={iconColor} />
+            ),
             heading: "Agile Methodologies",
             reason:
               "Your website must make use of the most recent web technology to stay competitive as technology advances quickly. Our team of professionals will quickly choose the best website development tool and make sure your project is finished in accordance with industry standards.",
@@ -633,7 +644,7 @@ const routesConfig = {
             heading: "Responsive Web Design",
             text: "With our responsive web design of modern website development. We focus on creating websites that adapt and optimize their layout, content, and functionality across various devices and screen sizes. Using responsive web design users access websites from smartphones, tablets, laptops, and desktop computers, responsive design ensures a consistent and user-friendly experience across all platforms.",
           },
-        ]
+        ],
       },
     },
     {
@@ -733,7 +744,7 @@ const routesConfig = {
             heading: "E-commerce Integration",
             text: "We integrate E-commerce services offered by CMS development companies, enabling businesses to seamlessly integrate their content management systems with e-commerce platforms and online storefronts. This service facilitates the creation, management, and optimization of e-commerce websites, allowing businesses to sell products or services online efficiently.",
           },
-        ]
+        ],
       },
     },
     {
@@ -833,7 +844,7 @@ const routesConfig = {
             heading: "Customization and Extension",
             text: "Customization and extension services in CRM development involve tailoring the CRM system to meet the specific needs and requirements of each client's business processes and workflows. This service encompasses the customization of existing CRM modules, the development of new functionalities, and the integration of third-party plugins and extensions to enhance the CRM's capabilities.",
           },
-        ]
+        ],
       },
     },
     {
@@ -936,7 +947,7 @@ const routesConfig = {
             heading: "Website Maintenance and Support",
             text: "Website maintenance and support services are essential for ensuring the ongoing functionality, security, and performance of a website after its initial development and launch. This service involves regular monitoring, updates, and optimizations to keep the website running smoothly and effectively, providing a positive experience for visitors and maximizing its impact on business goals. ",
           },
-        ]
+        ],
       },
     },
     {
@@ -1039,7 +1050,7 @@ const routesConfig = {
             heading: "Dedicated Development Team",
             text: "Offering a dedicated development team service involves providing clients with access to a team of skilled and experienced web developers in India who work exclusively on their projects. This model allows clients to scale their development capacity rapidly, flexibly, and cost-effectively, without the overhead of hiring and managing in-house teams.",
           },
-        ]
+        ],
       },
     },
     {
@@ -1136,7 +1147,7 @@ const routesConfig = {
             heading: "Predictive Analytics",
             text: "Predictive analytics is a service offered by AI/ML solutions providers that leverage machine learning algorithms to analyze historical data, identify patterns, and make predictions about future outcomes or trends. This service enables businesses to gain actionable insights, optimize decision-making, and anticipate potential opportunities or risks based on data-driven predictions.",
           },
-        ]
+        ],
       },
     },
   ],
@@ -1147,140 +1158,140 @@ const routesConfig = {
         heroImageLink: "/backgrounds/technologies/magento.jpg",
         heading: "Magento Development Company",
         text: "We specialize in Magento development, dedicated to crafting exceptional e-commerce experiences. With years of expertise and a proven track record, we're committed to realizing your digital vision.",
-        whyCoose: ""
-      }
+        whyCoose: "",
+      },
     },
     {
       path: "technologies/shopify",
-      content: "shopify"
+      content: "shopify",
     },
     {
       path: "technologies/shopify-plus",
-      content: "shopify-plus"
+      content: "shopify-plus",
     },
     {
       path: "technologies/opencart",
-      content: "open-cart"
+      content: "open-cart",
     },
     {
       path: "technologies/woocommerce",
-      content: "woocommerce"
+      content: "woocommerce",
     },
     {
       path: "technologies/bigcommerce",
-      content: "bigcommerce"
+      content: "bigcommerce",
     },
     {
       path: "technologies/wix",
-      content: "wix"
+      content: "wix",
     },
     {
       path: "technologies/wordpress",
-      content: "wordpress"
+      content: "wordpress",
     },
     {
       path: "technologies/drupal",
-      content: "drupal"
+      content: "drupal",
     },
     {
       path: "technologies/joompla",
-      content: "joomla"
+      content: "joomla",
     },
     {
       path: "technologies/php-framework",
-      content: "php-framework"
+      content: "php-framework",
     },
     {
       path: "technologies/laravel",
-      content: "laravel"
+      content: "laravel",
     },
     {
       path: "technologies/mean-mern",
-      content: "mean-mern"
+      content: "mean-mern",
     },
     {
       path: "technologies/nodejs",
-      content: "nodejs"
+      content: "nodejs",
     },
     {
       path: "technologies/python",
-      content: "python"
+      content: "python",
     },
     {
       path: "technologies/iphone",
-      content: "iphone"
+      content: "iphone",
     },
     {
       path: "technologies/android",
-      content: "android"
+      content: "android",
     },
     {
       path: "technologies/xamarin",
-      content: "xamarin"
+      content: "xamarin",
     },
     {
       path: "technologies/react-native",
-      content: "react-native"
+      content: "react-native",
     },
     {
       path: "technologies/dotnet-development",
-      content: "dotnet-development"
+      content: "dotnet-development",
     },
     {
       path: "technologies/ms-dynamic-crm",
-      content: "ms-dynamic-crm"
+      content: "ms-dynamic-crm",
     },
     {
       path: "technologies/sharepoint",
-      content: "sharepoint"
+      content: "sharepoint",
     },
     {
       path: "technologies/microsoft-bot",
-      content: "microsoft-bot"
+      content: "microsoft-bot",
     },
     {
       path: "technologies/angularjs",
-      content: "angularjs"
+      content: "angularjs",
     },
     {
       path: "technologies/ui-ux",
-      content: "ui-ux"
+      content: "ui-ux",
     },
     {
       path: "technologies/graphics",
-      content: "graphics"
+      content: "graphics",
     },
     {
       path: "technologies/reactjs",
-      content: "reactjs"
+      content: "reactjs",
     },
     {
       path: "technologies/alexa-skills-development",
-      content: "alexa-skills-development"
+      content: "alexa-skills-development",
     },
     {
       path: "technologies/membership-management-solutions",
-      content: "membership-management-solutions"
+      content: "membership-management-solutions",
     },
     {
       path: "technologies/big-data",
-      content: "big-data"
+      content: "big-data",
     },
     {
       path: "technologies/devops",
-      content: "devops"
+      content: "devops",
     },
     {
       path: "technologies/banking-as-a-service",
-      content: "banking-as-a-service"
+      content: "banking-as-a-service",
     },
     {
       path: "technologies/open-network-for-digital-commerce",
-      content: "open-network-for-digital-commerce"
+      content: "open-network-for-digital-commerce",
     },
     {
       path: "technologies/magento",
-      content: ""
+      content: "",
     },
   ],
   industries: [
@@ -1308,7 +1319,7 @@ const routesConfig = {
             heading: "Healthcare Mobile App Development",
             text: "The number of healthcare applications also keeps expanding along with the mobile sector. Numerous health organizations appeal to us for the development of medical applications for mobile devices as a result of the popularity of reference apps, care planning apps, prescription reminder apps, and facility management solutions on app stores. We have a lot of expertise in developing apps of different levels of complexity and addressing problems. Healthcare mobile app development is important and challenging, and We will offer our services to you.",
           },
-        ]
+        ],
       },
     },
     {
@@ -1347,36 +1358,36 @@ const routesConfig = {
   AboutUs: [
     {
       path: "about-us/company",
-      content: []
+      content: [],
     },
     {
       path: "about-us/partners-and-awards",
-      content: []
+      content: [],
     },
     {
       path: "about-us/client-testimonials",
-      content: []
+      content: [],
     },
     {
       path: "about-us/quality-assurance",
-      content: []
+      content: [],
     },
     {
       path: "about-us/careers",
-      content: []
+      content: [],
     },
     {
       path: "about-us/development-approach",
-      content: []
+      content: [],
     },
     {
       path: "about-us/communication-strategy",
-      content: []
+      content: [],
     },
     {
       path: "about-us/social-responsibility",
-      content: []
-    }
+      content: [],
+    },
   ],
 };
 export default routesConfig;
