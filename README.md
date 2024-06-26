@@ -1,3 +1,3 @@
 Work in Progress...
 
-hosted on : isritech.netlify.app
+hosted on : isritech.netlify.app  and isritech3.netlify.app
